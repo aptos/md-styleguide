@@ -58,11 +58,25 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $routeProvider, $mdThemingProvider)
     .primaryPalette('yellow')
     .dark();
 
+  $mdThemingProvider.definePalette('womply-primary', $mdThemingProvider.extendPalette('blue', {
+      '50':   '#CDE9F9',
+      '100':  '#8FC7EA',
+      '200':  '#49A3DD',
+      '300':  '#0B81CA',
+      '400':  '#0874B7',
+      '500':  '#0969A2',
+      '600':  '#086094',
+      '700':  '#07507A',
+      '800':  '#053751',
+      '900':  '#042F44',
+      'contrastDefaultColor': 'light',
+      'contrastDarkColors': '50 100 200 A100',
+      'contrastStrongLightColors': '300 400 A200 A400'
+  }));
+
   $mdThemingProvider.theme('default')
-    .primaryPalette('docs-blue')
-    .accentPalette('docs-red');
-    // .primaryPalette('indigo')
-    // .accentPalette('pink');
+    .primaryPalette('womply-primary')
+    .accentPalette('pink');
 
   angular.forEach(PAGES, function(pages, area) {
     angular.forEach(pages, function(page) {

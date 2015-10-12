@@ -360,28 +360,28 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $location, $rootScope, $http, $wind
   //       }
   //     });
 
-  // return self = {
-  //   version:  version,
-  //   sections: sections,
+  return self = {
+    version:  version,
+    sections: sections,
 
-  //   selectSection: function(section) {
-  //     self.openedSection = section;
-  //   },
-  //   toggleSelectSection: function(section) {
-  //     self.openedSection = (self.openedSection === section ? null : section);
-  //   },
-  //   isSectionSelected: function(section) {
-  //     return self.openedSection === section;
-  //   },
+    selectSection: function(section) {
+      self.openedSection = section;
+    },
+    toggleSelectSection: function(section) {
+      self.openedSection = (self.openedSection === section ? null : section);
+    },
+    isSectionSelected: function(section) {
+      return self.openedSection === section;
+    },
 
-  //   selectPage: function(section, page) {
-  //     self.currentSection = section;
-  //     self.currentPage = page;
-  //   },
-  //   isPageSelected: function(page) {
-  //     return self.currentPage === page;
-  //   }
-  // };
+    selectPage: function(section, page) {
+      self.currentSection = section;
+      self.currentPage = page;
+    },
+    isPageSelected: function(page) {
+      return self.currentPage === page;
+    }
+  };
 
   function sortByHumanName(a,b) {
     return (a.humanName < b.humanName) ? -1 :

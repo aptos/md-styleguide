@@ -32,7 +32,7 @@ gulp.task('docs-css', function() {
     'css/*.css',
     'demo-partials/**/*.css'
     ])
-  .pipe(concat('new_docs.css'))
+  .pipe(concat('docs.css'))
   .pipe(gulp.dest('./'));
 });
 
@@ -42,6 +42,13 @@ gulp.task('watch', function() {
   gulp.watch(paths.css, ['docs-css']);
 });
 
-gulp.task('default', ['scripts', 'css']);
+gulp.task('default', ['docs-demo-scripts','docs-js', 'docs-css']);
 
-gulp.task('serve', ['web-server', 'watch']);
+gulp.task('serve', function() {
+  gulp.src('./')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: true,
+      open: true
+    }));
+});

@@ -1089,6 +1089,9 @@ docs-demo .doc-demo-content {
   height: 18px;
   width: 18px; }
 
+.carddemoBasicUsage md-card {
+  min-height: 150px; }
+
 .bottomSheetdemoBasicUsage .md-inline-list-icon-label {
   display: inline-block;
   padding-left: 10px;
@@ -1123,9 +1126,6 @@ docs-demo .doc-demo-content {
 .bottomSheetdemoBasicUsage md-toast > * {
   font-weight: bolder; }
 
-.carddemoBasicUsage md-card {
-  min-height: 150px; }
-
 .buttondemoBasicUsage section {
   background: #f7f7f7;
   border-radius: 3px;
@@ -1147,56 +1147,6 @@ docs-demo .doc-demo-content {
   left: 7px;
   font-size: 14px;
   opacity: 0.54; }
-
-.checkboxdemoBasicUsage .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoBasicUsage p {
-  padding-left: 8px; }
-
-.checkboxdemoBasicUsage fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
-
-.checkboxdemoBasicUsage legend {
-  color: #3F51B5; }
-
-.checkboxdemoBasicUsage legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoBasicUsage .ipsum {
-  color: saddlebrown; }
-
-.checkboxdemoSyncing .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoSyncing legend {
-  color: #3F51B5; }
-
-.checkboxdemoSyncing legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoSyncing p {
-  padding-left: 8px; }
-
-.checkboxdemoSyncing .info {
-  padding-left: 13px; }
-
-.checkboxdemoSyncing div.standard {
-  padding: 8px;
-  padding-left: 15px; }
-
-.checkboxdemoSyncing fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
 
 .chipsdemoBasicUsage .custom-chips .md-chip {
   position: relative; }
@@ -1305,6 +1255,65 @@ docs-demo .doc-demo-content {
 .contentdemoBasicUsage md-content {
   padding: 24px; }
 
+.checkboxdemoBasicUsage .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoBasicUsage p {
+  padding-left: 8px; }
+
+.checkboxdemoBasicUsage fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
+.checkboxdemoBasicUsage legend {
+  color: #3F51B5; }
+
+.checkboxdemoBasicUsage legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoBasicUsage .ipsum {
+  color: saddlebrown; }
+
+.checkboxdemoSyncing .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoSyncing legend {
+  color: #3F51B5; }
+
+.checkboxdemoSyncing legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoSyncing p {
+  padding-left: 8px; }
+
+.checkboxdemoSyncing .info {
+  padding-left: 13px; }
+
+.checkboxdemoSyncing div.standard {
+  padding: 8px;
+  padding-left: 15px; }
+
+.checkboxdemoSyncing fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
+.datepickerdemoBasicUsage {
+  /** Demo styles for mdCalendar. */ }
+  .datepickerdemoBasicUsage md-content {
+    padding-bottom: 200px; }
+  .datepickerdemoBasicUsage .validation-messages {
+    font-size: 11px;
+    color: darkred;
+    margin: 10px 0 0 25px; }
+
 .dialogdemoBasicUsage #popupContainer {
   position: relative; }
 
@@ -1322,14 +1331,11 @@ docs-demo .doc-demo-content {
   font-size: 0.8em;
   margin-top: 50px; }
 
-.datepickerdemoBasicUsage {
-  /** Demo styles for mdCalendar. */ }
-  .datepickerdemoBasicUsage md-content {
-    padding-bottom: 200px; }
-  .datepickerdemoBasicUsage .validation-messages {
-    font-size: 11px;
-    color: darkred;
-    margin: 10px 0 0 25px; }
+.dividerdemoBasicUsage .face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px; }
 
 .fabSpeedDialdemoBasicUsage .text-capitalize {
   text-transform: capitalize; }
@@ -1364,12 +1370,6 @@ docs-demo .doc-demo-content {
 
 .fabSpeedDialdemoMoreOptions md-content div[flex="50"] {
   padding: 15px; }
-
-.dividerdemoBasicUsage .face {
-  border-radius: 30px;
-  border: 1px solid #ddd;
-  width: 48px;
-  margin: 16px; }
 
 .fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
   left: 7px; }
@@ -1943,20 +1943,74 @@ docs-demo .doc-demo-content {
   padding-left: 25px;
   padding-top: 25px; }
 
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
-  box-shadow: none;
-  border: none;
-  transform: none;
-  -webkit-transform: none; }
+.tabsdemoDynamicHeight md-content {
+  background-color: transparent !important; }
+  .tabsdemoDynamicHeight md-content md-tabs {
+    background: #f6f6f6;
+    border: 1px solid #e1e1e1; }
+    .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+      background: white; }
+  .tabsdemoDynamicHeight md-content h1:first-child {
+    margin-top: 0; }
 
-.tooltipdemoBasicUsage .left {
-  top: 70px !important;
-  left: 56px !important; }
+.tabsdemoDynamicTabs md-content {
+  background-color: transparent !important; }
+  .tabsdemoDynamicTabs md-content md-tabs {
+    border: 1px solid #e1e1e1; }
+    .tabsdemoDynamicTabs md-content md-tabs md-tab-content {
+      background: #f6f6f6; }
+    .tabsdemoDynamicTabs md-content md-tabs md-tabs-wrapper {
+      background: white; }
+  .tabsdemoDynamicTabs md-content h1:first-child {
+    margin-top: 0; }
 
-.tooltipdemoBasicUsage .right {
-  top: 70px !important;
-  right: 56px !important; }
+.tabsdemoDynamicTabs md-input-container {
+  padding-bottom: 0; }
+
+.tabsdemoDynamicTabs .remove-tab {
+  margin-bottom: 40px; }
+
+.tabsdemoDynamicTabs .demo-tab > div > div {
+  padding: 25px;
+  box-sizing: border-box; }
+
+.tabsdemoDynamicTabs .edit-form input {
+  width: 100%; }
+
+.tabsdemoDynamicTabs md-tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+
+.tabsdemoDynamicTabs md-tab[disabled] {
+  opacity: 0.5; }
+
+.tabsdemoDynamicTabs label {
+  text-align: left; }
+
+.tabsdemoDynamicTabs .long > input {
+  width: 264px; }
+
+.tabsdemoDynamicTabs .md-button.add-tab {
+  transform: translateY(5px); }
+
+.tabsdemoStaticTabs md-tab-content {
+  padding: 25px; }
+  .tabsdemoStaticTabs md-tab-content:nth-child(1) {
+    background-color: #42A5F5; }
+  .tabsdemoStaticTabs md-tab-content:nth-child(2) {
+    background-color: #689F38; }
+  .tabsdemoStaticTabs md-tab-content:nth-child(3) {
+    background-color: #26C6DA; }
+
+.tabsdemoStaticTabs .after-tabs-area > span {
+  margin-top: 25px;
+  padding-right: 15px;
+  vertical-align: middle;
+  line-height: 30px;
+  height: 35px; }
+
+.tabsdemoStaticTabs .after-tabs-area > md-checkbox {
+  margin-top: 26px;
+  margin-left: 0; }
 
 .toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
   color: white; }
@@ -2043,74 +2097,20 @@ docs-demo .doc-demo-content {
 .virtualRepeatdemoVerticalUsage .md-virtual-repeat-container .md-virtual-repeat-offsetter {
   padding-left: 16px; }
 
-.tabsdemoDynamicHeight md-content {
-  background-color: transparent !important; }
-  .tabsdemoDynamicHeight md-content md-tabs {
-    background: #f6f6f6;
-    border: 1px solid #e1e1e1; }
-    .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
-      background: white; }
-  .tabsdemoDynamicHeight md-content h1:first-child {
-    margin-top: 0; }
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
+  box-shadow: none;
+  border: none;
+  transform: none;
+  -webkit-transform: none; }
 
-.tabsdemoDynamicTabs md-content {
-  background-color: transparent !important; }
-  .tabsdemoDynamicTabs md-content md-tabs {
-    border: 1px solid #e1e1e1; }
-    .tabsdemoDynamicTabs md-content md-tabs md-tab-content {
-      background: #f6f6f6; }
-    .tabsdemoDynamicTabs md-content md-tabs md-tabs-wrapper {
-      background: white; }
-  .tabsdemoDynamicTabs md-content h1:first-child {
-    margin-top: 0; }
+.tooltipdemoBasicUsage .left {
+  top: 70px !important;
+  left: 56px !important; }
 
-.tabsdemoDynamicTabs md-input-container {
-  padding-bottom: 0; }
-
-.tabsdemoDynamicTabs .remove-tab {
-  margin-bottom: 40px; }
-
-.tabsdemoDynamicTabs .demo-tab > div > div {
-  padding: 25px;
-  box-sizing: border-box; }
-
-.tabsdemoDynamicTabs .edit-form input {
-  width: 100%; }
-
-.tabsdemoDynamicTabs md-tabs {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
-
-.tabsdemoDynamicTabs md-tab[disabled] {
-  opacity: 0.5; }
-
-.tabsdemoDynamicTabs label {
-  text-align: left; }
-
-.tabsdemoDynamicTabs .long > input {
-  width: 264px; }
-
-.tabsdemoDynamicTabs .md-button.add-tab {
-  transform: translateY(5px); }
-
-.tabsdemoStaticTabs md-tab-content {
-  padding: 25px; }
-  .tabsdemoStaticTabs md-tab-content:nth-child(1) {
-    background-color: #42A5F5; }
-  .tabsdemoStaticTabs md-tab-content:nth-child(2) {
-    background-color: #689F38; }
-  .tabsdemoStaticTabs md-tab-content:nth-child(3) {
-    background-color: #26C6DA; }
-
-.tabsdemoStaticTabs .after-tabs-area > span {
-  margin-top: 25px;
-  padding-right: 15px;
-  vertical-align: middle;
-  line-height: 30px;
-  height: 35px; }
-
-.tabsdemoStaticTabs .after-tabs-area > md-checkbox {
-  margin-top: 26px;
-  margin-left: 0; }
+.tooltipdemoBasicUsage .right {
+  top: 70px !important;
+  right: 56px !important; }
 
 .whiteframedemoBasicUsage md-whiteframe {
   background: #fff;

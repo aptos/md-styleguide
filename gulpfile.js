@@ -22,7 +22,7 @@ gulp.task('docs-js', function() {
     'js/**/*.js'
     ])
   .pipe(concat('docs.js'))
-  .pipe(gulpif(!argv.dev, uglify()))
+  // .pipe(gulpif(!argv.dev, uglify()))
   .pipe(gulp.dest('./'));
 });
 
@@ -43,12 +43,3 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['docs-demo-scripts','docs-js', 'docs-css']);
-
-gulp.task('serve', function() {
-  gulp.src('./')
-    .pipe(webserver({
-      livereload: true,
-      directoryListing: true,
-      open: true
-    }));
-});

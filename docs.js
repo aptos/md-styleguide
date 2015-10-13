@@ -2113,6 +2113,49 @@ angular.module('docsApp').constant('DEMOS', [
     "url": "/demo/material.components.card"
   },
   {
+    "name": "material.components.wcard",
+    "label": "wCard",
+    "demos": [
+      {
+        "ngModule": {
+          "name": "cardDemo2",
+          "module": "cardDemo2",
+          "dependencies": [
+            "ngMaterial"
+          ]
+        },
+        "id": "wcarddemoBasicUsage",
+        "css": [
+          {
+            "name": "style.css",
+            "label": "style.css",
+            "fileType": "css",
+            "outputPath": "demo-partials/wcard/demoBasicUsage/style.css"
+          }
+        ],
+        "html": [],
+        "js": [
+          {
+            "name": "script.js",
+            "label": "script.js",
+            "fileType": "js",
+            "outputPath": "demo-partials/wcard/demoBasicUsage/script.js"
+          }
+        ],
+        "moduleName": "material.components.wcard",
+        "name": "demoBasicUsage",
+        "label": "Basic Usage",
+        "index": {
+          "name": "index.html",
+          "label": "index.html",
+          "fileType": "html",
+          "outputPath": "demo-partials/wcard/demoBasicUsage/index.html"
+        }
+      }
+    ],
+    "url": "/demo/material.components.wcard"
+  },
+  {
     "name": "material.components.checkbox",
     "label": "Checkbox",
     "demos": [
@@ -4356,9 +4399,9 @@ function($mdUtil) {
 }]);
 
 DocsApp.directive('demoInclude', [
-  '$q', 
-  '$http', 
-  '$compile', 
+  '$q',
+  '$http',
+  '$compile',
   '$templateCache',
   '$timeout',
 function($q, $http, $compile, $templateCache, $timeout) {
@@ -4366,7 +4409,7 @@ function($q, $http, $compile, $templateCache, $timeout) {
     restrict: 'E',
     link: postLink
   };
-  
+
   function postLink(scope, element, attr) {
     var demoContainer;
 

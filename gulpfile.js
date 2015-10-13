@@ -8,7 +8,8 @@ var gulp = require('gulp'),
   livereload = require('gulp-livereload'),
   paths = {
     scripts: ['**/*.js'],
-    css: '**/*.css'
+    css: '**/*.css',
+    scss: ['**/**.scss']
   };
 
 gulp.task('docs-demo-scripts', function() {
@@ -36,10 +37,17 @@ gulp.task('docs-css', function() {
   .pipe(gulp.dest('./'));
 });
 
+gulp.task('sass', function () {
+  return gulp.src('./scss/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./dist'));
+});
+
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch(paths.scripts, ['docs-demo-scripts','docs-js']);
   gulp.watch(paths.css, ['docs-css']);
+  gulp.watch(paths.scss, ['sass']);
 });
 
-gulp.task('default', ['docs-demo-scripts','docs-js', 'docs-css']);
+gulp.task('default', ['docs-demo-scripts','docs-js', 'docs-css', 'sass']);

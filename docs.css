@@ -1089,8 +1089,27 @@ docs-demo .doc-demo-content {
   height: 18px;
   width: 18px; }
 
-.carddemoBasicUsage md-card {
-  min-height: 150px; }
+.buttondemoBasicUsage section {
+  background: #f7f7f7;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em;
+  position: relative !important;
+  padding-bottom: 10px; }
+
+.buttondemoBasicUsage md-content {
+  margin-right: 7px; }
+
+.buttondemoBasicUsage section .md-button {
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
+.buttondemoBasicUsage .label {
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  font-size: 14px;
+  opacity: 0.54; }
 
 .bottomSheetdemoBasicUsage .md-inline-list-icon-label {
   display: inline-block;
@@ -1126,27 +1145,58 @@ docs-demo .doc-demo-content {
 .bottomSheetdemoBasicUsage md-toast > * {
   font-weight: bolder; }
 
-.buttondemoBasicUsage section {
-  background: #f7f7f7;
-  border-radius: 3px;
-  text-align: center;
-  margin: 1em;
-  position: relative !important;
-  padding-bottom: 10px; }
+.carddemoBasicUsage md-card {
+  min-height: 150px; }
 
-.buttondemoBasicUsage md-content {
-  margin-right: 7px; }
+.checkboxdemoBasicUsage .checkboxDemo1 div {
+  clear: both; }
 
-.buttondemoBasicUsage section .md-button {
-  margin-top: 16px;
-  margin-bottom: 16px; }
+.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
+  float: left; }
 
-.buttondemoBasicUsage .label {
-  position: absolute;
-  bottom: 5px;
-  left: 7px;
-  font-size: 14px;
-  opacity: 0.54; }
+.checkboxdemoBasicUsage p {
+  padding-left: 8px; }
+
+.checkboxdemoBasicUsage fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
+.checkboxdemoBasicUsage legend {
+  color: #3F51B5; }
+
+.checkboxdemoBasicUsage legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoBasicUsage .ipsum {
+  color: saddlebrown; }
+
+.checkboxdemoSyncing .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoSyncing legend {
+  color: #3F51B5; }
+
+.checkboxdemoSyncing legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoSyncing p {
+  padding-left: 8px; }
+
+.checkboxdemoSyncing .info {
+  padding-left: 13px; }
+
+.checkboxdemoSyncing div.standard {
+  padding: 8px;
+  padding-left: 15px; }
+
+.checkboxdemoSyncing fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
 
 .chipsdemoBasicUsage .custom-chips .md-chip {
   position: relative; }
@@ -1245,66 +1295,6 @@ docs-demo .doc-demo-content {
 .chipsdemoStaticChips p.note {
   font-size: 12px; }
 
-.contentdemoBasicUsage div.demo-content {
-  height: 600px; }
-
-.contentdemoBasicUsage div[ng-controller] {
-  height: 100%;
-  padding-bottom: 15px; }
-
-.contentdemoBasicUsage md-content {
-  padding: 24px; }
-
-.checkboxdemoBasicUsage .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoBasicUsage p {
-  padding-left: 8px; }
-
-.checkboxdemoBasicUsage fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
-
-.checkboxdemoBasicUsage legend {
-  color: #3F51B5; }
-
-.checkboxdemoBasicUsage legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoBasicUsage .ipsum {
-  color: saddlebrown; }
-
-.checkboxdemoSyncing .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoSyncing legend {
-  color: #3F51B5; }
-
-.checkboxdemoSyncing legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoSyncing p {
-  padding-left: 8px; }
-
-.checkboxdemoSyncing .info {
-  padding-left: 13px; }
-
-.checkboxdemoSyncing div.standard {
-  padding: 8px;
-  padding-left: 15px; }
-
-.checkboxdemoSyncing fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
-
 .datepickerdemoBasicUsage {
   /** Demo styles for mdCalendar. */ }
   .datepickerdemoBasicUsage md-content {
@@ -1330,6 +1320,16 @@ docs-demo .doc-demo-content {
 .dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
   font-size: 0.8em;
   margin-top: 50px; }
+
+.contentdemoBasicUsage div.demo-content {
+  height: 600px; }
+
+.contentdemoBasicUsage div[ng-controller] {
+  height: 100%;
+  padding-bottom: 15px; }
+
+.contentdemoBasicUsage md-content {
+  padding: 24px; }
 
 .dividerdemoBasicUsage .face {
   border-radius: 30px;
@@ -1746,27 +1746,6 @@ docs-demo .doc-demo-content {
   user-select: none;
   /* Likely future */ }
 
-.menudemoBasicUsage .md-menu-demo {
-  padding: 24px; }
-
-.menudemoBasicUsage .menu-demo-container {
-  min-height: 200px; }
-
-.menudemoMenuPositionModes .md-menu-demo {
-  padding: 24px; }
-
-.menudemoMenuPositionModes .menu-demo-container {
-  min-height: 200px; }
-
-.menudemoMenuWidth .md-menu-demo {
-  padding: 24px; }
-
-.menudemoMenuWidth .menu-demo-container {
-  min-height: 200px; }
-
-.menudemoMenuWidth .menus {
-  width: 100%; }
-
 .menuBardemoBasicUsage .page-container {
   background-color: #f1f1f1;
   padding: 32px; }
@@ -1821,6 +1800,62 @@ docs-demo .doc-demo-content {
 
 .progressCirculardemoBasicUsage .visible {
   border-color: rgba(221, 221, 177, 0); }
+
+.menudemoBasicUsage .md-menu-demo {
+  padding: 24px; }
+
+.menudemoBasicUsage .menu-demo-container {
+  min-height: 200px; }
+
+.menudemoMenuPositionModes .md-menu-demo {
+  padding: 24px; }
+
+.menudemoMenuPositionModes .menu-demo-container {
+  min-height: 200px; }
+
+.menudemoMenuWidth .md-menu-demo {
+  padding: 24px; }
+
+.menudemoMenuWidth .menu-demo-container {
+  min-height: 200px; }
+
+.menudemoMenuWidth .menus {
+  width: 100%; }
+
+.radioButtondemoBasicUsage body {
+  padding: 20px; }
+
+.radioButtondemoBasicUsage hr {
+  margin-left: -20px;
+  opacity: 0.3; }
+
+.radioButtondemoBasicUsage md-radio-group {
+  width: 150px; }
+
+.radioButtondemoBasicUsage p:last-child {
+  padding-bottom: 50px; }
+
+.radioButtondemoBasicUsage [ng-controller] {
+  padding-left: 20px; }
+
+.radioButtondemoBasicUsage .radioValue {
+  margin-left: 5px;
+  color: #0f9d58;
+  font-weight: bold;
+  padding: 5px; }
+
+.radioButtondemoBasicUsage md-icon {
+  margin: 20px;
+  margin-top: 0;
+  width: 128px;
+  height: 128px; }
+
+.radioButtondemoBasicUsage .ipsum {
+  color: saddlebrown;
+  font-size: 0.9em; }
+
+.selectdemoBasicUsage md-input-container {
+  margin-right: 10px; }
 
 .progressLineardemoBasicUsage body {
   padding: 20px; }
@@ -1881,41 +1916,6 @@ docs-demo .doc-demo-content {
   margin-top: 10px;
   padding: 25px;
   font-size: 0.9em; }
-
-.radioButtondemoBasicUsage body {
-  padding: 20px; }
-
-.radioButtondemoBasicUsage hr {
-  margin-left: -20px;
-  opacity: 0.3; }
-
-.radioButtondemoBasicUsage md-radio-group {
-  width: 150px; }
-
-.radioButtondemoBasicUsage p:last-child {
-  padding-bottom: 50px; }
-
-.radioButtondemoBasicUsage [ng-controller] {
-  padding-left: 20px; }
-
-.radioButtondemoBasicUsage .radioValue {
-  margin-left: 5px;
-  color: #0f9d58;
-  font-weight: bold;
-  padding: 5px; }
-
-.radioButtondemoBasicUsage md-icon {
-  margin: 20px;
-  margin-top: 0;
-  width: 128px;
-  height: 128px; }
-
-.radioButtondemoBasicUsage .ipsum {
-  color: saddlebrown;
-  font-size: 0.9em; }
-
-.selectdemoBasicUsage md-input-container {
-  margin-right: 10px; }
 
 .sliderdemoBasicUsage input[type="number"] {
   text-align: center;
@@ -2021,6 +2021,21 @@ docs-demo .doc-demo-content {
   border-radius: 48px;
   border: 1px solid #ddd; }
 
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
+  box-shadow: none;
+  border: none;
+  transform: none;
+  -webkit-transform: none; }
+
+.tooltipdemoBasicUsage .left {
+  top: 70px !important;
+  left: 56px !important; }
+
+.tooltipdemoBasicUsage .right {
+  top: 70px !important;
+  right: 56px !important; }
+
 .virtualRepeatdemoDeferredLoading #vertical-container {
   height: 292px;
   width: 400px; }
@@ -2097,20 +2112,8 @@ docs-demo .doc-demo-content {
 .virtualRepeatdemoVerticalUsage .md-virtual-repeat-container .md-virtual-repeat-offsetter {
   padding-left: 16px; }
 
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
-  box-shadow: none;
-  border: none;
-  transform: none;
-  -webkit-transform: none; }
-
-.tooltipdemoBasicUsage .left {
-  top: 70px !important;
-  left: 56px !important; }
-
-.tooltipdemoBasicUsage .right {
-  top: 70px !important;
-  right: 56px !important; }
+.carddemoBasicUsage md-card {
+  min-height: 150px; }
 
 .whiteframedemoBasicUsage md-whiteframe {
   background: #fff;

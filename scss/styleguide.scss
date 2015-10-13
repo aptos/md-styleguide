@@ -1,0 +1,7 @@
+// Import angular-material variable overrides before angular-material
+@import "womply/variables.scss";
+@import "bower_components/angular-material/angular-material.scss";
+
+// Other class overrides and womply additional classes
+@import "womply/typography";
+@import "womply/partner_logos";

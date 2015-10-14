@@ -1834,12 +1834,6 @@ DocsApp
       "outputPath": "templates/awesomeness.html",
       "url": "/Templates/awesomeness",
       "label": "awesomeness"
-    },
-    {
-      "name": "datatable",
-      "outputPath": "templates/datatable.html",
-      "url": "/Templates/datatable",
-      "label": "Data Table"
     }
   ],
   "CSS": [

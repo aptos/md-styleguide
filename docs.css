@@ -1089,28 +1089,6 @@ docs-demo .doc-demo-content {
   height: 18px;
   width: 18px; }
 
-.buttondemoBasicUsage section {
-  background: #f7f7f7;
-  border-radius: 3px;
-  text-align: center;
-  margin: 1em;
-  position: relative !important;
-  padding-bottom: 10px; }
-
-.buttondemoBasicUsage md-content {
-  margin-right: 7px; }
-
-.buttondemoBasicUsage section .md-button {
-  margin-top: 16px;
-  margin-bottom: 16px; }
-
-.buttondemoBasicUsage .label {
-  position: absolute;
-  bottom: 5px;
-  left: 7px;
-  font-size: 14px;
-  opacity: 0.54; }
-
 .bottomSheetdemoBasicUsage .md-inline-list-icon-label {
   display: inline-block;
   padding-left: 10px;
@@ -1145,6 +1123,28 @@ docs-demo .doc-demo-content {
 .bottomSheetdemoBasicUsage md-toast > * {
   font-weight: bolder; }
 
+.buttondemoBasicUsage section {
+  background: #f7f7f7;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em;
+  position: relative !important;
+  padding-bottom: 10px; }
+
+.buttondemoBasicUsage md-content {
+  margin-right: 7px; }
+
+.buttondemoBasicUsage section .md-button {
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
+.buttondemoBasicUsage .label {
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  font-size: 14px;
+  opacity: 0.54; }
+
 .carddemoBasicUsage md-card {
   min-height: 150px; }
 
@@ -1170,6 +1170,43 @@ docs-demo .doc-demo-content {
 
 .checkboxdemoBasicUsage .ipsum {
   color: saddlebrown; }
+
+.checkboxdemoSyncing .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoSyncing legend {
+  color: #3F51B5; }
+
+.checkboxdemoSyncing legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoSyncing p {
+  padding-left: 8px; }
+
+.checkboxdemoSyncing .info {
+  padding-left: 13px; }
+
+.checkboxdemoSyncing div.standard {
+  padding: 8px;
+  padding-left: 15px; }
+
+.checkboxdemoSyncing fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
+.contentdemoBasicUsage div.demo-content {
+  height: 600px; }
+
+.contentdemoBasicUsage div[ng-controller] {
+  height: 100%;
+  padding-bottom: 15px; }
+
+.contentdemoBasicUsage md-content {
+  padding: 24px; }
 
 .chipsdemoBasicUsage .custom-chips .md-chip {
   position: relative; }
@@ -1204,33 +1241,6 @@ docs-demo .doc-demo-content {
         background: rgba(255, 0, 0, 0.8); }
   .chipsdemoBasicUsage .custom-chips .md-chip:not(.md-readonly) md-chip-template {
     padding-right: 5px; }
-
-.checkboxdemoSyncing .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoSyncing legend {
-  color: #3F51B5; }
-
-.checkboxdemoSyncing legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoSyncing p {
-  padding-left: 8px; }
-
-.checkboxdemoSyncing .info {
-  padding-left: 13px; }
-
-.checkboxdemoSyncing div.standard {
-  padding: 8px;
-  padding-left: 15px; }
-
-.checkboxdemoSyncing fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
 
 .chipsdemoContactChips md-content.autocomplete {
   min-height: 250px; }
@@ -1304,16 +1314,6 @@ docs-demo .doc-demo-content {
     color: darkred;
     margin: 10px 0 0 25px; }
 
-.contentdemoBasicUsage div.demo-content {
-  height: 600px; }
-
-.contentdemoBasicUsage div[ng-controller] {
-  height: 100%;
-  padding-bottom: 15px; }
-
-.contentdemoBasicUsage md-content {
-  padding: 24px; }
-
 .dialogdemoBasicUsage #popupContainer {
   position: relative; }
 
@@ -1330,12 +1330,6 @@ docs-demo .doc-demo-content {
 .dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
   font-size: 0.8em;
   margin-top: 50px; }
-
-.dividerdemoBasicUsage .face {
-  border-radius: 30px;
-  border: 1px solid #ddd;
-  width: 48px;
-  margin: 16px; }
 
 .fabSpeedDialdemoBasicUsage .text-capitalize {
   text-transform: capitalize; }
@@ -1370,6 +1364,12 @@ docs-demo .doc-demo-content {
 
 .fabSpeedDialdemoMoreOptions md-content div[flex="50"] {
   padding: 15px; }
+
+.dividerdemoBasicUsage .face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px; }
 
 .fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
   left: 7px; }
@@ -1698,27 +1698,6 @@ docs-demo .doc-demo-content {
   padding-left: 25px;
   color: #7f7e7e; }
 
-.listdemoBasicUsage md-divider {
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
-.listdemoListControls md-divider {
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
-.listdemoListControls md-list-item > p,
-.listdemoListControls md-list-item > .md-list-item-inner > p,
-.listdemoListControls md-list-item .md-list-item-inner > p,
-.listdemoListControls md-list-item .md-list-item-inner > .md-list-item-inner > p {
-  -webkit-user-select: none;
-  /* Chrome all / Safari all */
-  -moz-user-select: none;
-  /* Firefox all */
-  -ms-user-select: none;
-  /* IE 10+ */
-  user-select: none;
-  /* Likely future */ }
-
 .inputdemoBasicUsage md-datepicker {
   margin-top: 18px; }
 
@@ -1745,6 +1724,27 @@ docs-demo .doc-demo-content {
 .inputdemoIcons md-input-container.md-input-invalid > md-icon.email,
 .inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
   color: red; }
+
+.listdemoBasicUsage md-divider {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.listdemoListControls md-divider {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.listdemoListControls md-list-item > p,
+.listdemoListControls md-list-item > .md-list-item-inner > p,
+.listdemoListControls md-list-item .md-list-item-inner > p,
+.listdemoListControls md-list-item .md-list-item-inner > .md-list-item-inner > p {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */ }
 
 .menudemoBasicUsage .md-menu-demo {
   padding: 24px; }
@@ -1786,41 +1786,6 @@ docs-demo .doc-demo-content {
 
 .menuBardemoBasicUsage .page p {
   line-height: 1.6rem; }
-
-.progressCirculardemoBasicUsage body {
-  padding: 20px; }
-
-.progressCirculardemoBasicUsage h4 {
-  margin: 10px 0; }
-
-.progressCirculardemoBasicUsage md-progress-circular {
-  margin-bottom: 20px; }
-
-.progressCirculardemoBasicUsage #loaders > md-switch {
-  margin: 0;
-  margin-left: 10px;
-  margin-top: -10px; }
-
-.progressCirculardemoBasicUsage #loaders > h5 {
-  padding-top: 8px; }
-
-.progressCirculardemoBasicUsage #loaders > p {
-  margin-right: 20px; }
-
-.progressCirculardemoBasicUsage p.small {
-  font-size: 0.8em;
-  margin-top: -18px; }
-
-.progressCirculardemoBasicUsage hr {
-  width: 100%;
-  margin-top: 20px;
-  border-color: rgba(221, 221, 177, 0.1); }
-
-.progressCirculardemoBasicUsage p.small > code {
-  font-size: 0.8em; }
-
-.progressCirculardemoBasicUsage .visible {
-  border-color: rgba(221, 221, 177, 0); }
 
 .progressLineardemoBasicUsage body {
   padding: 20px; }
@@ -1882,6 +1847,41 @@ docs-demo .doc-demo-content {
   padding: 25px;
   font-size: 0.9em; }
 
+.progressCirculardemoBasicUsage body {
+  padding: 20px; }
+
+.progressCirculardemoBasicUsage h4 {
+  margin: 10px 0; }
+
+.progressCirculardemoBasicUsage md-progress-circular {
+  margin-bottom: 20px; }
+
+.progressCirculardemoBasicUsage #loaders > md-switch {
+  margin: 0;
+  margin-left: 10px;
+  margin-top: -10px; }
+
+.progressCirculardemoBasicUsage #loaders > h5 {
+  padding-top: 8px; }
+
+.progressCirculardemoBasicUsage #loaders > p {
+  margin-right: 20px; }
+
+.progressCirculardemoBasicUsage p.small {
+  font-size: 0.8em;
+  margin-top: -18px; }
+
+.progressCirculardemoBasicUsage hr {
+  width: 100%;
+  margin-top: 20px;
+  border-color: rgba(221, 221, 177, 0.1); }
+
+.progressCirculardemoBasicUsage p.small > code {
+  font-size: 0.8em; }
+
+.progressCirculardemoBasicUsage .visible {
+  border-color: rgba(221, 221, 177, 0); }
+
 .radioButtondemoBasicUsage body {
   padding: 20px; }
 
@@ -1927,6 +1927,10 @@ docs-demo .doc-demo-content {
   width: 48px;
   margin: 16px; }
 
+.switchdemoBasicUsage .inset {
+  padding-left: 25px;
+  padding-top: 25px; }
+
 .swipedemoBasicUsage .demo-swipe {
   padding: 20px 10px; }
 
@@ -1939,9 +1943,15 @@ docs-demo .doc-demo-content {
   -ms-user-select: none;
   user-select: none; }
 
-.switchdemoBasicUsage .inset {
-  padding-left: 25px;
-  padding-top: 25px; }
+.tabsdemoDynamicHeight md-content {
+  background-color: transparent !important; }
+  .tabsdemoDynamicHeight md-content md-tabs {
+    background: #f6f6f6;
+    border: 1px solid #e1e1e1; }
+    .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+      background: white; }
+  .tabsdemoDynamicHeight md-content h1:first-child {
+    margin-top: 0; }
 
 .tabsdemoDynamicTabs md-content {
   background-color: transparent !important; }
@@ -1982,16 +1992,6 @@ docs-demo .doc-demo-content {
 .tabsdemoDynamicTabs .md-button.add-tab {
   transform: translateY(5px); }
 
-.tabsdemoDynamicHeight md-content {
-  background-color: transparent !important; }
-  .tabsdemoDynamicHeight md-content md-tabs {
-    background: #f6f6f6;
-    border: 1px solid #e1e1e1; }
-    .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
-      background: white; }
-  .tabsdemoDynamicHeight md-content h1:first-child {
-    margin-top: 0; }
-
 .tabsdemoStaticTabs md-tab-content {
   padding: 25px; }
   .tabsdemoStaticTabs md-tab-content:nth-child(1) {
@@ -2020,6 +2020,21 @@ docs-demo .doc-demo-content {
   margin: 16px;
   border-radius: 48px;
   border: 1px solid #ddd; }
+
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
+  box-shadow: none;
+  border: none;
+  transform: none;
+  -webkit-transform: none; }
+
+.tooltipdemoBasicUsage .left {
+  top: 70px !important;
+  left: 56px !important; }
+
+.tooltipdemoBasicUsage .right {
+  top: 70px !important;
+  right: 56px !important; }
 
 .virtualRepeatdemoDeferredLoading #vertical-container {
   height: 292px;
@@ -2101,18 +2116,3 @@ docs-demo .doc-demo-content {
   background: #fff;
   margin: 30px;
   height: 100px; }
-
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
-  box-shadow: none;
-  border: none;
-  transform: none;
-  -webkit-transform: none; }
-
-.tooltipdemoBasicUsage .left {
-  top: 70px !important;
-  left: 56px !important; }
-
-.tooltipdemoBasicUsage .right {
-  top: 70px !important;
-  right: 56px !important; }

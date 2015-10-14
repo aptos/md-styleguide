@@ -1089,6 +1089,28 @@ docs-demo .doc-demo-content {
   height: 18px;
   width: 18px; }
 
+.buttondemoBasicUsage section {
+  background: #f7f7f7;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em;
+  position: relative !important;
+  padding-bottom: 10px; }
+
+.buttondemoBasicUsage md-content {
+  margin-right: 7px; }
+
+.buttondemoBasicUsage section .md-button {
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
+.buttondemoBasicUsage .label {
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  font-size: 14px;
+  opacity: 0.54; }
+
 .bottomSheetdemoBasicUsage .md-inline-list-icon-label {
   display: inline-block;
   padding-left: 10px;
@@ -1123,90 +1145,8 @@ docs-demo .doc-demo-content {
 .bottomSheetdemoBasicUsage md-toast > * {
   font-weight: bolder; }
 
-.buttondemoBasicUsage section {
-  background: #f7f7f7;
-  border-radius: 3px;
-  text-align: center;
-  margin: 1em;
-  position: relative !important;
-  padding-bottom: 10px; }
-
-.buttondemoBasicUsage md-content {
-  margin-right: 7px; }
-
-.buttondemoBasicUsage section .md-button {
-  margin-top: 16px;
-  margin-bottom: 16px; }
-
-.buttondemoBasicUsage .label {
-  position: absolute;
-  bottom: 5px;
-  left: 7px;
-  font-size: 14px;
-  opacity: 0.54; }
-
 .carddemoBasicUsage md-card {
   min-height: 150px; }
-
-.checkboxdemoBasicUsage .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoBasicUsage p {
-  padding-left: 8px; }
-
-.checkboxdemoBasicUsage fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
-
-.checkboxdemoBasicUsage legend {
-  color: #3F51B5; }
-
-.checkboxdemoBasicUsage legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoBasicUsage .ipsum {
-  color: saddlebrown; }
-
-.checkboxdemoSyncing .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoSyncing legend {
-  color: #3F51B5; }
-
-.checkboxdemoSyncing legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoSyncing p {
-  padding-left: 8px; }
-
-.checkboxdemoSyncing .info {
-  padding-left: 13px; }
-
-.checkboxdemoSyncing div.standard {
-  padding: 8px;
-  padding-left: 15px; }
-
-.checkboxdemoSyncing fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
-
-.contentdemoBasicUsage div.demo-content {
-  height: 600px; }
-
-.contentdemoBasicUsage div[ng-controller] {
-  height: 100%;
-  padding-bottom: 15px; }
-
-.contentdemoBasicUsage md-content {
-  padding: 24px; }
 
 .chipsdemoBasicUsage .custom-chips .md-chip {
   position: relative; }
@@ -1305,6 +1245,56 @@ docs-demo .doc-demo-content {
 .chipsdemoStaticChips p.note {
   font-size: 12px; }
 
+.checkboxdemoBasicUsage .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoBasicUsage p {
+  padding-left: 8px; }
+
+.checkboxdemoBasicUsage fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
+.checkboxdemoBasicUsage legend {
+  color: #3F51B5; }
+
+.checkboxdemoBasicUsage legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoBasicUsage .ipsum {
+  color: saddlebrown; }
+
+.checkboxdemoSyncing .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoSyncing legend {
+  color: #3F51B5; }
+
+.checkboxdemoSyncing legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoSyncing p {
+  padding-left: 8px; }
+
+.checkboxdemoSyncing .info {
+  padding-left: 13px; }
+
+.checkboxdemoSyncing div.standard {
+  padding: 8px;
+  padding-left: 15px; }
+
+.checkboxdemoSyncing fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
 .datepickerdemoBasicUsage {
   /** Demo styles for mdCalendar. */ }
   .datepickerdemoBasicUsage md-content {
@@ -1313,6 +1303,16 @@ docs-demo .doc-demo-content {
     font-size: 11px;
     color: darkred;
     margin: 10px 0 0 25px; }
+
+.contentdemoBasicUsage div.demo-content {
+  height: 600px; }
+
+.contentdemoBasicUsage div[ng-controller] {
+  height: 100%;
+  padding-bottom: 15px; }
+
+.contentdemoBasicUsage md-content {
+  padding: 24px; }
 
 .dialogdemoBasicUsage #popupContainer {
   position: relative; }
@@ -1330,6 +1330,12 @@ docs-demo .doc-demo-content {
 .dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
   font-size: 0.8em;
   margin-top: 50px; }
+
+.dividerdemoBasicUsage .face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px; }
 
 .fabSpeedDialdemoBasicUsage .text-capitalize {
   text-transform: capitalize; }
@@ -1364,12 +1370,6 @@ docs-demo .doc-demo-content {
 
 .fabSpeedDialdemoMoreOptions md-content div[flex="50"] {
   padding: 15px; }
-
-.dividerdemoBasicUsage .face {
-  border-radius: 30px;
-  border: 1px solid #ddd;
-  width: 48px;
-  margin: 16px; }
 
 .fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
   left: 7px; }
@@ -1787,66 +1787,6 @@ docs-demo .doc-demo-content {
 .menuBardemoBasicUsage .page p {
   line-height: 1.6rem; }
 
-.progressLineardemoBasicUsage body {
-  padding: 20px; }
-
-.progressLineardemoBasicUsage h4 {
-  margin: 10px 0; }
-
-.progressLineardemoBasicUsage md-progress-linear {
-  padding-top: 10px;
-  margin-bottom: 20px; }
-
-.progressLineardemoBasicUsage #loaders > md-switch {
-  margin: 0;
-  margin-left: 10px;
-  margin-top: -10px; }
-
-.progressLineardemoBasicUsage #loaders > h5 {
-  padding-top: 4px; }
-
-.progressLineardemoBasicUsage #loaders > p {
-  margin-right: 20px;
-  font-size: 0.90em; }
-
-.progressLineardemoBasicUsage p.small {
-  font-size: 0.8em;
-  margin-top: -18px; }
-
-.progressLineardemoBasicUsage hr {
-  width: 100%;
-  margin-top: 20px;
-  border-color: rgba(221, 221, 177, 0.1); }
-
-.progressLineardemoBasicUsage p.small > code {
-  font-size: 0.8em; }
-
-.progressLineardemoBasicUsage .visible {
-  opacity: 0;
-  border: 2px solid white !important; }
-
-.progressLineardemoBasicUsage .container {
-  display: block;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  border: 2px solid #aad1f9;
-  transition: opacity 0.1s linear;
-  border-top: 0px; }
-
-.progressLineardemoBasicUsage .bottom-block {
-  display: block;
-  position: relative;
-  background-color: rgba(255, 235, 169, 0.25);
-  height: 85px;
-  width: 100%; }
-
-.progressLineardemoBasicUsage .bottom-block > span {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 25px;
-  font-size: 0.9em; }
-
 .progressCirculardemoBasicUsage body {
   padding: 20px; }
 
@@ -1914,6 +1854,66 @@ docs-demo .doc-demo-content {
   color: saddlebrown;
   font-size: 0.9em; }
 
+.progressLineardemoBasicUsage body {
+  padding: 20px; }
+
+.progressLineardemoBasicUsage h4 {
+  margin: 10px 0; }
+
+.progressLineardemoBasicUsage md-progress-linear {
+  padding-top: 10px;
+  margin-bottom: 20px; }
+
+.progressLineardemoBasicUsage #loaders > md-switch {
+  margin: 0;
+  margin-left: 10px;
+  margin-top: -10px; }
+
+.progressLineardemoBasicUsage #loaders > h5 {
+  padding-top: 4px; }
+
+.progressLineardemoBasicUsage #loaders > p {
+  margin-right: 20px;
+  font-size: 0.90em; }
+
+.progressLineardemoBasicUsage p.small {
+  font-size: 0.8em;
+  margin-top: -18px; }
+
+.progressLineardemoBasicUsage hr {
+  width: 100%;
+  margin-top: 20px;
+  border-color: rgba(221, 221, 177, 0.1); }
+
+.progressLineardemoBasicUsage p.small > code {
+  font-size: 0.8em; }
+
+.progressLineardemoBasicUsage .visible {
+  opacity: 0;
+  border: 2px solid white !important; }
+
+.progressLineardemoBasicUsage .container {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #aad1f9;
+  transition: opacity 0.1s linear;
+  border-top: 0px; }
+
+.progressLineardemoBasicUsage .bottom-block {
+  display: block;
+  position: relative;
+  background-color: rgba(255, 235, 169, 0.25);
+  height: 85px;
+  width: 100%; }
+
+.progressLineardemoBasicUsage .bottom-block > span {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 25px;
+  font-size: 0.9em; }
+
 .selectdemoBasicUsage md-input-container {
   margin-right: 10px; }
 
@@ -1927,10 +1927,6 @@ docs-demo .doc-demo-content {
   width: 48px;
   margin: 16px; }
 
-.switchdemoBasicUsage .inset {
-  padding-left: 25px;
-  padding-top: 25px; }
-
 .swipedemoBasicUsage .demo-swipe {
   padding: 20px 10px; }
 
@@ -1942,6 +1938,10 @@ docs-demo .doc-demo-content {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+
+.switchdemoBasicUsage .inset {
+  padding-left: 25px;
+  padding-top: 25px; }
 
 .tabsdemoDynamicHeight md-content {
   background-color: transparent !important; }
@@ -2036,6 +2036,11 @@ docs-demo .doc-demo-content {
   top: 70px !important;
   right: 56px !important; }
 
+.whiteframedemoBasicUsage md-whiteframe {
+  background: #fff;
+  margin: 30px;
+  height: 100px; }
+
 .virtualRepeatdemoDeferredLoading #vertical-container {
   height: 292px;
   width: 400px; }
@@ -2111,8 +2116,3 @@ docs-demo .doc-demo-content {
 
 .virtualRepeatdemoVerticalUsage .md-virtual-repeat-container .md-virtual-repeat-offsetter {
   padding-left: 16px; }
-
-.whiteframedemoBasicUsage md-whiteframe {
-  background: #fff;
-  margin: 30px;
-  height: 100px; }

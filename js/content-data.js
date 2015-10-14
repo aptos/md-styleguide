@@ -6,6 +6,12 @@ DocsApp
       "outputPath": "templates/awesomeness.html",
       "url": "/Templates/awesomeness",
       "label": "awesomeness"
+    },
+    {
+      "name": "logos",
+      "outputPath": "templates/logos.html",
+      "url": "/Templates/logos",
+      "label": "logos"
     }
   ],
   "CSS": [

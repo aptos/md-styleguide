@@ -45,9 +45,17 @@ gulp.task('sass', function () {
 
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch(paths.scripts, ['docs-demo-scripts','docs-js']);
+  gulp.watch(paths.scripts, ['docs-demo-scripts','docs-js','js']);
   gulp.watch(paths.css, ['docs-css']);
   gulp.watch(paths.scss, ['sass']);
+});
+
+gulp.task('webserver', function() {
+  gulp.src('./')
+    .pipe(webserver({
+      livereload: true,
+      open: true
+    }));
 });
 
 gulp.task('default', ['docs-demo-scripts','docs-js', 'docs-css', 'sass']);

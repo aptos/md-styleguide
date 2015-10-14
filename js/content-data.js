@@ -1,5 +1,13 @@
 DocsApp
 .constant('PAGES', {
+  "Templates": [
+    {
+      "name": "awesomeness",
+      "outputPath": "templates/awesomeness.html",
+      "url": "/Templates/awesomeness",
+      "label": "awesomeness"
+    }
+  ],
   "CSS": [
     {
       "name": "button",

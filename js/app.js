@@ -180,6 +180,21 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $location, $rootScope, $http, $wind
     type: 'toggle'
   });
 
+  console.info("Templates!!", PAGES.Templates)
+  var templateDocs = [];
+  angular.forEach(PAGES.Templates, function(template) {
+    templateDocs.push({
+      name: template.label,
+      url: template.url
+    });
+  });
+
+  sections.push({
+    name: 'Templates',
+    pages: templateDocs.sort(sortByName),
+    type: 'toggle'
+  });
+
   sections.push();
 
   sections.push({

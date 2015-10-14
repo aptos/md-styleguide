@@ -180,6 +180,21 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $location, $rootScope, $http, $wind
     type: 'toggle'
   });
 
+  console.info("Templates!!", PAGES.Templates)
+  var templateDocs = [];
+  angular.forEach(PAGES.Templates, function(template) {
+    templateDocs.push({
+      name: template.label,
+      url: template.url
+    });
+  });
+
+  sections.push({
+    name: 'Templates',
+    pages: templateDocs.sort(sortByName),
+    type: 'toggle'
+  });
+
   sections.push();
 
   sections.push({
@@ -1813,6 +1828,20 @@ DocsApp
 
 DocsApp
 .constant('PAGES', {
+  "Templates": [
+    {
+      "name": "awesomeness",
+      "outputPath": "templates/awesomeness.html",
+      "url": "/Templates/awesomeness",
+      "label": "awesomeness"
+    },
+    {
+      "name": "datatable",
+      "outputPath": "templates/datatable.html",
+      "url": "/Templates/datatable",
+      "label": "Data Table"
+    }
+  ],
   "CSS": [
     {
       "name": "button",
@@ -2111,49 +2140,6 @@ angular.module('docsApp').constant('DEMOS', [
       }
     ],
     "url": "/demo/material.components.card"
-  },
-  {
-    "name": "material.components.wcard",
-    "label": "wCard",
-    "demos": [
-      {
-        "ngModule": {
-          "name": "cardDemo2",
-          "module": "cardDemo2",
-          "dependencies": [
-            "ngMaterial"
-          ]
-        },
-        "id": "wcarddemoBasicUsage",
-        "css": [
-          {
-            "name": "style.css",
-            "label": "style.css",
-            "fileType": "css",
-            "outputPath": "demo-partials/wcard/demoBasicUsage/style.css"
-          }
-        ],
-        "html": [],
-        "js": [
-          {
-            "name": "script.js",
-            "label": "script.js",
-            "fileType": "js",
-            "outputPath": "demo-partials/wcard/demoBasicUsage/script.js"
-          }
-        ],
-        "moduleName": "material.components.wcard",
-        "name": "demoBasicUsage",
-        "label": "Basic Usage",
-        "index": {
-          "name": "index.html",
-          "label": "index.html",
-          "fileType": "html",
-          "outputPath": "demo-partials/wcard/demoBasicUsage/index.html"
-        }
-      }
-    ],
-    "url": "/demo/material.components.wcard"
   },
   {
     "name": "material.components.checkbox",
@@ -4399,9 +4385,9 @@ function($mdUtil) {
 }]);
 
 DocsApp.directive('demoInclude', [
-  '$q',
-  '$http',
-  '$compile',
+  '$q', 
+  '$http', 
+  '$compile', 
   '$templateCache',
   '$timeout',
 function($q, $http, $compile, $templateCache, $timeout) {
@@ -4409,7 +4395,7 @@ function($q, $http, $compile, $templateCache, $timeout) {
     restrict: 'E',
     link: postLink
   };
-
+  
   function postLink(scope, element, attr) {
     var demoContainer;
 

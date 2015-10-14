@@ -1171,33 +1171,6 @@ docs-demo .doc-demo-content {
 .checkboxdemoBasicUsage .ipsum {
   color: saddlebrown; }
 
-.checkboxdemoSyncing .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoSyncing legend {
-  color: #3F51B5; }
-
-.checkboxdemoSyncing legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoSyncing p {
-  padding-left: 8px; }
-
-.checkboxdemoSyncing .info {
-  padding-left: 13px; }
-
-.checkboxdemoSyncing div.standard {
-  padding: 8px;
-  padding-left: 15px; }
-
-.checkboxdemoSyncing fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
-
 .chipsdemoBasicUsage .custom-chips .md-chip {
   position: relative; }
   .chipsdemoBasicUsage .custom-chips .md-chip .md-chip-remove-container {
@@ -1231,6 +1204,33 @@ docs-demo .doc-demo-content {
         background: rgba(255, 0, 0, 0.8); }
   .chipsdemoBasicUsage .custom-chips .md-chip:not(.md-readonly) md-chip-template {
     padding-right: 5px; }
+
+.checkboxdemoSyncing .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoSyncing legend {
+  color: #3F51B5; }
+
+.checkboxdemoSyncing legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoSyncing p {
+  padding-left: 8px; }
+
+.checkboxdemoSyncing .info {
+  padding-left: 13px; }
+
+.checkboxdemoSyncing div.standard {
+  padding: 8px;
+  padding-left: 15px; }
+
+.checkboxdemoSyncing fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
 
 .chipsdemoContactChips md-content.autocomplete {
   min-height: 250px; }
@@ -1304,6 +1304,16 @@ docs-demo .doc-demo-content {
     color: darkred;
     margin: 10px 0 0 25px; }
 
+.contentdemoBasicUsage div.demo-content {
+  height: 600px; }
+
+.contentdemoBasicUsage div[ng-controller] {
+  height: 100%;
+  padding-bottom: 15px; }
+
+.contentdemoBasicUsage md-content {
+  padding: 24px; }
+
 .dialogdemoBasicUsage #popupContainer {
   position: relative; }
 
@@ -1320,16 +1330,6 @@ docs-demo .doc-demo-content {
 .dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
   font-size: 0.8em;
   margin-top: 50px; }
-
-.contentdemoBasicUsage div.demo-content {
-  height: 600px; }
-
-.contentdemoBasicUsage div[ng-controller] {
-  height: 100%;
-  padding-bottom: 15px; }
-
-.contentdemoBasicUsage md-content {
-  padding: 24px; }
 
 .dividerdemoBasicUsage .face {
   border-radius: 30px;
@@ -1698,6 +1698,27 @@ docs-demo .doc-demo-content {
   padding-left: 25px;
   color: #7f7e7e; }
 
+.listdemoBasicUsage md-divider {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.listdemoListControls md-divider {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.listdemoListControls md-list-item > p,
+.listdemoListControls md-list-item > .md-list-item-inner > p,
+.listdemoListControls md-list-item .md-list-item-inner > p,
+.listdemoListControls md-list-item .md-list-item-inner > .md-list-item-inner > p {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */ }
+
 .inputdemoBasicUsage md-datepicker {
   margin-top: 18px; }
 
@@ -1725,26 +1746,26 @@ docs-demo .doc-demo-content {
 .inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
   color: red; }
 
-.listdemoBasicUsage md-divider {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+.menudemoBasicUsage .md-menu-demo {
+  padding: 24px; }
 
-.listdemoListControls md-divider {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+.menudemoBasicUsage .menu-demo-container {
+  min-height: 200px; }
 
-.listdemoListControls md-list-item > p,
-.listdemoListControls md-list-item > .md-list-item-inner > p,
-.listdemoListControls md-list-item .md-list-item-inner > p,
-.listdemoListControls md-list-item .md-list-item-inner > .md-list-item-inner > p {
-  -webkit-user-select: none;
-  /* Chrome all / Safari all */
-  -moz-user-select: none;
-  /* Firefox all */
-  -ms-user-select: none;
-  /* IE 10+ */
-  user-select: none;
-  /* Likely future */ }
+.menudemoMenuPositionModes .md-menu-demo {
+  padding: 24px; }
+
+.menudemoMenuPositionModes .menu-demo-container {
+  min-height: 200px; }
+
+.menudemoMenuWidth .md-menu-demo {
+  padding: 24px; }
+
+.menudemoMenuWidth .menu-demo-container {
+  min-height: 200px; }
+
+.menudemoMenuWidth .menus {
+  width: 100%; }
 
 .menuBardemoBasicUsage .page-container {
   background-color: #f1f1f1;
@@ -1800,62 +1821,6 @@ docs-demo .doc-demo-content {
 
 .progressCirculardemoBasicUsage .visible {
   border-color: rgba(221, 221, 177, 0); }
-
-.menudemoBasicUsage .md-menu-demo {
-  padding: 24px; }
-
-.menudemoBasicUsage .menu-demo-container {
-  min-height: 200px; }
-
-.menudemoMenuPositionModes .md-menu-demo {
-  padding: 24px; }
-
-.menudemoMenuPositionModes .menu-demo-container {
-  min-height: 200px; }
-
-.menudemoMenuWidth .md-menu-demo {
-  padding: 24px; }
-
-.menudemoMenuWidth .menu-demo-container {
-  min-height: 200px; }
-
-.menudemoMenuWidth .menus {
-  width: 100%; }
-
-.radioButtondemoBasicUsage body {
-  padding: 20px; }
-
-.radioButtondemoBasicUsage hr {
-  margin-left: -20px;
-  opacity: 0.3; }
-
-.radioButtondemoBasicUsage md-radio-group {
-  width: 150px; }
-
-.radioButtondemoBasicUsage p:last-child {
-  padding-bottom: 50px; }
-
-.radioButtondemoBasicUsage [ng-controller] {
-  padding-left: 20px; }
-
-.radioButtondemoBasicUsage .radioValue {
-  margin-left: 5px;
-  color: #0f9d58;
-  font-weight: bold;
-  padding: 5px; }
-
-.radioButtondemoBasicUsage md-icon {
-  margin: 20px;
-  margin-top: 0;
-  width: 128px;
-  height: 128px; }
-
-.radioButtondemoBasicUsage .ipsum {
-  color: saddlebrown;
-  font-size: 0.9em; }
-
-.selectdemoBasicUsage md-input-container {
-  margin-right: 10px; }
 
 .progressLineardemoBasicUsage body {
   padding: 20px; }
@@ -1917,6 +1882,41 @@ docs-demo .doc-demo-content {
   padding: 25px;
   font-size: 0.9em; }
 
+.radioButtondemoBasicUsage body {
+  padding: 20px; }
+
+.radioButtondemoBasicUsage hr {
+  margin-left: -20px;
+  opacity: 0.3; }
+
+.radioButtondemoBasicUsage md-radio-group {
+  width: 150px; }
+
+.radioButtondemoBasicUsage p:last-child {
+  padding-bottom: 50px; }
+
+.radioButtondemoBasicUsage [ng-controller] {
+  padding-left: 20px; }
+
+.radioButtondemoBasicUsage .radioValue {
+  margin-left: 5px;
+  color: #0f9d58;
+  font-weight: bold;
+  padding: 5px; }
+
+.radioButtondemoBasicUsage md-icon {
+  margin: 20px;
+  margin-top: 0;
+  width: 128px;
+  height: 128px; }
+
+.radioButtondemoBasicUsage .ipsum {
+  color: saddlebrown;
+  font-size: 0.9em; }
+
+.selectdemoBasicUsage md-input-container {
+  margin-right: 10px; }
+
 .sliderdemoBasicUsage input[type="number"] {
   text-align: center;
   padding-left: 10px; }
@@ -1942,16 +1942,6 @@ docs-demo .doc-demo-content {
 .switchdemoBasicUsage .inset {
   padding-left: 25px;
   padding-top: 25px; }
-
-.tabsdemoDynamicHeight md-content {
-  background-color: transparent !important; }
-  .tabsdemoDynamicHeight md-content md-tabs {
-    background: #f6f6f6;
-    border: 1px solid #e1e1e1; }
-    .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
-      background: white; }
-  .tabsdemoDynamicHeight md-content h1:first-child {
-    margin-top: 0; }
 
 .tabsdemoDynamicTabs md-content {
   background-color: transparent !important; }
@@ -1992,6 +1982,16 @@ docs-demo .doc-demo-content {
 .tabsdemoDynamicTabs .md-button.add-tab {
   transform: translateY(5px); }
 
+.tabsdemoDynamicHeight md-content {
+  background-color: transparent !important; }
+  .tabsdemoDynamicHeight md-content md-tabs {
+    background: #f6f6f6;
+    border: 1px solid #e1e1e1; }
+    .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+      background: white; }
+  .tabsdemoDynamicHeight md-content h1:first-child {
+    margin-top: 0; }
+
 .tabsdemoStaticTabs md-tab-content {
   padding: 25px; }
   .tabsdemoStaticTabs md-tab-content:nth-child(1) {
@@ -2020,21 +2020,6 @@ docs-demo .doc-demo-content {
   margin: 16px;
   border-radius: 48px;
   border: 1px solid #ddd; }
-
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
-  box-shadow: none;
-  border: none;
-  transform: none;
-  -webkit-transform: none; }
-
-.tooltipdemoBasicUsage .left {
-  top: 70px !important;
-  left: 56px !important; }
-
-.tooltipdemoBasicUsage .right {
-  top: 70px !important;
-  right: 56px !important; }
 
 .virtualRepeatdemoDeferredLoading #vertical-container {
   height: 292px;
@@ -2112,10 +2097,22 @@ docs-demo .doc-demo-content {
 .virtualRepeatdemoVerticalUsage .md-virtual-repeat-container .md-virtual-repeat-offsetter {
   padding-left: 16px; }
 
-.carddemoBasicUsage md-card {
-  min-height: 150px; }
-
 .whiteframedemoBasicUsage md-whiteframe {
   background: #fff;
   margin: 30px;
   height: 100px; }
+
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
+  box-shadow: none;
+  border: none;
+  transform: none;
+  -webkit-transform: none; }
+
+.tooltipdemoBasicUsage .left {
+  top: 70px !important;
+  left: 56px !important; }
+
+.tooltipdemoBasicUsage .right {
+  top: 70px !important;
+  right: 56px !important; }

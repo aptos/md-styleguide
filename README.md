@@ -31,3 +31,14 @@ While the component library is based on the angular-material documentation as a 
 
 1. Place new templates as html files in the /templates directory
 1. Add the template information into the PAGES section of  js/content-data.js. This will render a new link in the side menu under Templates
+
+## Adding image assets
+
+Image assets should be dropped directly into dist/assets/images
+
+## Building
+
+    gulp build
+
+This compiles scss files and creates a single styleguide.css file within dist/
+

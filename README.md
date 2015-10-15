@@ -19,15 +19,11 @@ This style guide contains a set of visual design standards based on the Google M
 
 SASS files are arranged in the scss directory
 
-  |-- styleguide.scss
-
-  |-- womply
-
-      |-- _partner_logos.scss
-
-      |-- _typography.scss (for example purposes)
-
-      |-- _variables.scss (overrides and additions to angular-material.scss)
+    |-- styleguide.scss
+    |-- womply
+        |-- _partner_logos.scss
+        |-- _typography.scss (for example purposes)
+        |-- _variables.scss (overrides and additions to angular-material.scss)
 
 ## Adding new Templates
 

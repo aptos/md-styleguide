@@ -4618,7 +4618,7 @@ angular.module('docsApp').run(['$templateCache', function($templateCache) {
     '  <md-content>\n' +
     '    <h2 class="md-headline">Womply Material Design Style Guide</h2>\n' +
     '    <p>\n' +
-    '      This style guide contains a set of visual standards based on the Google Material Design Specification.\n' +
+    '      This style guide contains a set of visual design standards based on the Google Material Design Specification.\n' +
     '      It is intended to be used by Womply product teams as tool for accessing common components that can be referenced in Womply product designs.\n' +
     '      This is an interactive style guide which provides Component Demos, Templates composed of multiple Components \n' +
     '      as well as information about CSS and Theming through color palatte selections.' +

@@ -3,8 +3,7 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   refresh = require('gulp-livereload'),
   lrserver = require('tiny-lr')(),
-  webserver = require('gulp-webserver'),
-  livereload = require('gulp-livereload');
+  webserver = require('gulp-webserver');
 
 gulp.task('sass', function(){
   gulp.src('./scss/**/*.scss')
@@ -42,14 +41,14 @@ gulp.task('docs-css', function() {
 });
 
 //Convenience task for running a one-off build
-gulp.task('build', function() {
-  gulp.run('docs-demo-scripts','docs-js', 'docs-css', 'sass');
-});
+gulp.task('build', ['docs-demo-scripts','docs-js', 'docs-css', 'sass']);
 
 gulp.task('watch', function() {
   gulp.watch('js/**/*.js', ['docs-demo-scripts','docs-js']);
   gulp.watch('scss/**/*.scss', ['sass']);
 });
+
+gulp.task('default', ['build', 'watch']);
 
 // IMPORTANT!!
 // the serve config is *not* working correctly (yet)

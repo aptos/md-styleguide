@@ -10,19 +10,23 @@ This style guide contains a set of visual design standards based on the Google M
 1. Install npm libraries:
   - `npm install`
 1. If you will update SASS files or Templates, and only want to build
-  - 'gulp build'
+  - `gulp build`
 1. To view in browser as you make updates (default)
-  - 'gulp'
-  - run 'live-server' in a second terminal
+  - `gulp`
+  - run `live-server` in a second terminal
 
 ## Updating css
 
 SASS files are arranged in the scss directory
 
   |-- styleguide.scss
+
   |-- womply
+
       |-- _partner_logos.scss
+
       |-- _typography.scss (for example purposes)
+
       |-- _variables.scss (overrides and additions to angular-material.scss)
 
 ## Adding new Templates

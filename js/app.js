@@ -271,7 +271,7 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $location, $rootScope, $http, $wind
   });
 
   sections.push({
-    name: 'API Reference',
+    name: 'Angular API Reference',
     type: 'heading',
     children: [
     {

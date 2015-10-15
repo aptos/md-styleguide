@@ -1,21 +1,23 @@
 var gulp = require('gulp'),
-  concat = require('gulp-concat'),
   sass = require('gulp-sass'),
-  uglify = require('gulp-uglify'),
-  gulpif = require('gulp-if'),
-  argv = require('minimist')(process.argv.slice(2)),
+  concat = require('gulp-concat'),
+  refresh = require('gulp-livereload'),
+  lrserver = require('tiny-lr')(),
   webserver = require('gulp-webserver'),
-  livereload = require('gulp-livereload'),
-  paths = {
-    scripts: ['**/*.js'],
-    css: '**/*.css',
-    scss: ['**/**.scss']
-  };
+  livereload = require('gulp-livereload');
+
+gulp.task('sass', function(){
+  gulp.src('./scss/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('dist'))
+    .pipe(refresh(lrserver));
+});
 
 gulp.task('docs-demo-scripts', function() {
   return gulp.src('demo-partials/**/*.js')
   .pipe(concat('docs-demo-scripts.js'))
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('./'))
+  .pipe(refresh(lrserver));
 });
 
 gulp.task('docs-js', function() {
@@ -24,7 +26,8 @@ gulp.task('docs-js', function() {
     ])
   .pipe(concat('docs.js'))
   // .pipe(gulpif(!argv.dev, uglify()))
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('./'))
+  .pipe(refresh(lrserver));
 });
 
 gulp.task('docs-css', function() {
@@ -34,28 +37,34 @@ gulp.task('docs-css', function() {
     'demo-partials/**/*.css'
     ])
   .pipe(concat('docs.css'))
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('./'))
+  .pipe(refresh(lrserver));
 });
 
-gulp.task('sass', function () {
-  return gulp.src('./scss/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist'));
+//Convenience task for running a one-off build
+gulp.task('build', function() {
+  gulp.run('docs-demo-scripts','docs-js', 'docs-css', 'sass');
 });
+
+
+// IMPORTANT!!
+// the serve config is *not* working correctly (yet)
+// recommend running 'gulp watch' in one terminal and 'live-server' in a second.
+//
+// gulp.task('serve', function() {
+//   gulp.src()
+//     .pipe(webserver({
+//       livereload: true,
+//       directoryListing: false,
+//       open: true
+//     }));
+// });
 
 gulp.task('watch', function() {
-  livereload.listen();
-  gulp.watch(paths.scripts, ['docs-demo-scripts','docs-js','js']);
-  gulp.watch(paths.css, ['docs-css']);
-  gulp.watch(paths.scss, ['sass']);
+  gulp.watch('js/**/*.js', ['docs-demo-scripts','docs-js']);
+  gulp.watch('scss/**/*.scss', ['sass']);
 });
 
-gulp.task('webserver', function() {
-  gulp.src('./')
-    .pipe(webserver({
-      livereload: true,
-      open: true
-    }));
+gulp.task('default', function () {
+  gulp.run('build', 'serve', 'watch');
 });
-
-gulp.task('default', ['docs-demo-scripts','docs-js', 'docs-css', 'sass']);

@@ -1089,28 +1089,6 @@ docs-demo .doc-demo-content {
   height: 18px;
   width: 18px; }
 
-.buttondemoBasicUsage section {
-  background: #f7f7f7;
-  border-radius: 3px;
-  text-align: center;
-  margin: 1em;
-  position: relative !important;
-  padding-bottom: 10px; }
-
-.buttondemoBasicUsage md-content {
-  margin-right: 7px; }
-
-.buttondemoBasicUsage section .md-button {
-  margin-top: 16px;
-  margin-bottom: 16px; }
-
-.buttondemoBasicUsage .label {
-  position: absolute;
-  bottom: 5px;
-  left: 7px;
-  font-size: 14px;
-  opacity: 0.54; }
-
 .bottomSheetdemoBasicUsage .md-inline-list-icon-label {
   display: inline-block;
   padding-left: 10px;
@@ -1145,8 +1123,90 @@ docs-demo .doc-demo-content {
 .bottomSheetdemoBasicUsage md-toast > * {
   font-weight: bolder; }
 
+.buttondemoBasicUsage section {
+  background: #f7f7f7;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em;
+  position: relative !important;
+  padding-bottom: 10px; }
+
+.buttondemoBasicUsage md-content {
+  margin-right: 7px; }
+
+.buttondemoBasicUsage section .md-button {
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
+.buttondemoBasicUsage .label {
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  font-size: 14px;
+  opacity: 0.54; }
+
 .carddemoBasicUsage md-card {
   min-height: 150px; }
+
+.checkboxdemoBasicUsage .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoBasicUsage p {
+  padding-left: 8px; }
+
+.checkboxdemoBasicUsage fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
+.checkboxdemoBasicUsage legend {
+  color: #3F51B5; }
+
+.checkboxdemoBasicUsage legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoBasicUsage .ipsum {
+  color: saddlebrown; }
+
+.checkboxdemoSyncing .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoSyncing legend {
+  color: #3F51B5; }
+
+.checkboxdemoSyncing legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoSyncing p {
+  padding-left: 8px; }
+
+.checkboxdemoSyncing .info {
+  padding-left: 13px; }
+
+.checkboxdemoSyncing div.standard {
+  padding: 8px;
+  padding-left: 15px; }
+
+.checkboxdemoSyncing fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
+.contentdemoBasicUsage div.demo-content {
+  height: 600px; }
+
+.contentdemoBasicUsage div[ng-controller] {
+  height: 100%;
+  padding-bottom: 15px; }
+
+.contentdemoBasicUsage md-content {
+  padding: 24px; }
 
 .chipsdemoBasicUsage .custom-chips .md-chip {
   position: relative; }
@@ -1245,56 +1305,6 @@ docs-demo .doc-demo-content {
 .chipsdemoStaticChips p.note {
   font-size: 12px; }
 
-.checkboxdemoBasicUsage .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoBasicUsage p {
-  padding-left: 8px; }
-
-.checkboxdemoBasicUsage fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
-
-.checkboxdemoBasicUsage legend {
-  color: #3F51B5; }
-
-.checkboxdemoBasicUsage legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoBasicUsage .ipsum {
-  color: saddlebrown; }
-
-.checkboxdemoSyncing .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoSyncing legend {
-  color: #3F51B5; }
-
-.checkboxdemoSyncing legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoSyncing p {
-  padding-left: 8px; }
-
-.checkboxdemoSyncing .info {
-  padding-left: 13px; }
-
-.checkboxdemoSyncing div.standard {
-  padding: 8px;
-  padding-left: 15px; }
-
-.checkboxdemoSyncing fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
-
 .datepickerdemoBasicUsage {
   /** Demo styles for mdCalendar. */ }
   .datepickerdemoBasicUsage md-content {
@@ -1303,16 +1313,6 @@ docs-demo .doc-demo-content {
     font-size: 11px;
     color: darkred;
     margin: 10px 0 0 25px; }
-
-.contentdemoBasicUsage div.demo-content {
-  height: 600px; }
-
-.contentdemoBasicUsage div[ng-controller] {
-  height: 100%;
-  padding-bottom: 15px; }
-
-.contentdemoBasicUsage md-content {
-  padding: 24px; }
 
 .dialogdemoBasicUsage #popupContainer {
   position: relative; }
@@ -1370,9 +1370,6 @@ docs-demo .doc-demo-content {
 
 .fabSpeedDialdemoMoreOptions md-content div[flex="50"] {
   padding: 15px; }
-
-.fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
-  left: 7px; }
 
 .gridListdemoBasicUsage md-grid-list {
   margin: 8px; }
@@ -1471,6 +1468,9 @@ docs-demo .doc-demo-content {
   font-weight: 700;
   width: 100%;
   text-align: center; }
+
+.fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
+  left: 7px; }
 
 .icondemoFontIconsWithClassnames {
   /* Bootstrap Overrides */
@@ -1676,6 +1676,20 @@ docs-demo .doc-demo-content {
   width: 48px;
   height: 48px; }
 
+.inputdemoBasicUsage md-datepicker {
+  margin-top: 18px; }
+
+.inputdemoBasicUsage .md-datepicker-button {
+  height: 36px;
+  width: 36px;
+  line-height: 36px; }
+
+.inputdemoBasicUsage .md-datepicker-input-container {
+  margin-left: 2px; }
+
+.inputdemoErrors .inputErrorsApp {
+  min-height: 48px; }
+
 .icondemoUsingTemplateCache md-progress-circular {
   margin-bottom: 20px; }
 
@@ -1697,20 +1711,6 @@ docs-demo .doc-demo-content {
   margin-top: -2px;
   padding-left: 25px;
   color: #7f7e7e; }
-
-.inputdemoBasicUsage md-datepicker {
-  margin-top: 18px; }
-
-.inputdemoBasicUsage .md-datepicker-button {
-  height: 36px;
-  width: 36px;
-  line-height: 36px; }
-
-.inputdemoBasicUsage .md-datepicker-input-container {
-  margin-left: 2px; }
-
-.inputdemoErrors .inputErrorsApp {
-  min-height: 48px; }
 
 .inputdemoIcons .inputIconDemo {
   min-height: 48px; }
@@ -1822,38 +1822,6 @@ docs-demo .doc-demo-content {
 .progressCirculardemoBasicUsage .visible {
   border-color: rgba(221, 221, 177, 0); }
 
-.radioButtondemoBasicUsage body {
-  padding: 20px; }
-
-.radioButtondemoBasicUsage hr {
-  margin-left: -20px;
-  opacity: 0.3; }
-
-.radioButtondemoBasicUsage md-radio-group {
-  width: 150px; }
-
-.radioButtondemoBasicUsage p:last-child {
-  padding-bottom: 50px; }
-
-.radioButtondemoBasicUsage [ng-controller] {
-  padding-left: 20px; }
-
-.radioButtondemoBasicUsage .radioValue {
-  margin-left: 5px;
-  color: #0f9d58;
-  font-weight: bold;
-  padding: 5px; }
-
-.radioButtondemoBasicUsage md-icon {
-  margin: 20px;
-  margin-top: 0;
-  width: 128px;
-  height: 128px; }
-
-.radioButtondemoBasicUsage .ipsum {
-  color: saddlebrown;
-  font-size: 0.9em; }
-
 .progressLineardemoBasicUsage body {
   padding: 20px; }
 
@@ -1914,18 +1882,44 @@ docs-demo .doc-demo-content {
   padding: 25px;
   font-size: 0.9em; }
 
+.radioButtondemoBasicUsage body {
+  padding: 20px; }
+
+.radioButtondemoBasicUsage hr {
+  margin-left: -20px;
+  opacity: 0.3; }
+
+.radioButtondemoBasicUsage md-radio-group {
+  width: 150px; }
+
+.radioButtondemoBasicUsage p:last-child {
+  padding-bottom: 50px; }
+
+.radioButtondemoBasicUsage [ng-controller] {
+  padding-left: 20px; }
+
+.radioButtondemoBasicUsage .radioValue {
+  margin-left: 5px;
+  color: #0f9d58;
+  font-weight: bold;
+  padding: 5px; }
+
+.radioButtondemoBasicUsage md-icon {
+  margin: 20px;
+  margin-top: 0;
+  width: 128px;
+  height: 128px; }
+
+.radioButtondemoBasicUsage .ipsum {
+  color: saddlebrown;
+  font-size: 0.9em; }
+
 .selectdemoBasicUsage md-input-container {
   margin-right: 10px; }
 
 .sliderdemoBasicUsage input[type="number"] {
   text-align: center;
   padding-left: 10px; }
-
-.subheaderdemoBasicUsage .face {
-  border-radius: 30px;
-  border: 1px solid #ddd;
-  width: 48px;
-  margin: 16px; }
 
 .swipedemoBasicUsage .demo-swipe {
   padding: 20px 10px; }
@@ -1938,6 +1932,12 @@ docs-demo .doc-demo-content {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+
+.subheaderdemoBasicUsage .face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px; }
 
 .switchdemoBasicUsage .inset {
   padding-left: 25px;
@@ -2012,15 +2012,6 @@ docs-demo .doc-demo-content {
   margin-top: 26px;
   margin-left: 0; }
 
-.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
-  color: white; }
-
-.toolbardemoScrollShrink .face {
-  width: 48px;
-  margin: 16px;
-  border-radius: 48px;
-  border: 1px solid #ddd; }
-
 .tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
 .tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
   box-shadow: none;
@@ -2036,10 +2027,14 @@ docs-demo .doc-demo-content {
   top: 70px !important;
   right: 56px !important; }
 
-.whiteframedemoBasicUsage md-whiteframe {
-  background: #fff;
-  margin: 30px;
-  height: 100px; }
+.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+  color: white; }
+
+.toolbardemoScrollShrink .face {
+  width: 48px;
+  margin: 16px;
+  border-radius: 48px;
+  border: 1px solid #ddd; }
 
 .virtualRepeatdemoDeferredLoading #vertical-container {
   height: 292px;
@@ -2097,6 +2092,11 @@ docs-demo .doc-demo-content {
 
 .virtualRepeatdemoInfiniteScroll .md-virtual-repeat-container .md-virtual-repeat-offsetter {
   padding-left: 16px; }
+
+.whiteframedemoBasicUsage md-whiteframe {
+  background: #fff;
+  margin: 30px;
+  height: 100px; }
 
 .virtualRepeatdemoVerticalUsage #vertical-container {
   height: 292px;

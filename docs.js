@@ -271,7 +271,7 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $location, $rootScope, $http, $wind
   });
 
   sections.push({
-    name: 'API Reference',
+    name: 'Angular API Reference',
     type: 'heading',
     children: [
     {
@@ -1832,13 +1832,19 @@ DocsApp
       "name": "awesomeness",
       "outputPath": "templates/awesomeness.html",
       "url": "/Templates/awesomeness",
-      "label": "awesomeness"
+      "label": "Awesomeness"
     },
     {
       "name": "logos",
       "outputPath": "templates/logos.html",
       "url": "/Templates/logos",
-      "label": "logos"
+      "label": "Logos"
+    },
+    {
+      "name": "datatables",
+      "outputPath": "templates/datatables.html",
+      "url": "/Templates/datatables",
+      "label": "Data Tables"
     }
   ],
   "CSS": [
@@ -4573,58 +4579,34 @@ angular.module('docsApp').run(['$templateCache', function($templateCache) {
   $templateCache.put('partials/getting-started.tmpl.html',
     '<div ng-controller="GuideCtrl" class="doc-content">\n' +
     '  <md-content>\n' +
-    '    <p><em>New to Angular.js? Before getting into Angular Material, it might be helpful to\n' +
-    '      <a href="https://egghead.io/articles/new-to-angularjs-start-learning-here" target="_blank"\n' +
-    '         title="Link opens in a new window">read about the framework</a>.</em></p>\n' +
-    '\n' +
     '    <h2>How do I start?</h2>\n' +
     '    <ul style="margin-bottom: 2em;">\n' +
-    '      <li><a href="http://codepen.io/collection/AxKKgY/" target="_blank"\n' +
-    '             title="Link opens in a new window">Fork a Codepen</a></li>\n' +
-    '      <li><a href="https://github.com/angular/material-start" target="_blank"\n' +
-    '             title="Link opens in a new window">Clone a Github Starter Project</a></li>\n' +
+    '      <li>If you are interested in browsing the Material Design component library, open <b>DEMOS</b></li>\n' +
+    '      <li>If you want to reference Womply extras, open <b>Templates</b></li>\n' +
+    '      <li>If you want to add to or update CSS or Templates, see below:</li>\n' +
     '    </ul>\n' +
     '\n' +
-    '    <h3>Including Angular Material and its dependencies</h3>\n' +
-    '    <ul style="margin-bottom: 2em;">\n' +
-    '      <li><a href="https://github.com/angular/material#bower">Using Bower</a></li>\n' +
-    '      <li><a href="https://github.com/angular/material#cdn">Using a CDN</a> (example below)</li>\n' +
-    '    </ul>\n' +
+    '    <h2>Add to or Update CSS</h2>\n' +
+    '    <p>\n' +
+    '      The scss directory contains SASS files used in building the styleguide.css found in the /dist directory.\n' +
+    '      To add new css, create or add to an appropriate file within the scss/womply directory.\n' +
+    '      When adding a new file, update the top level styleguide file scss/styleguide.scss with an @import declaration.\n' +
+    '    </p>\n' +
+    '    <h2>Override sass variables</h2>\n' +
+    '    <p>\n' +
+    '      In order to jumpstart the styleguide, the initial component styles are based on the Angular Material project css.\n' +
+    '      Prior to import of the angular material scss, variables can be overriden within scss/womply/_variables.scss, \n' +
+    '      which is imported prior to the angular-material.scss.\n' +
+    '    </p>\n' +
+    '    <h2>Add or Update new Templates</h2>\n' +
+    '    <p>\n' +
+    '      All Templates are added as simple html files within the /templates directory.\n' +
+    '      This is where you can reference any other components found in DEMOS and add new elements with womply specific css.\n' +
+    '      In order to add a new template to the Templates menu, you must also update js/content-data.js .\n' +
+    '      Add a new element within "Templates" that includes name, outputPath, url and the label.\n' +
+    '      For the javascript averse, ask a dev for assitance. In the future, this task can be automated.\n' +
+    '    </p>\n' +
     '\n' +
-    '    <iframe height=\'272\' scrolling=\'no\' data-default-tab="html"\n' +
-    '            src=\'//codepen.io/marcysutton/embed/OPbpKm?height=272&theme-id=11083\'\n' +
-    '            frameborder=\'no\' allowtransparency=\'true\' allowfullscreen=\'true\' style=\'width: 100%;\'>\n' +
-    '      See the Pen <a href=\'http://codepen.io/marcysutton/pen/OPbpKm/\'>Angular Material Dependencies</a>\n' +
-    '      on <a href=\'http://codepen.io\'>CodePen</a>.\n' +
-    '    </iframe>\n' +
-    '\n' +
-    '    <md-divider></md-divider>\n' +
-    '\n' +
-    '    <br/>\n' +
-    '    <h2>Contributing to Angular Material</h2>\n' +
-    '    <ul style="margin-bottom: 2em;">\n' +
-    '      <li>Please read our <a href="https://github.com/angular/material#contributing">contributor guidelines</a>.</li>\n' +
-    '      <li>To contribute, fork our GitHub <a href="https://github.com/angular/material">repository</a>.</li>\n' +
-    '      <li>For problems,\n' +
-    '          <a href="https://github.com/angular/material/issues?q=is%3Aissue+is%3Aopen" target="_blank">\n' +
-    '              search the GitHub Issues\n' +
-    '          </a> and/or\n' +
-    '          <a href="https://github.com/angular/material/issues/new" target="_blank">\n' +
-    '              create a New Issue\n' +
-    '          </a>.\n' +
-    '      </li>\n' +
-    '      <li>For questions,\n' +
-    '          <a href="https://groups.google.com/forum/#!forum/ngmaterial" target="_blank">\n' +
-    '              search the Forum\n' +
-    '          </a> and/or post a new message.\n' +
-    '      </li>\n' +
-    '      <li>\n' +
-    '        Join the\n' +
-    '        <a href="https://gitter.im/angular/material?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank">\n' +
-    '          Gitter Chat\n' +
-    '        </a>\n' +
-    '      </li>\n' +
-    '    </ul>\n' +
     '  </md-content>\n' +
     '</div>\n' +
     '');
@@ -4634,30 +4616,22 @@ angular.module('docsApp').run(['$templateCache', function($templateCache) {
   $templateCache.put('partials/home.tmpl.html',
     '<div ng-controller="HomeCtrl" class="doc-content">\n' +
     '  <md-content>\n' +
-    '    <h2 class="md-headline" style="margin-top: 0;">What is Angular Material?</h2>\n' +
-    '    <p>The Angular Material project is an implementation of Material Design in Angular.js. This project provides a set of reusable, well-tested, and accessible UI components based on the Material Design system.</p>\n' +
-    '    <p>Similar to the\n' +
-    '      <a href="http://www.polymer-project.org/">Polymer</a> project\'s\n' +
-    '      <a href="http://www.polymer-project.org/docs/elements/paper-elements.html">Paper elements</a> collection, Angular Material is supported internally at Google by the Angular.js, Material Design UX and other product teams.\n' +
+    '    <h2 class="md-headline">Womply Material Design Style Guide</h2>\n' +
+    '    <p>\n' +
+    '      This style guide contains a set of visual standards based on the Google Material Design Specification.\n' +
+    '      It is intended to be used by Womply product teams as tool for accessing common components that can be referenced in Womply product designs.\n' +
+    '      This is an interactive style guide which provides Component Demos, Templates composed of multiple Components \n' +
+    '      as well as information about CSS and Theming through color palatte selections.' +
     '    </p>\n' +
-    '    <ul class="buckets" layout layout-align="center center" layout-wrap>\n' +
-    '      <li flex="25" flex-md="50" flex-sm="50" ng-repeat="(index, link) in [\n' +
-    '        { href: \'getting-started\', icon: \'school\', text: \'Getting Started\' },\n' +
-    '        { href: \'demo\', icon: \'play_circle_fill\', text: \'Demos\' },\n' +
-    '        { href: \'CSS/typography\', icon: \'build\', text: \'Customization\' },\n' +
-    '        { href: \'api\', icon: \'code\', text: \'API Reference\' }\n' +
-    '      ]">\n' +
-    '        <md-button\n' +
-    '            class="md-primary md-raised"\n' +
-    '            ng-href="#/{{link.href}}"\n' +
-    '            aria-label="{{link.text}}">\n' +
-    '          <md-icon class="block" md-svg-src="img/icons/ic_{{link.icon}}_24px.svg"></md-icon>\n' +
-    '          {{link.text}}\n' +
-    '        </md-button>\n' +
-    '      </li>\n' +
-    '    </ul>\n' +
-    '\n' +
-    '    <br/>\n' +
+    '    <p>\n' +
+    '       For information on adding new CSS classes, image assets, and building for release, please read the Getting Started section.\n ' +
+    '    </p>\n' +
+    '    <h2 class="md-headline">Why does this look like the Angular Material Documentation?</h2>\n' +
+    '    <p>\n' +
+    '      In order to jumpstart a style guide with a comprehensive set of components, the doc set from the Angular Material project has been used.\n' +
+    '      The documents contain some js examples for angular devs, however this styleguide is intended for use by all Womply product teams.\n' +
+    '      The CSS declarations for each component may be useful for ReactJS based projects as well.\n' +
+    '    </p>\n' +
     '    <h2 class="md-headline">What is Material Design?</h2>\n' +
     '    <p>\n' +
     '      Material Design is a specification for a\n' +
@@ -4679,14 +4653,6 @@ angular.module('docsApp').run(['$templateCache', function($templateCache) {
     '        </md-button>\n' +
     '      </li>\n' +
     '    </ul>\n' +
-    '\n' +
-    '    <br/>\n' +
-    '    <md-divider></md-divider>\n' +
-    '    <p class="md-caption" style="text-align: center; margin-bottom: 0;">\n' +
-    '      These docs were generated from\n' +
-    '      (<a ng-href="{{BUILDCONFIG.repository}}/{{menu.version.current.github}}" target="_blank">v{{BUILDCONFIG.version}} - SHA {{BUILDCONFIG.commit.substring(0,7)}}</a>)\n' +
-    '      on (<strong>{{BUILDCONFIG.date}}</strong>) GMT.\n' +
-    '    </p>\n' +
     '  </md-content>\n' +
     '</div>\n' +
     '\n' +

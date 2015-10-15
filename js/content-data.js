@@ -5,13 +5,19 @@ DocsApp
       "name": "awesomeness",
       "outputPath": "templates/awesomeness.html",
       "url": "/Templates/awesomeness",
-      "label": "awesomeness"
+      "label": "Awesomeness"
     },
     {
       "name": "logos",
       "outputPath": "templates/logos.html",
       "url": "/Templates/logos",
-      "label": "logos"
+      "label": "Logos"
+    },
+    {
+      "name": "datatables",
+      "outputPath": "templates/datatables.html",
+      "url": "/Templates/datatables",
+      "label": "Data Tables"
     }
   ],
   "CSS": [

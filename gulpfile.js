@@ -46,6 +46,10 @@ gulp.task('build', function() {
   gulp.run('docs-demo-scripts','docs-js', 'docs-css', 'sass');
 });
 
+gulp.task('watch', function() {
+  gulp.watch('js/**/*.js', ['docs-demo-scripts','docs-js']);
+  gulp.watch('scss/**/*.scss', ['sass']);
+});
 
 // IMPORTANT!!
 // the serve config is *not* working correctly (yet)
@@ -59,12 +63,7 @@ gulp.task('build', function() {
 //       open: true
 //     }));
 // });
-
-gulp.task('watch', function() {
-  gulp.watch('js/**/*.js', ['docs-demo-scripts','docs-js']);
-  gulp.watch('scss/**/*.scss', ['sass']);
-});
-
-gulp.task('default', function () {
-  gulp.run('build', 'serve', 'watch');
-});
+//
+// gulp.task('default', function () {
+//   gulp.run('build', 'serve', 'watch');
+// });

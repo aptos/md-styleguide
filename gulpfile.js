@@ -55,14 +55,14 @@ gulp.task('default', ['build', 'watch']);
 // recommend running 'gulp watch' in one terminal and 'live-server' in a second.
 //
 // gulp.task('serve', function() {
-//   gulp.src()
+//   gulp.src('./')
 //     .pipe(webserver({
 //       livereload: true,
 //       directoryListing: false,
 //       open: true
 //     }));
 // });
-//
+
 // gulp.task('default', function () {
 //   gulp.run('build', 'serve', 'watch');
 // });

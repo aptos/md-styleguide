@@ -1148,6 +1148,56 @@ docs-demo .doc-demo-content {
 .carddemoBasicUsage md-card {
   min-height: 150px; }
 
+.checkboxdemoBasicUsage .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoBasicUsage p {
+  padding-left: 8px; }
+
+.checkboxdemoBasicUsage fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
+.checkboxdemoBasicUsage legend {
+  color: #3F51B5; }
+
+.checkboxdemoBasicUsage legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoBasicUsage .ipsum {
+  color: saddlebrown; }
+
+.checkboxdemoSyncing .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoSyncing legend {
+  color: #3F51B5; }
+
+.checkboxdemoSyncing legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoSyncing p {
+  padding-left: 8px; }
+
+.checkboxdemoSyncing .info {
+  padding-left: 13px; }
+
+.checkboxdemoSyncing div.standard {
+  padding: 8px;
+  padding-left: 15px; }
+
+.checkboxdemoSyncing fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
 .chipsdemoBasicUsage .custom-chips .md-chip {
   position: relative; }
   .chipsdemoBasicUsage .custom-chips .md-chip .md-chip-remove-container {
@@ -1245,29 +1295,6 @@ docs-demo .doc-demo-content {
 .chipsdemoStaticChips p.note {
   font-size: 12px; }
 
-.checkboxdemoBasicUsage .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoBasicUsage p {
-  padding-left: 8px; }
-
-.checkboxdemoBasicUsage fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
-
-.checkboxdemoBasicUsage legend {
-  color: #3F51B5; }
-
-.checkboxdemoBasicUsage legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoBasicUsage .ipsum {
-  color: saddlebrown; }
-
 .contentdemoBasicUsage div.demo-content {
   height: 600px; }
 
@@ -1277,33 +1304,6 @@ docs-demo .doc-demo-content {
 
 .contentdemoBasicUsage md-content {
   padding: 24px; }
-
-.checkboxdemoSyncing .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoSyncing legend {
-  color: #3F51B5; }
-
-.checkboxdemoSyncing legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoSyncing p {
-  padding-left: 8px; }
-
-.checkboxdemoSyncing .info {
-  padding-left: 13px; }
-
-.checkboxdemoSyncing div.standard {
-  padding: 8px;
-  padding-left: 15px; }
-
-.checkboxdemoSyncing fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
 
 .datepickerdemoBasicUsage {
   /** Demo styles for mdCalendar. */ }
@@ -1331,6 +1331,12 @@ docs-demo .doc-demo-content {
   font-size: 0.8em;
   margin-top: 50px; }
 
+.dividerdemoBasicUsage .face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px; }
+
 .fabSpeedDialdemoBasicUsage .text-capitalize {
   text-transform: capitalize; }
 
@@ -1347,12 +1353,6 @@ docs-demo .doc-demo-content {
   height: 300px;
   margin-left: auto;
   margin-right: auto; }
-
-.dividerdemoBasicUsage .face {
-  border-radius: 30px;
-  border: 1px solid #ddd;
-  width: 48px;
-  margin: 16px; }
 
 .fabSpeedDialdemoMoreOptions .lock-size {
   min-width: 300px;
@@ -1471,6 +1471,33 @@ docs-demo .doc-demo-content {
   font-weight: 700;
   width: 100%;
   text-align: center; }
+
+.inputdemoBasicUsage md-datepicker {
+  margin-top: 18px; }
+
+.inputdemoBasicUsage .md-datepicker-button {
+  height: 36px;
+  width: 36px;
+  line-height: 36px; }
+
+.inputdemoBasicUsage .md-datepicker-input-container {
+  margin-left: 2px; }
+
+.inputdemoErrors .inputErrorsApp {
+  min-height: 48px; }
+
+.inputdemoIcons .inputIconDemo {
+  min-height: 48px; }
+
+.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.email {
+  color: green; }
+
+.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.name {
+  color: dodgerblue; }
+
+.inputdemoIcons md-input-container.md-input-invalid > md-icon.email,
+.inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
+  color: red; }
 
 .icondemoFontIconsWithClassnames {
   /* Bootstrap Overrides */
@@ -1697,33 +1724,6 @@ docs-demo .doc-demo-content {
   margin-top: -2px;
   padding-left: 25px;
   color: #7f7e7e; }
-
-.inputdemoBasicUsage md-datepicker {
-  margin-top: 18px; }
-
-.inputdemoBasicUsage .md-datepicker-button {
-  height: 36px;
-  width: 36px;
-  line-height: 36px; }
-
-.inputdemoBasicUsage .md-datepicker-input-container {
-  margin-left: 2px; }
-
-.inputdemoErrors .inputErrorsApp {
-  min-height: 48px; }
-
-.inputdemoIcons .inputIconDemo {
-  min-height: 48px; }
-
-.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.email {
-  color: green; }
-
-.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.name {
-  color: dodgerblue; }
-
-.inputdemoIcons md-input-container.md-input-invalid > md-icon.email,
-.inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
-  color: red; }
 
 .listdemoBasicUsage md-divider {
   margin-top: 10px;
@@ -2021,21 +2021,6 @@ docs-demo .doc-demo-content {
   border-radius: 48px;
   border: 1px solid #ddd; }
 
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
-  box-shadow: none;
-  border: none;
-  transform: none;
-  -webkit-transform: none; }
-
-.tooltipdemoBasicUsage .left {
-  top: 70px !important;
-  left: 56px !important; }
-
-.tooltipdemoBasicUsage .right {
-  top: 70px !important;
-  right: 56px !important; }
-
 .virtualRepeatdemoDeferredLoading #vertical-container {
   height: 292px;
   width: 400px; }
@@ -2111,6 +2096,21 @@ docs-demo .doc-demo-content {
 
 .virtualRepeatdemoVerticalUsage .md-virtual-repeat-container .md-virtual-repeat-offsetter {
   padding-left: 16px; }
+
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
+  box-shadow: none;
+  border: none;
+  transform: none;
+  -webkit-transform: none; }
+
+.tooltipdemoBasicUsage .left {
+  top: 70px !important;
+  left: 56px !important; }
+
+.tooltipdemoBasicUsage .right {
+  top: 70px !important;
+  right: 56px !important; }
 
 .whiteframedemoBasicUsage md-whiteframe {
   background: #fff;

@@ -76,8 +76,8 @@ angular.module('docsApp').run(['$templateCache', function($templateCache) {
     '    <h2>How do I start?</h2>\n' +
     '    <ul style="margin-bottom: 2em;">\n' +
     '      <li>If you are interested in browsing the Material Design component library, open <b>DEMOS</b></li>\n' +
-    '      <li>If you want to reference Womply extras, open <b>Templates</b></li>\n' +
-    '      <li>If you want to add to or update CSS or Templates, see below:</li>\n' +
+    '      <li>If you want to reference Womply extras, open <b>Compositions</b></li>\n' +
+    '      <li>If you want to add to or update CSS or Compositions, see below:</li>\n' +
     '    </ul>\n' +
     '\n' +
     '    <h2>Add to or Update CSS</h2>\n' +
@@ -92,12 +92,12 @@ angular.module('docsApp').run(['$templateCache', function($templateCache) {
     '      Prior to import of the angular material scss, variables can be overriden within scss/womply/_variables.scss, \n' +
     '      which is imported prior to the angular-material.scss.\n' +
     '    </p>\n' +
-    '    <h2>Add or Update new Templates</h2>\n' +
+    '    <h2>Add or Update new Compositions</h2>\n' +
     '    <p>\n' +
-    '      All Templates are added as simple html files within the /templates directory.\n' +
+    '      All Compositions are added as simple html files within the /compositions directory.\n' +
     '      This is where you can reference any other components found in DEMOS and add new elements with womply specific css.\n' +
-    '      In order to add a new template to the Templates menu, you must also update js/content-data.js .\n' +
-    '      Add a new element within "Templates" that includes name, outputPath, url and the label.\n' +
+    '      In order to add a new template to the Compositions menu, you must also update js/content-data.js .\n' +
+    '      Add a new element within "Compositions" that includes name, outputPath, url and the label.\n' +
     '      For the javascript averse, ask a dev for assitance. In the future, this task can be automated.\n' +
     '    </p>\n' +
     '\n' +
@@ -114,7 +114,7 @@ angular.module('docsApp').run(['$templateCache', function($templateCache) {
     '    <p>\n' +
     '      This style guide contains a set of visual design standards based on the Google Material Design Specification.\n' +
     '      It is intended to be used by Womply product teams as tool for accessing common components that can be referenced in Womply product designs.\n' +
-    '      This is an interactive style guide which provides Component Demos, Templates composed of multiple Components \n' +
+    '      This is an interactive style guide which provides Component Demos, Compositions composed of multiple Components \n' +
     '      as well as information about CSS and Theming through color palatte selections.' +
     '    </p>\n' +
     '    <p>\n' +

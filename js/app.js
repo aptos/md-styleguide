@@ -181,7 +181,7 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $location, $rootScope, $http, $wind
   });
 
   var templateDocs = [];
-  angular.forEach(PAGES.Templates, function(template) {
+  angular.forEach(PAGES.Compositions, function(template) {
     templateDocs.push({
       name: template.label,
       url: template.url
@@ -189,7 +189,7 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $location, $rootScope, $http, $wind
   });
 
   sections.push({
-    name: 'Templates',
+    name: 'Compositions',
     pages: templateDocs.sort(sortByName),
     type: 'toggle'
   });

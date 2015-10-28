@@ -1,22 +1,22 @@
 DocsApp
 .constant('PAGES', {
-  "Templates": [
+  "Compositions": [
     {
       "name": "awesomeness",
-      "outputPath": "templates/awesomeness.html",
-      "url": "/Templates/awesomeness",
-      "label": "Awesomeness"
+      "outputPath": "compositions/awesomeness.html",
+      "url": "/Compositions/awesomeness",
+      "label": "Case Study 23"
     },
     {
       "name": "logos",
-      "outputPath": "templates/logos.html",
-      "url": "/Templates/logos",
+      "outputPath": "compositions/logos.html",
+      "url": "/Compositions/logos",
       "label": "Logos"
     },
     {
       "name": "datatables",
-      "outputPath": "templates/datatables.html",
-      "url": "/Templates/datatables",
+      "outputPath": "compositions/datatables.html",
+      "url": "/Compositions/datatables",
       "label": "Data Tables"
     }
   ],

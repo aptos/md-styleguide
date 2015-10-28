@@ -1089,28 +1089,6 @@ docs-demo .doc-demo-content {
   height: 18px;
   width: 18px; }
 
-.buttondemoBasicUsage section {
-  background: #f7f7f7;
-  border-radius: 3px;
-  text-align: center;
-  margin: 1em;
-  position: relative !important;
-  padding-bottom: 10px; }
-
-.buttondemoBasicUsage md-content {
-  margin-right: 7px; }
-
-.buttondemoBasicUsage section .md-button {
-  margin-top: 16px;
-  margin-bottom: 16px; }
-
-.buttondemoBasicUsage .label {
-  position: absolute;
-  bottom: 5px;
-  left: 7px;
-  font-size: 14px;
-  opacity: 0.54; }
-
 .bottomSheetdemoBasicUsage .md-inline-list-icon-label {
   display: inline-block;
   padding-left: 10px;
@@ -1147,6 +1125,28 @@ docs-demo .doc-demo-content {
 
 .carddemoBasicUsage md-card {
   min-height: 150px; }
+
+.buttondemoBasicUsage section {
+  background: #f7f7f7;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em;
+  position: relative !important;
+  padding-bottom: 10px; }
+
+.buttondemoBasicUsage md-content {
+  margin-right: 7px; }
+
+.buttondemoBasicUsage section .md-button {
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
+.buttondemoBasicUsage .label {
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  font-size: 14px;
+  opacity: 0.54; }
 
 .checkboxdemoBasicUsage .checkboxDemo1 div {
   clear: both; }
@@ -1314,6 +1314,12 @@ docs-demo .doc-demo-content {
     color: darkred;
     margin: 10px 0 0 25px; }
 
+.dividerdemoBasicUsage .face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px; }
+
 .dialogdemoBasicUsage #popupContainer {
   position: relative; }
 
@@ -1330,12 +1336,6 @@ docs-demo .doc-demo-content {
 .dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
   font-size: 0.8em;
   margin-top: 50px; }
-
-.dividerdemoBasicUsage .face {
-  border-radius: 30px;
-  border: 1px solid #ddd;
-  width: 48px;
-  margin: 16px; }
 
 .fabSpeedDialdemoBasicUsage .text-capitalize {
   text-transform: capitalize; }
@@ -1471,33 +1471,6 @@ docs-demo .doc-demo-content {
   font-weight: 700;
   width: 100%;
   text-align: center; }
-
-.inputdemoBasicUsage md-datepicker {
-  margin-top: 18px; }
-
-.inputdemoBasicUsage .md-datepicker-button {
-  height: 36px;
-  width: 36px;
-  line-height: 36px; }
-
-.inputdemoBasicUsage .md-datepicker-input-container {
-  margin-left: 2px; }
-
-.inputdemoErrors .inputErrorsApp {
-  min-height: 48px; }
-
-.inputdemoIcons .inputIconDemo {
-  min-height: 48px; }
-
-.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.email {
-  color: green; }
-
-.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.name {
-  color: dodgerblue; }
-
-.inputdemoIcons md-input-container.md-input-invalid > md-icon.email,
-.inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
-  color: red; }
 
 .icondemoFontIconsWithClassnames {
   /* Bootstrap Overrides */
@@ -1703,6 +1676,17 @@ docs-demo .doc-demo-content {
   width: 48px;
   height: 48px; }
 
+.inputdemoBasicUsage md-datepicker {
+  margin-top: 18px; }
+
+.inputdemoBasicUsage .md-datepicker-button {
+  height: 36px;
+  width: 36px;
+  line-height: 36px; }
+
+.inputdemoBasicUsage .md-datepicker-input-container {
+  margin-left: 2px; }
+
 .icondemoUsingTemplateCache md-progress-circular {
   margin-bottom: 20px; }
 
@@ -1724,6 +1708,22 @@ docs-demo .doc-demo-content {
   margin-top: -2px;
   padding-left: 25px;
   color: #7f7e7e; }
+
+.inputdemoErrors .inputErrorsApp {
+  min-height: 48px; }
+
+.inputdemoIcons .inputIconDemo {
+  min-height: 48px; }
+
+.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.email {
+  color: green; }
+
+.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.name {
+  color: dodgerblue; }
+
+.inputdemoIcons md-input-container.md-input-invalid > md-icon.email,
+.inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
+  color: red; }
 
 .listdemoBasicUsage md-divider {
   margin-top: 10px;
@@ -1917,15 +1917,15 @@ docs-demo .doc-demo-content {
 .selectdemoBasicUsage md-input-container {
   margin-right: 10px; }
 
-.sliderdemoBasicUsage input[type="number"] {
-  text-align: center;
-  padding-left: 10px; }
-
 .subheaderdemoBasicUsage .face {
   border-radius: 30px;
   border: 1px solid #ddd;
   width: 48px;
   margin: 16px; }
+
+.sliderdemoBasicUsage input[type="number"] {
+  text-align: center;
+  padding-left: 10px; }
 
 .swipedemoBasicUsage .demo-swipe {
   padding: 20px 10px; }
@@ -2021,6 +2021,21 @@ docs-demo .doc-demo-content {
   border-radius: 48px;
   border: 1px solid #ddd; }
 
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
+  box-shadow: none;
+  border: none;
+  transform: none;
+  -webkit-transform: none; }
+
+.tooltipdemoBasicUsage .left {
+  top: 70px !important;
+  left: 56px !important; }
+
+.tooltipdemoBasicUsage .right {
+  top: 70px !important;
+  right: 56px !important; }
+
 .virtualRepeatdemoDeferredLoading #vertical-container {
   height: 292px;
   width: 400px; }
@@ -2096,21 +2111,6 @@ docs-demo .doc-demo-content {
 
 .virtualRepeatdemoVerticalUsage .md-virtual-repeat-container .md-virtual-repeat-offsetter {
   padding-left: 16px; }
-
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
-.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
-  box-shadow: none;
-  border: none;
-  transform: none;
-  -webkit-transform: none; }
-
-.tooltipdemoBasicUsage .left {
-  top: 70px !important;
-  left: 56px !important; }
-
-.tooltipdemoBasicUsage .right {
-  top: 70px !important;
-  right: 56px !important; }
 
 .whiteframedemoBasicUsage md-whiteframe {
   background: #fff;

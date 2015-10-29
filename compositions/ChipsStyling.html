@@ -1,0 +1,139 @@
+<style>
+.chipsdemoContactChips md-content.autocomplete {
+  min-height: 250px;
+}
+
+.chipsdemoContactChips .md-item-text.compact {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.chipsdemoContactChips .contact-item {
+  box-sizing: border-box;
+}
+
+.chipsdemoContactChips .contact-item.selected {
+  opacity: 0.5;
+}
+
+.chipsdemoContactChips .contact-item.selected h3 {
+  opacity: 0.5;
+}
+
+.chipsdemoContactChips .contact-item .md-list-item-text {
+  padding: 14px 0;
+}
+
+.chipsdemoContactChips .contact-item .md-list-item-text h3 {
+  margin: 0 !important;
+  padding: 0;
+  line-height: 1.2em !important;
+}
+
+.chipsdemoContactChips .contact-item .md-list-item-text h3,
+.chipsdemoContactChips .contact-item .md-list-item-text p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .chipsdemoContactChips .contact-item {
+    float: left;
+    width: 33%;
+  }
+}
+
+.chipsdemoContactChips md-contact-chips {
+  margin-bottom: 10px;
+}
+
+.chipsdemoContactChips .md-chips {
+  padding: 5px 0 8px;
+}
+
+.chipsdemoContactChips .fixedRows {
+  height: 250px;
+  overflow: hidden;
+}
+</style>
+<section class="chipsdemoContactChips">
+  <div class="md-chip-content" tabindex="-1" aria-hidden="true">
+    <md-chip-template class="ng-scope">
+      <div class="md-contact-avatar">
+        <img ng-src="http://lorempixel.com/50/50/people?0" alt="Marina Augustine" src="http://lorempixel.com/50/50/people?0">
+      </div>
+      <div class="md-contact-name">Marina Augustine</div>
+    </md-chip-template>
+  </div>
+  <md-list class="fixedRows" role="list">
+    <div class="md-no-sticky md-subheader">
+      <div class="md-subheader-inner">
+        <span class="md-subheader-content"><span class="ng-scope">Contacts</span></span>
+      </div>
+    </div>
+    <md-list-item class="md-2-line contact-item md-no-proxy ng-scope" role="listitem">
+      <img ng-src="http://lorempixel.com/50/50/people?1" class="md-avatar" alt="Oddr Sarno" src="http://lorempixel.com/50/50/people?1">
+      <div class="md-list-item-text compact">
+        <h3 class="ng-binding">Oddr Sarno</h3>
+        <p class="ng-binding">o.sarno@example.com</p>
+      </div>
+    </md-list-item>
+    <md-list-item class="md-2-line contact-item md-no-proxy ng-scope">
+      <img ng-src="http://lorempixel.com/50/50/people?2" class="md-avatar" alt="Nick Giannopoulos" src="http://lorempixel.com/50/50/people?2">
+      <div class="md-list-item-text compact">
+        <h3 class="ng-binding">Nick Giannopoulos</h3>
+        <p class="ng-binding">n.giannopoulos@example.com</p>
+      </div>
+    </md-list-item>
+    <md-list-item class="md-2-line contact-item md-no-proxy ng-scope">
+      <img ng-src="http://lorempixel.com/50/50/people?3" class="md-avatar" alt="Narayana Garner" src="http://lorempixel.com/50/50/people?3">
+      <div class="md-list-item-text compact">
+        <h3 class="ng-binding">Narayana Garner</h3>
+        <p class="ng-binding">n.garner@example.com</p>
+      </div>
+    </md-list-item>
+    <md-list-item class="md-2-line contact-item md-no-proxy ng-scope">
+      <img ng-src="http://lorempixel.com/50/50/people?4" class="md-avatar" alt="Anita Gros" src="http://lorempixel.com/50/50/people?4">
+      <div class="md-list-item-text compact">
+        <h3 class="ng-binding">Anita Gros</h3>
+        <p class="ng-binding">a.gros@example.com</p>
+      </div>
+    </md-list-item>
+    <md-list-item class="md-2-line contact-item md-no-proxy ng-scope">
+      <img ng-src="http://lorempixel.com/50/50/people?5" class="md-avatar" alt="Megan Smith" src="http://lorempixel.com/50/50/people?5">
+      <div class="md-list-item-text compact">
+        <h3 class="ng-binding">Megan Smith</h3>
+        <p class="ng-binding">m.smith@example.com</p>
+      </div>
+    </md-list-item>
+    <md-list-item class="md-2-line contact-item md-no-proxy ng-scope">
+      <img ng-src="http://lorempixel.com/50/50/people?6" class="md-avatar" alt="Tsvetko Metzger" src="http://lorempixel.com/50/50/people?6">
+      <div class="md-list-item-text compact">
+        <h3 class="ng-binding">Tsvetko Metzger</h3>
+        <p class="ng-binding">t.metzger@example.com</p>
+      </div>
+    </md-list-item>
+    <md-list-item class="md-2-line contact-item md-no-proxy ng-scope">
+      <img ng-src="http://lorempixel.com/50/50/people?7" class="md-avatar" alt="Hector Simek" src="http://lorempixel.com/50/50/people?7">
+      <div class="md-list-item-text compact">
+        <h3 class="ng-binding">Hector Simek</h3>
+        <p class="ng-binding">h.simek@example.com</p>
+      </div>
+    </md-list-item>
+    <md-list-item class="md-2-line contact-item md-no-proxy ng-scope">
+      <img ng-src="http://lorempixel.com/50/50/people?8" class="md-avatar" alt="Some-guy withalongalastaname" src="http://lorempixel.com/50/50/people?8">
+      <div class="md-list-item-text compact">
+        <h3 class="ng-binding">Some-guy withalongalastaname</h3>
+        <p class="ng-binding">s.withalongalastaname@example.com</p>
+      </div>
+    </md-list-item>
+    <md-list-item class="md-2-line contact-item selected md-no-proxy ng-scope">
+      <img ng-src="http://lorempixel.com/50/50/people?0" class="md-avatar" alt="Marina Augustine" src="http://lorempixel.com/50/50/people?0">
+      <div class="md-list-item-text compact">
+        <h3 class="ng-binding">Marina Augustine</h3>
+        <p class="ng-binding">m.augustine@example.com</p>
+      </div>
+    </md-list-item>
+  </md-list>
+</section>

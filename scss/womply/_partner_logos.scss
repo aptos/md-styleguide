@@ -1,116 +1,23 @@
-// Partner Logos
-//
-// Partner logo images
-//
-// Styleguide 7
-
-
-
-
-// Logos
-//
-// Large and small size partner logos
-//
-// .womply-logo-large - Womply logo
-// .womply-logo-small - Womply logo
-// .anovia-logo-large - Anovia logo
-// .anovia-logo-small - Anovia logo
-// .axia-logo-large - Axia logo
-// .axia-logo-small - Axia logo
-// .ems-logo-large - EMS logo
-// .ems-logo-small - EMS logo
-// .mainstream-logo-large - Mainstream logo
-// .mainstream-logo-small - Mainstream logo
-// .mcps-logo-large - MCPS logo
-// .mcps-logo-small - MCPS logo
-// .mybizperks-logo-large - MyBizPerks logo
-// .mybizperks-logo-small - MyBizPerks logo
-// .nationwide-logo-large - Nationwide logo
-// .nationwide-logo-small - Nationwide logo
-// .payanywhere-logo-large - PayAnywhere logo
-// .payanywhere-logo-small - PayAnywhere logo
-// .phoneswipe-logo-large - PhoneSwipe logo
-// .phoneswipe-logo-small - PhoneSwipe logo
-// .pivotalpayments-logo-large - PivotalPayments logo
-// .pivotalpayments-logo-small - PivotalPayments logo
-// .saltsha-logo-large - Saltsha logo
-// .saltsha-logo-small - Saltsha logo
-// .securepay-logo-large - Securepay logo
-// .securepay-logo-small - Securepay logo
-// .signapay-logo-large - Signapay logo
-// .signapay-logo-small - Signapay logo
-// .tsys-logo-large - TSYS logo
-// .tsys-logo-small - TSYS logo
-// .ums-logo-large - UMS logo
-// .ums-logo-small - UMS logo
-// .upinsights-logo-large - UpInsights logo
-// .upinsights-logo-small - UpInsights logo
-// .usms-logo-large - USMS logo
-// .usms-logo-small - USMS logo
-// .vimas-logo-large - Vimas logo
-// .vimas-logo-small - Vimas logo
-// .windriver-logo-large - Windriver logo
-// .windriver-logo-small - Windriver logo
-// .faps-logo-large - Faps logo
-// .faps-logo-small - Faps logo
-// .payscape-logo-large - Payscape logo
-// .payscape-logo-small - Payscape logo
-// .go4insights-logo-large - Go4Insights logo
-// .go4insights-logo-small - Go4Insights logo
-// .worldpay-logo-large - Worldpay logo
-// .worldpay-logo-small - Worldpay logo
-// .eliot-logo-large - Eliot logo
-// .eliot-logo-small - Eliot logo
-// .securus-logo-large - Securus logo
-// .securus-logo-small - Securus logo
-// .cpn-logo-large - CPN logo
-// .cpn-logo-small - CPN logo
-// .red-logo-large - RedPayments logo
-// .red-logo-small - RedPayments logo
-// markup:
-// <div class="partner-logo {$modifiers}"></div>
-//
-// Styleguide 7.1
-
-// Global partner logo styles (individual logos / sizes can be edited per project)
-.partner-logo {
-  display: block;
-  height: 72px;
-  width: 192px;
-  &.contain {
-    background-size: contain;
-  }
-  &.cover {
-    background-size: cover;
-  }
-}
-
-$partner-logo-path: 'assets/images/logos/' !default;
-
-// Create partner logo classes
-@mixin partner-logo($slug) {
-  .#{$slug}-logo-large {
-    background: url("#{$partner-logo-path}#{$slug}-large.png") center no-repeat;
-  }
-  .#{$slug}-logo-small {
-    background: url("#{$partner-logo-path}#{$slug}-small.png") center no-repeat;
-  }
-}
-
-// Create logos
-@include partner-logo('womply');
+// created by gulp
 @include partner-logo('anovia');
 @include partner-logo('axia');
+@include partner-logo('cpn');
+@include partner-logo('eliot');
 @include partner-logo('ems');
+@include partner-logo('faps');
+@include partner-logo('go4insights');
 @include partner-logo('mainstream');
 @include partner-logo('mcps');
 @include partner-logo('mybizperks');
 @include partner-logo('nationwide');
 @include partner-logo('payanywhere');
+@include partner-logo('payscape');
 @include partner-logo('phoneswipe');
 @include partner-logo('pivotalpayments');
+@include partner-logo('red');
 @include partner-logo('saltsha');
 @include partner-logo('securepay');
+@include partner-logo('securus');
 @include partner-logo('signapay');
 @include partner-logo('tsys');
 @include partner-logo('ums');
@@ -118,12 +25,5 @@ $partner-logo-path: 'assets/images/logos/' !default;
 @include partner-logo('usms');
 @include partner-logo('vimas');
 @include partner-logo('windriver');
-@include partner-logo('faps');
-@include partner-logo('payscape');
-@include partner-logo('go4insights');
+@include partner-logo('womply');
 @include partner-logo('worldpay');
-@include partner-logo('eliot');
-@include partner-logo('securus');
-@include partner-logo('cpn');
-@include partner-logo('red');
-

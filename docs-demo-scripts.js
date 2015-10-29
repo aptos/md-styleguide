@@ -337,6 +337,13 @@ angular.module('bottomSheetDemo1', ['ngMaterial'])
   });
 
 
+angular.module('cardDemo1', ['ngMaterial'])
+
+.controller('AppCtrl', function($scope) {
+  $scope.imagePath = 'img/washedout.png';
+});
+
+
 angular.module('buttonsDemo1', ['ngMaterial'])
 
 .controller('AppCtrl', function($scope) {
@@ -346,13 +353,6 @@ angular.module('buttonsDemo1', ['ngMaterial'])
 
   $scope.googleUrl = 'http://google.com';
 
-});
-
-
-angular.module('cardDemo1', ['ngMaterial'])
-
-.controller('AppCtrl', function($scope) {
-  $scope.imagePath = 'img/washedout.png';
 });
 
 
@@ -366,6 +366,13 @@ angular.module('checkboxDemo1', ['ngMaterial'])
   $scope.data.cb3 = false;
   $scope.data.cb4 = false;
   $scope.data.cb5 = false;
+
+});
+
+
+angular.module('contentDemo1', ['ngMaterial'])
+
+.controller('AppCtrl', function($scope) {
 
 });
 
@@ -575,13 +582,6 @@ angular.module('checkboxDemo1', ['ngMaterial'])
   }
 })();
 
-
-angular.module('contentDemo1', ['ngMaterial'])
-
-.controller('AppCtrl', function($scope) {
-
-});
-
 angular.module('datepickerBasicUsage',
     ['ngMaterial', 'ngMessages']).controller('AppCtrl', function($scope) {
   $scope.myDate = new Date();
@@ -759,115 +759,6 @@ angular.module('dividerDemo1', ['ngMaterial'])
 })();
 
 
-angular
-  .module('appDemoFontIconsWithClassnames', ['ngMaterial'])
-  .controller('DemoCtrl', function( $scope ) {
-      // Create list of font-icon names with color overrides
-      var iconData = [
-            {name: 'icon-home'        , color: "#777" },
-            {name: 'icon-user-plus'   , color: "rgb(89, 226, 168)" },
-            {name: 'icon-google-plus2', color: "#A00" },
-            {name: 'icon-youtube4'    , color:"#00A" },
-             // Use theming to color the font-icon
-            {name: 'icon-settings'    , color:"#A00", theme:"md-warn md-hue-5"}
-          ];
-
-      // Create a set of sizes...
-      $scope.sizes = [
-        {size:48,padding:10},
-        {size:36,padding:6},
-        {size:21,padding:2},
-        {size:12,padding:0}
-      ];
-
-      $scope.fonts = [].concat(iconData);
-
-
-
-  })
-  .config(function($mdThemingProvider){
-    // Update the theme colors to use themes on font-icons
-    $mdThemingProvider.theme('default')
-          .primaryPalette("red")
-          .accentPalette('green')
-          .warnPalette('blue');
-  });
-
-
-angular
-  .module('appDemoFontIconsWithLigatures', ['ngMaterial'])
-  .controller('DemoCtrl', function( $scope ) {
-      // Specify a list of font-icons with ligatures and color overrides
-      var iconData = [
-            {name: 'accessibility'  , color: "#777" },
-            {name: 'question_answer', color: "rgb(89, 226, 168)" },
-            {name: 'backup'         , color: "#A00" },
-            {name: 'email'          , color: "#00A" }
-          ];
-
-      $scope.fonts = [].concat(iconData);
-
-      // Create a set of sizes...
-      $scope.sizes = [
-        {size:"md-18",padding:0},
-        {size:"md-24",padding:2},
-        {size:"md-36",padding:6},
-        {size:"md-48",padding:10}
-      ];
-
-  });
-
-
-angular.module('appSvgIconSets', ['ngMaterial'])
-  .controller('DemoCtrl', function($scope) {})
-  .config(['$mdIconProvider', function($mdIconProvider) {
-    $mdIconProvider
-      .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
-      .defaultIconSet('img/icons/sets/core-icons.svg', 24);
-  }]);
-
-
-angular.module('appDemoSvgIcons', ['ngMaterial'])
-.controller('DemoCtrl', function( $scope ) {
-
-    $scope.insertDriveIconURL = 'img/icons/ic_insert_drive_file_24px.svg';
-    $scope.getAndroid = function() {
-      return 'img/icons/android.svg';
-    }
-});
-
-
-angular.module('appUsingTemplateCache', ['ngMaterial'])
-  .controller('DemoCtrl', function($scope) {})
-  .config(function($mdIconProvider) {
-
-    // Register icon IDs with sources. Future $mdIcon( <id> ) lookups
-    // will load by url and retrieve the data via the $http and $templateCache
-
-    $mdIconProvider
-      .iconSet('core', 'img/icons/sets/core-icons.svg',24)
-      .icon('social:cake', 'img/icons/cake.svg',24);
-
-  })
-  .run(function($http, $templateCache) {
-
-    var urls = [
-      'img/icons/sets/core-icons.svg',
-      'img/icons/cake.svg',
-      'img/icons/android.svg'
-    ];
-
-    // Pre-fetch icons sources by URL and cache in the $templateCache...
-    // subsequent $http calls will look there first.
-
-    angular.forEach(urls, function(url) {
-      $http.get(url, {cache: $templateCache});
-    });
-
-  })
-  ;
-
-
 angular.module('gridListDemo1', ['ngMaterial'])
 .controller('AppCtrl', function($scope) {});
 
@@ -975,6 +866,115 @@ angular.module('gridListDemo1', ['ngMaterial'])
       };
     });
 })();
+
+angular
+  .module('appDemoFontIconsWithClassnames', ['ngMaterial'])
+  .controller('DemoCtrl', function( $scope ) {
+      // Create list of font-icon names with color overrides
+      var iconData = [
+            {name: 'icon-home'        , color: "#777" },
+            {name: 'icon-user-plus'   , color: "rgb(89, 226, 168)" },
+            {name: 'icon-google-plus2', color: "#A00" },
+            {name: 'icon-youtube4'    , color:"#00A" },
+             // Use theming to color the font-icon
+            {name: 'icon-settings'    , color:"#A00", theme:"md-warn md-hue-5"}
+          ];
+
+      // Create a set of sizes...
+      $scope.sizes = [
+        {size:48,padding:10},
+        {size:36,padding:6},
+        {size:21,padding:2},
+        {size:12,padding:0}
+      ];
+
+      $scope.fonts = [].concat(iconData);
+
+
+
+  })
+  .config(function($mdThemingProvider){
+    // Update the theme colors to use themes on font-icons
+    $mdThemingProvider.theme('default')
+          .primaryPalette("red")
+          .accentPalette('green')
+          .warnPalette('blue');
+  });
+
+
+angular
+  .module('appDemoFontIconsWithLigatures', ['ngMaterial'])
+  .controller('DemoCtrl', function( $scope ) {
+      // Specify a list of font-icons with ligatures and color overrides
+      var iconData = [
+            {name: 'accessibility'  , color: "#777" },
+            {name: 'question_answer', color: "rgb(89, 226, 168)" },
+            {name: 'backup'         , color: "#A00" },
+            {name: 'email'          , color: "#00A" }
+          ];
+
+      $scope.fonts = [].concat(iconData);
+
+      // Create a set of sizes...
+      $scope.sizes = [
+        {size:"md-18",padding:0},
+        {size:"md-24",padding:2},
+        {size:"md-36",padding:6},
+        {size:"md-48",padding:10}
+      ];
+
+  });
+
+
+angular.module('appDemoSvgIcons', ['ngMaterial'])
+.controller('DemoCtrl', function( $scope ) {
+
+    $scope.insertDriveIconURL = 'img/icons/ic_insert_drive_file_24px.svg';
+    $scope.getAndroid = function() {
+      return 'img/icons/android.svg';
+    }
+});
+
+
+angular.module('appSvgIconSets', ['ngMaterial'])
+  .controller('DemoCtrl', function($scope) {})
+  .config(['$mdIconProvider', function($mdIconProvider) {
+    $mdIconProvider
+      .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
+      .defaultIconSet('img/icons/sets/core-icons.svg', 24);
+  }]);
+
+
+angular.module('appUsingTemplateCache', ['ngMaterial'])
+  .controller('DemoCtrl', function($scope) {})
+  .config(function($mdIconProvider) {
+
+    // Register icon IDs with sources. Future $mdIcon( <id> ) lookups
+    // will load by url and retrieve the data via the $http and $templateCache
+
+    $mdIconProvider
+      .iconSet('core', 'img/icons/sets/core-icons.svg',24)
+      .icon('social:cake', 'img/icons/cake.svg',24);
+
+  })
+  .run(function($http, $templateCache) {
+
+    var urls = [
+      'img/icons/sets/core-icons.svg',
+      'img/icons/cake.svg',
+      'img/icons/android.svg'
+    ];
+
+    // Pre-fetch icons sources by URL and cache in the $templateCache...
+    // subsequent $http calls will look there first.
+
+    angular.forEach(urls, function(url) {
+      $http.get(url, {cache: $templateCache});
+    });
+
+  })
+  ;
+
 angular
   .module('inputBasicDemo', ['ngMaterial', 'ngMessages'])
   .controller('DemoCtrl', function($scope) {
@@ -1142,6 +1142,35 @@ angular.module('listDemo2', ['ngMaterial'])
 });
 
 angular
+  .module('menuDemoPosition', ['ngMaterial'])
+  .config(function($mdIconProvider) {
+    $mdIconProvider
+      .iconSet("call", 'img/icons/sets/communication-icons.svg', 24)
+      .iconSet("social", 'img/icons/sets/social-icons.svg', 24);
+  })
+  .controller('PositionDemoCtrl', function DemoCtrl($mdDialog) {
+    var originatorEv;
+
+    this.openMenu = function($mdOpenMenu, ev) {
+      originatorEv = ev;
+      $mdOpenMenu(ev);
+    };
+
+    this.announceClick = function(index) {
+      $mdDialog.show(
+        $mdDialog.alert()
+          .title('You clicked!')
+          .content('You clicked the menu item at index ' + index)
+          .ok('Nice')
+          .targetEvent(originatorEv)
+      );
+      originatorEv = null;
+    };
+  });
+
+
+
+angular
   .module('menuDemoBasic', ['ngMaterial'])
   .config(function($mdIconProvider) {
     $mdIconProvider
@@ -1179,35 +1208,6 @@ angular
       // This never happens.
     };
   });
-
-angular
-  .module('menuDemoPosition', ['ngMaterial'])
-  .config(function($mdIconProvider) {
-    $mdIconProvider
-      .iconSet("call", 'img/icons/sets/communication-icons.svg', 24)
-      .iconSet("social", 'img/icons/sets/social-icons.svg', 24);
-  })
-  .controller('PositionDemoCtrl', function DemoCtrl($mdDialog) {
-    var originatorEv;
-
-    this.openMenu = function($mdOpenMenu, ev) {
-      originatorEv = ev;
-      $mdOpenMenu(ev);
-    };
-
-    this.announceClick = function(index) {
-      $mdDialog.show(
-        $mdDialog.alert()
-          .title('You clicked!')
-          .content('You clicked the menu item at index ' + index)
-          .ok('Nice')
-          .targetEvent(originatorEv)
-      );
-      originatorEv = null;
-    };
-  });
-
-
 
 angular.module('menuDemoWidth', ['ngMaterial'])
 .config(function($mdIconProvider) {
@@ -1482,6 +1482,48 @@ angular.module('selectDemoValidation', ['ngMaterial', 'ngMessages'])
   };
 });
 
+angular
+  .module('sidenavDemo1', ['ngMaterial'])
+  .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $mdUtil, $log) {
+
+    $scope.toggleLeft = buildToggler('left');
+    $scope.toggleRight = buildToggler('right');
+
+    /**
+     * Build handler to open/close a SideNav; when animation finishes
+     * report completion in console
+     */
+    function buildToggler(navID) {
+      var debounceFn =  $mdUtil.debounce(function(){
+            $mdSidenav(navID)
+              .toggle()
+              .then(function () {
+                $log.debug("toggle " + navID + " is done");
+              });
+          },200);
+
+      return debounceFn;
+    }
+
+  })
+  .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+    $scope.close = function () {
+      $mdSidenav('left').close()
+        .then(function () {
+          $log.debug("close LEFT is done");
+        });
+
+    };
+  })
+  .controller('RightCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+    $scope.close = function () {
+      $mdSidenav('right').close()
+        .then(function () {
+          $log.debug("close RIGHT is done");
+        });
+    };
+  });
+
 
 angular.module('sliderDemo1', ['ngMaterial'])
 
@@ -1501,17 +1543,6 @@ angular.module('sliderDemo1', ['ngMaterial'])
   $scope.disabled2 = 70;
 
 });
-
-angular.module('demoSwipe', ['ngMaterial'])
-  .controller('demoSwipeCtrl', function($scope) {
-    $scope.onSwipeLeft = function(ev) {
-      alert('You swiped left!!');
-    };
-
-    $scope.onSwipeRight = function(ev) {
-      alert('You swiped right!!');
-    };
-  });
 
 
 angular.module('subheaderBasicDemo', ['ngMaterial'])
@@ -1602,6 +1633,17 @@ angular.module('subheaderBasicDemo', ['ngMaterial'])
     ];
 });
 
+angular.module('demoSwipe', ['ngMaterial'])
+  .controller('demoSwipeCtrl', function($scope) {
+    $scope.onSwipeLeft = function(ev) {
+      alert('You swiped left!!');
+    };
+
+    $scope.onSwipeRight = function(ev) {
+      alert('You swiped right!!');
+    };
+  });
+
 angular.module('switchDemo1', ['ngMaterial'])
 .controller('SwitchDemoCtrl', function($scope) {
   $scope.data = {
@@ -1615,47 +1657,69 @@ angular.module('switchDemo1', ['ngMaterial'])
   };
 });
 
-angular
-  .module('sidenavDemo1', ['ngMaterial'])
-  .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $mdUtil, $log) {
+(function () {
+  'use strict';
+  angular
+      .module('tabsDemoDynamicTabs', ['ngMaterial'])
+      .controller('AppCtrl', AppCtrl);
 
-    $scope.toggleLeft = buildToggler('left');
-    $scope.toggleRight = buildToggler('right');
-
-    /**
-     * Build handler to open/close a SideNav; when animation finishes
-     * report completion in console
-     */
-    function buildToggler(navID) {
-      var debounceFn =  $mdUtil.debounce(function(){
-            $mdSidenav(navID)
-              .toggle()
-              .then(function () {
-                $log.debug("toggle " + navID + " is done");
-              });
-          },200);
-
-      return debounceFn;
-    }
-
-  })
-  .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
-    $scope.close = function () {
-      $mdSidenav('left').close()
-        .then(function () {
-          $log.debug("close LEFT is done");
-        });
-
+  function AppCtrl ($scope, $log) {
+    var tabs = [
+          { title: 'One', content: "Tabs will become paginated if there isn't enough room for them."},
+          { title: 'Two', content: "You can swipe left and right on a mobile device to change tabs."},
+          { title: 'Three', content: "You can bind the selected tab via the selected attribute on the md-tabs element."},
+          { title: 'Four', content: "If you set the selected tab binding to -1, it will leave no tab selected."},
+          { title: 'Five', content: "If you remove a tab, it will try to select a new one."},
+          { title: 'Six', content: "There's an ink bar that follows the selected tab, you can turn it off if you want."},
+          { title: 'Seven', content: "If you set ng-disabled on a tab, it becomes unselectable. If the currently selected tab becomes disabled, it will try to select the next tab."},
+          { title: 'Eight', content: "If you look at the source, you're using tabs to look at a demo for tabs. Recursion!"},
+          { title: 'Nine', content: "If you set md-theme=\"green\" on the md-tabs element, you'll get green tabs."},
+          { title: 'Ten', content: "If you're still reading this, you should just go check out the API docs for tabs!"}
+        ],
+        selected = null,
+        previous = null;
+    $scope.tabs = tabs;
+    $scope.selectedIndex = 2;
+    $scope.$watch('selectedIndex', function(current, old){
+      previous = selected;
+      selected = tabs[current];
+      if ( old + 1 && (old != current)) $log.debug('Goodbye ' + previous.title + '!');
+      if ( current + 1 )                $log.debug('Hello ' + selected.title + '!');
+    });
+    $scope.addTab = function (title, view) {
+      view = view || title + " Content View";
+      tabs.push({ title: title, content: view, disabled: false});
     };
-  })
-  .controller('RightCtrl', function ($scope, $timeout, $mdSidenav, $log) {
-    $scope.close = function () {
-      $mdSidenav('right').close()
-        .then(function () {
-          $log.debug("close RIGHT is done");
-        });
+    $scope.removeTab = function (tab) {
+      var index = tabs.indexOf(tab);
+      tabs.splice(index, 1);
     };
-  });
+  }
+})();
+
+
+(function () {
+  'use strict';
+
+  angular
+      .module('tabsDemoStaticTabs', ['ngMaterial'] )
+      .controller('AppCtrl', AppCtrl);
+
+  function AppCtrl ( $scope ) {
+    $scope.data = {
+      selectedIndex: 0,
+      secondLocked:  true,
+      secondLabel:   "Item Two",
+      bottom:        false
+    };
+    $scope.next = function() {
+      $scope.data.selectedIndex = Math.min($scope.data.selectedIndex + 1, 2) ;
+    };
+    $scope.previous = function() {
+      $scope.data.selectedIndex = Math.max($scope.data.selectedIndex - 1, 0);
+    };
+  }
+})();
 
 
 angular.module('toastDemo1', ['ngMaterial'])
@@ -1730,75 +1794,6 @@ angular.module('toastDemo1', ['ngMaterial'])
   };
 });
 
-(function () {
-  'use strict';
-  angular
-      .module('tabsDemoDynamicTabs', ['ngMaterial'])
-      .controller('AppCtrl', AppCtrl);
-
-  function AppCtrl ($scope, $log) {
-    var tabs = [
-          { title: 'One', content: "Tabs will become paginated if there isn't enough room for them."},
-          { title: 'Two', content: "You can swipe left and right on a mobile device to change tabs."},
-          { title: 'Three', content: "You can bind the selected tab via the selected attribute on the md-tabs element."},
-          { title: 'Four', content: "If you set the selected tab binding to -1, it will leave no tab selected."},
-          { title: 'Five', content: "If you remove a tab, it will try to select a new one."},
-          { title: 'Six', content: "There's an ink bar that follows the selected tab, you can turn it off if you want."},
-          { title: 'Seven', content: "If you set ng-disabled on a tab, it becomes unselectable. If the currently selected tab becomes disabled, it will try to select the next tab."},
-          { title: 'Eight', content: "If you look at the source, you're using tabs to look at a demo for tabs. Recursion!"},
-          { title: 'Nine', content: "If you set md-theme=\"green\" on the md-tabs element, you'll get green tabs."},
-          { title: 'Ten', content: "If you're still reading this, you should just go check out the API docs for tabs!"}
-        ],
-        selected = null,
-        previous = null;
-    $scope.tabs = tabs;
-    $scope.selectedIndex = 2;
-    $scope.$watch('selectedIndex', function(current, old){
-      previous = selected;
-      selected = tabs[current];
-      if ( old + 1 && (old != current)) $log.debug('Goodbye ' + previous.title + '!');
-      if ( current + 1 )                $log.debug('Hello ' + selected.title + '!');
-    });
-    $scope.addTab = function (title, view) {
-      view = view || title + " Content View";
-      tabs.push({ title: title, content: view, disabled: false});
-    };
-    $scope.removeTab = function (tab) {
-      var index = tabs.indexOf(tab);
-      tabs.splice(index, 1);
-    };
-  }
-})();
-
-
-angular.module('tooltipDemo1', ['ngMaterial'])
-.controller('AppCtrl', function($scope) {
-  $scope.demo = {};
-});
-
-(function () {
-  'use strict';
-
-  angular
-      .module('tabsDemoStaticTabs', ['ngMaterial'] )
-      .controller('AppCtrl', AppCtrl);
-
-  function AppCtrl ( $scope ) {
-    $scope.data = {
-      selectedIndex: 0,
-      secondLocked:  true,
-      secondLabel:   "Item Two",
-      bottom:        false
-    };
-    $scope.next = function() {
-      $scope.data.selectedIndex = Math.min($scope.data.selectedIndex + 1, 2) ;
-    };
-    $scope.previous = function() {
-      $scope.data.selectedIndex = Math.max($scope.data.selectedIndex - 1, 0);
-    };
-  }
-})();
-
 
 angular.module('toolbarDemo1', ['ngMaterial'])
 
@@ -1824,6 +1819,11 @@ app.controller('AppCtrl', function($scope) {
       notes: "I'll be in your neighborhood doing errands."
     });
   }
+});
+
+angular.module('tooltipDemo1', ['ngMaterial'])
+.controller('AppCtrl', function($scope) {
+  $scope.demo = {};
 });
 
 (function () {

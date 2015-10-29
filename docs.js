@@ -1837,22 +1837,28 @@ DocsApp
 
 DocsApp.constant('COMPOSITIONS',[
   {
-    "name": "FABulous",
-    "outputPath": "compositions/FABulous.html",
-    "url": "/Compositions/FABulous",
-    "label": "FABulous"
+    "name": "ChipsStyling",
+    "outputPath": "compositions/ChipsStyling.html",
+    "url": "/Compositions/ChipsStyling",
+    "label": "ChipsStyling"
+  },
+  {
+    "name": "FABusage",
+    "outputPath": "compositions/FABusage.html",
+    "url": "/Compositions/FABusage",
+    "label": "FABusage"
+  },
+  {
+    "name": "PartnerLogos",
+    "outputPath": "compositions/PartnerLogos.html",
+    "url": "/Compositions/PartnerLogos",
+    "label": "PartnerLogos"
   },
   {
     "name": "awesomeness",
     "outputPath": "compositions/awesomeness.html",
     "url": "/Compositions/awesomeness",
     "label": "awesomeness"
-  },
-  {
-    "name": "chipsAndSalsa",
-    "outputPath": "compositions/chipsAndSalsa.html",
-    "url": "/Compositions/chipsAndSalsa",
-    "label": "chipsAndSalsa"
   },
   {
     "name": "datatables",

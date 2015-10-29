@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+require_dir = require('require-dir'),
 sass = require('gulp-sass'),
 concat = require('gulp-concat'),
 tap = require('gulp-tap'),
@@ -6,10 +7,11 @@ util = require('util'),
 refresh = require('gulp-livereload'),
 lrserver = require('tiny-lr')(),
 webserver = require('gulp-webserver'),
-path = require('path'),
-compositions = [];
+path = require('path');
 
-gulp.task('sass', function(){
+require_dir('./gulp-tasks');
+
+gulp.task('sass', ['write-partner-logos', 'write-partner-logos-demo'], function(){
   gulp.src('./scss/**/*.scss')
   .pipe(sass())
   .pipe(gulp.dest('dist'))
@@ -23,33 +25,11 @@ gulp.task('docs-demo-scripts', function() {
   .pipe(refresh(lrserver));
 });
 
-gulp.task('collect-compositions', function () {
-  compositions = [];
-
-  return gulp.src('compositions/*.html')
-  .pipe(tap(function (file, t) {
-    var filename = path.basename(file.path);
-    var name = path.basename(file.path, '.html');
-    compositions.push({
-      "name": name,
-      "outputPath": "compositions/" + filename,
-      "url": "/Compositions/" + name,
-      "label": name
-    })
-  }));
-});
-
-gulp.task('write-compositions', ['collect-compositions'], function () {
-  var js = "DocsApp.constant('COMPOSITIONS'," + JSON.stringify(compositions, null, 2) + ");"
-  return require('fs').writeFileSync('js/compositions-data.js', js);
-});
-
 gulp.task('docs-js', ['write-compositions'], function() {
   return gulp.src([
     'js/**/*.js'
     ])
   .pipe(concat('docs.js'))
-  // .pipe(gulpif(!argv.dev, uglify()))
   .pipe(gulp.dest('./'))
   .pipe(refresh(lrserver));
 });

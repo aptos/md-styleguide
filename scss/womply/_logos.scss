@@ -1,0 +1,25 @@
+.partner-logo {
+  display: block;
+  height: 72px;
+  width: 192px;
+  &.contain {
+    background-size: contain;
+  }
+  &.cover {
+    background-size: cover;
+  }
+}
+
+$partner-logo-path: 'assets/images/partner_logos/' !default;
+
+// Create partner logo classes
+@mixin partner-logo($slug) {
+  .#{$slug}-logo-large {
+    background: url("#{$partner-logo-path}#{$slug}-large.png") center no-repeat;
+  }
+  .#{$slug}-logo-small {
+    background: url("#{$partner-logo-path}#{$slug}-small.png") center no-repeat;
+  }
+}
+
+@import "partner_logos";

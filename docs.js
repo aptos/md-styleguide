@@ -1,4 +1,4 @@
-var DocsApp = angular.module('docsApp', [ 'ngRoute', 'ngMessages', 'ngMaterial' ])
+var DocsApp = angular.module('docsApp', [ 'ngRoute', 'ngMessages', 'ngMaterial', 'ngMdIcons' ])
 
 .config([
   'SERVICES',
@@ -660,6 +660,9 @@ function($scope, $rootScope) {
   '$rootScope',
 function($rootScope) {
   $rootScope.currentComponent = $rootScope.currentDoc = null;
+
+  // Mock data for Compositions
+  $rootScope.myDate = new Date();
 }])
 
 .controller('LayoutCtrl', [

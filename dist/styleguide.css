@@ -7997,3 +7997,6 @@ md-tooltip {
     background: #F5F5F5; }
   .mdDataTable ng-md-icon {
     fill: #757575; }
+
+md-datepicker.hidden-button button.md-datepicker-button {
+  display: none; }

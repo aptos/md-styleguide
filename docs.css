@@ -1089,6 +1089,28 @@ docs-demo .doc-demo-content {
   height: 18px;
   width: 18px; }
 
+.buttondemoBasicUsage section {
+  background: #f7f7f7;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em;
+  position: relative !important;
+  padding-bottom: 10px; }
+
+.buttondemoBasicUsage md-content {
+  margin-right: 7px; }
+
+.buttondemoBasicUsage section .md-button {
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
+.buttondemoBasicUsage .label {
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  font-size: 14px;
+  opacity: 0.54; }
+
 .bottomSheetdemoBasicUsage .md-inline-list-icon-label {
   display: inline-block;
   padding-left: 10px;
@@ -1126,28 +1148,6 @@ docs-demo .doc-demo-content {
 .carddemoBasicUsage md-card {
   min-height: 150px; }
 
-.buttondemoBasicUsage section {
-  background: #f7f7f7;
-  border-radius: 3px;
-  text-align: center;
-  margin: 1em;
-  position: relative !important;
-  padding-bottom: 10px; }
-
-.buttondemoBasicUsage md-content {
-  margin-right: 7px; }
-
-.buttondemoBasicUsage section .md-button {
-  margin-top: 16px;
-  margin-bottom: 16px; }
-
-.buttondemoBasicUsage .label {
-  position: absolute;
-  bottom: 5px;
-  left: 7px;
-  font-size: 14px;
-  opacity: 0.54; }
-
 .checkboxdemoBasicUsage .checkboxDemo1 div {
   clear: both; }
 
@@ -1170,16 +1170,6 @@ docs-demo .doc-demo-content {
 
 .checkboxdemoBasicUsage .ipsum {
   color: saddlebrown; }
-
-.contentdemoBasicUsage div.demo-content {
-  height: 600px; }
-
-.contentdemoBasicUsage div[ng-controller] {
-  height: 100%;
-  padding-bottom: 15px; }
-
-.contentdemoBasicUsage md-content {
-  padding: 24px; }
 
 .checkboxdemoSyncing .checkboxDemo1 div {
   clear: both; }
@@ -1305,6 +1295,16 @@ docs-demo .doc-demo-content {
 .chipsdemoStaticChips p.note {
   font-size: 12px; }
 
+.contentdemoBasicUsage div.demo-content {
+  height: 600px; }
+
+.contentdemoBasicUsage div[ng-controller] {
+  height: 100%;
+  padding-bottom: 15px; }
+
+.contentdemoBasicUsage md-content {
+  padding: 24px; }
+
 .datepickerdemoBasicUsage {
   /** Demo styles for mdCalendar. */ }
   .datepickerdemoBasicUsage md-content {
@@ -1370,6 +1370,9 @@ docs-demo .doc-demo-content {
 
 .fabSpeedDialdemoMoreOptions md-content div[flex="50"] {
   padding: 15px; }
+
+.fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
+  left: 7px; }
 
 .gridListdemoBasicUsage md-grid-list {
   margin: 8px; }
@@ -1469,9 +1472,6 @@ docs-demo .doc-demo-content {
   width: 100%;
   text-align: center; }
 
-.fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
-  left: 7px; }
-
 .icondemoFontIconsWithClassnames {
   /* Bootstrap Overrides */
   /* OLD STYLES */ }
@@ -1563,6 +1563,36 @@ docs-demo .doc-demo-content {
     top: 48%;
     z-index: 100; }
 
+.icondemoLoadSvgIconsFromUrl md-progress-circular {
+  margin-bottom: 20px; }
+
+.icondemoLoadSvgIconsFromUrl md-icon {
+  margin: 20px;
+  margin-top: 0;
+  width: 24px;
+  height: 24px; }
+
+.icondemoLoadSvgIconsFromUrl .demo-content {
+  min-height: 210px; }
+
+.icondemoLoadSvgIconsFromUrl .appDemoSvgIcons {
+  padding: 25px; }
+
+.icondemoLoadSvgIconsFromUrl .s24 {
+  width: 24px;
+  height: 24px;
+  color: #f00; }
+
+.icondemoLoadSvgIconsFromUrl .s36 {
+  width: 36px;
+  height: 36px;
+  color: #0f0; }
+
+.icondemoLoadSvgIconsFromUrl .s48 {
+  width: 48px;
+  height: 48px;
+  color: #00f; }
+
 .icondemoFontIconsWithLigatures {
   /* Rules for sizing the icon.*/
   /* Rules for using icons as black on a light background.*/
@@ -1626,36 +1656,6 @@ docs-demo .doc-demo-content {
     color: white; }
   .icondemoFontIconsWithLigatures .material-icons.md-light.md-inactive {
     color: rgba(255, 255, 255, 0.3); }
-
-.icondemoLoadSvgIconsFromUrl md-progress-circular {
-  margin-bottom: 20px; }
-
-.icondemoLoadSvgIconsFromUrl md-icon {
-  margin: 20px;
-  margin-top: 0;
-  width: 24px;
-  height: 24px; }
-
-.icondemoLoadSvgIconsFromUrl .demo-content {
-  min-height: 210px; }
-
-.icondemoLoadSvgIconsFromUrl .appDemoSvgIcons {
-  padding: 25px; }
-
-.icondemoLoadSvgIconsFromUrl .s24 {
-  width: 24px;
-  height: 24px;
-  color: #f00; }
-
-.icondemoLoadSvgIconsFromUrl .s36 {
-  width: 36px;
-  height: 36px;
-  color: #0f0; }
-
-.icondemoLoadSvgIconsFromUrl .s48 {
-  width: 48px;
-  height: 48px;
-  color: #00f; }
 
 .icondemoSvgIconSets md-progress-circular {
   margin-bottom: 20px; }
@@ -1746,16 +1746,16 @@ docs-demo .doc-demo-content {
   user-select: none;
   /* Likely future */ }
 
-.menudemoMenuPositionModes .md-menu-demo {
-  padding: 24px; }
-
-.menudemoMenuPositionModes .menu-demo-container {
-  min-height: 200px; }
-
 .menudemoBasicUsage .md-menu-demo {
   padding: 24px; }
 
 .menudemoBasicUsage .menu-demo-container {
+  min-height: 200px; }
+
+.menudemoMenuPositionModes .md-menu-demo {
+  padding: 24px; }
+
+.menudemoMenuPositionModes .menu-demo-container {
   min-height: 200px; }
 
 .menudemoMenuWidth .md-menu-demo {
@@ -1943,6 +1943,15 @@ docs-demo .doc-demo-content {
   padding-left: 25px;
   padding-top: 25px; }
 
+.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+  color: white; }
+
+.toolbardemoScrollShrink .face {
+  width: 48px;
+  margin: 16px;
+  border-radius: 48px;
+  border: 1px solid #ddd; }
+
 .tabsdemoDynamicHeight md-content {
   background-color: transparent !important; }
   .tabsdemoDynamicHeight md-content md-tabs {
@@ -2011,15 +2020,6 @@ docs-demo .doc-demo-content {
 .tabsdemoStaticTabs .after-tabs-area > md-checkbox {
   margin-top: 26px;
   margin-left: 0; }
-
-.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
-  color: white; }
-
-.toolbardemoScrollShrink .face {
-  width: 48px;
-  margin: 16px;
-  border-radius: 48px;
-  border: 1px solid #ddd; }
 
 .tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
 .tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {

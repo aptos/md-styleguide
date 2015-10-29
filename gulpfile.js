@@ -1,15 +1,19 @@
 var gulp = require('gulp'),
-  sass = require('gulp-sass'),
-  concat = require('gulp-concat'),
-  refresh = require('gulp-livereload'),
-  lrserver = require('tiny-lr')(),
-  webserver = require('gulp-webserver');
+sass = require('gulp-sass'),
+concat = require('gulp-concat'),
+tap = require('gulp-tap'),
+util = require('util'),
+refresh = require('gulp-livereload'),
+lrserver = require('tiny-lr')(),
+webserver = require('gulp-webserver'),
+path = require('path'),
+compositions = [];
 
 gulp.task('sass', function(){
   gulp.src('./scss/**/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('dist'))
-    .pipe(refresh(lrserver));
+  .pipe(sass())
+  .pipe(gulp.dest('dist'))
+  .pipe(refresh(lrserver));
 });
 
 gulp.task('docs-demo-scripts', function() {
@@ -19,7 +23,28 @@ gulp.task('docs-demo-scripts', function() {
   .pipe(refresh(lrserver));
 });
 
-gulp.task('docs-js', function() {
+gulp.task('collect-compositions', function () {
+  compositions = [];
+
+  return gulp.src('compositions/*.html')
+  .pipe(tap(function (file, t) {
+    var filename = path.basename(file.path);
+    var name = path.basename(file.path, '.html');
+    compositions.push({
+      "name": name,
+      "outputPath": "compositions/" + filename,
+      "url": "/Compositions/" + name,
+      "label": name
+    })
+  }));
+});
+
+gulp.task('write-compositions', ['collect-compositions'], function () {
+  var js = "DocsApp.constant('COMPOSITIONS'," + JSON.stringify(compositions, null, 2) + ");"
+  return require('fs').writeFileSync('js/compositions-data.js', js);
+});
+
+gulp.task('docs-js', ['write-compositions'], function() {
   return gulp.src([
     'js/**/*.js'
     ])
@@ -44,6 +69,7 @@ gulp.task('docs-css', function() {
 gulp.task('build', ['docs-demo-scripts','docs-js', 'docs-css', 'sass']);
 
 gulp.task('watch', function() {
+  gulp.watch('compositions/*.html', ['docs-js'])
   gulp.watch('js/**/*.js', ['docs-demo-scripts','docs-js']);
   gulp.watch('scss/**/*.scss', ['sass']);
 });

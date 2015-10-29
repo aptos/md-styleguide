@@ -5,9 +5,10 @@ var DocsApp = angular.module('docsApp', [ 'ngRoute', 'ngMessages', 'ngMaterial' 
   'COMPONENTS',
   'DEMOS',
   'PAGES',
+  'COMPOSITIONS',
   '$routeProvider',
   '$mdThemingProvider',
-function(SERVICES, COMPONENTS, DEMOS, PAGES, $routeProvider, $mdThemingProvider) {
+function(SERVICES, COMPONENTS, DEMOS, PAGES, COMPOSITIONS, $routeProvider, $mdThemingProvider) {
   $routeProvider
     .when('/', {
       templateUrl: 'partials/home.tmpl.html'
@@ -77,6 +78,14 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $routeProvider, $mdThemingProvider)
   $mdThemingProvider.theme('default')
     .primaryPalette('womply-primary')
     .accentPalette('pink');
+
+  angular.forEach(COMPOSITIONS, function(page) {
+    $routeProvider
+      .when(page.url, {
+        templateUrl: page.outputPath,
+        controller: 'GuideCtrl'
+      });
+  });
 
   angular.forEach(PAGES, function(pages, area) {
     angular.forEach(pages, function(page) {
@@ -152,11 +161,12 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $routeProvider, $mdThemingProvider)
   'COMPONENTS',
   'DEMOS',
   'PAGES',
+  'COMPOSITIONS',
   '$location',
   '$rootScope',
   '$http',
   '$window',
-function(SERVICES, COMPONENTS, DEMOS, PAGES, $location, $rootScope, $http, $window) {
+function(SERVICES, COMPONENTS, DEMOS, PAGES, COMPOSITIONS, $location, $rootScope, $http, $window) {
 
   var version = {};
 
@@ -181,7 +191,7 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $location, $rootScope, $http, $wind
   });
 
   var templateDocs = [];
-  angular.forEach(PAGES.Compositions, function(template) {
+  angular.forEach(COMPOSITIONS, function(template) {
     templateDocs.push({
       name: template.label,
       url: template.url

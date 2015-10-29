@@ -5,9 +5,10 @@ var DocsApp = angular.module('docsApp', [ 'ngRoute', 'ngMessages', 'ngMaterial' 
   'COMPONENTS',
   'DEMOS',
   'PAGES',
+  'COMPOSITIONS',
   '$routeProvider',
   '$mdThemingProvider',
-function(SERVICES, COMPONENTS, DEMOS, PAGES, $routeProvider, $mdThemingProvider) {
+function(SERVICES, COMPONENTS, DEMOS, PAGES, COMPOSITIONS, $routeProvider, $mdThemingProvider) {
   $routeProvider
     .when('/', {
       templateUrl: 'partials/home.tmpl.html'
@@ -77,6 +78,14 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $routeProvider, $mdThemingProvider)
   $mdThemingProvider.theme('default')
     .primaryPalette('womply-primary')
     .accentPalette('pink');
+
+  angular.forEach(COMPOSITIONS, function(page) {
+    $routeProvider
+      .when(page.url, {
+        templateUrl: page.outputPath,
+        controller: 'GuideCtrl'
+      });
+  });
 
   angular.forEach(PAGES, function(pages, area) {
     angular.forEach(pages, function(page) {
@@ -152,11 +161,12 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $routeProvider, $mdThemingProvider)
   'COMPONENTS',
   'DEMOS',
   'PAGES',
+  'COMPOSITIONS',
   '$location',
   '$rootScope',
   '$http',
   '$window',
-function(SERVICES, COMPONENTS, DEMOS, PAGES, $location, $rootScope, $http, $window) {
+function(SERVICES, COMPONENTS, DEMOS, PAGES, COMPOSITIONS, $location, $rootScope, $http, $window) {
 
   var version = {};
 
@@ -181,7 +191,7 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, $location, $rootScope, $http, $wind
   });
 
   var templateDocs = [];
-  angular.forEach(PAGES.Compositions, function(template) {
+  angular.forEach(COMPOSITIONS, function(template) {
     templateDocs.push({
       name: template.label,
       url: template.url
@@ -1825,28 +1835,46 @@ DocsApp
   }
 ]);
 
+DocsApp.constant('COMPOSITIONS',[
+  {
+    "name": "FABulous",
+    "outputPath": "compositions/FABulous.html",
+    "url": "/Compositions/FABulous",
+    "label": "FABulous"
+  },
+  {
+    "name": "awesomeness",
+    "outputPath": "compositions/awesomeness.html",
+    "url": "/Compositions/awesomeness",
+    "label": "awesomeness"
+  },
+  {
+    "name": "chipsAndSalsa",
+    "outputPath": "compositions/chipsAndSalsa.html",
+    "url": "/Compositions/chipsAndSalsa",
+    "label": "chipsAndSalsa"
+  },
+  {
+    "name": "datatables",
+    "outputPath": "compositions/datatables.html",
+    "url": "/Compositions/datatables",
+    "label": "datatables"
+  },
+  {
+    "name": "logos",
+    "outputPath": "compositions/logos.html",
+    "url": "/Compositions/logos",
+    "label": "logos"
+  },
+  {
+    "name": "transactions",
+    "outputPath": "compositions/transactions.html",
+    "url": "/Compositions/transactions",
+    "label": "transactions"
+  }
+]);
 DocsApp
 .constant('PAGES', {
-  "Compositions": [
-    {
-      "name": "awesomeness",
-      "outputPath": "compositions/awesomeness.html",
-      "url": "/Compositions/awesomeness",
-      "label": "Case Study 23"
-    },
-    {
-      "name": "logos",
-      "outputPath": "compositions/logos.html",
-      "url": "/Compositions/logos",
-      "label": "Logos"
-    },
-    {
-      "name": "datatables",
-      "outputPath": "compositions/datatables.html",
-      "url": "/Compositions/datatables",
-      "label": "Data Tables"
-    }
-  ],
   "CSS": [
     {
       "name": "button",

@@ -531,8 +531,10 @@ input {
 *  References:
 *  1) https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties#flex
 *  2) https://css-tricks.com/almanac/properties/f/flex/
-*  3) https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items
-*  4) http://godban.com.ua/projects/flexgrid
+*  3) https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*  4) https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items
+*  5) http://godban.com.ua/projects/flexgrid
+*
 *
 */
 
@@ -590,7 +592,7 @@ input {
     }
   }
 
-  @each $i in 33, 34 {
+  @each $i in 33 {
     $offsets : '';
     $suffix : '';
 
@@ -602,11 +604,11 @@ input {
     }
 
     #{$offsets} {
-      margin-left: #{$i+'%'};
+      margin-left: calc(100% / 3);
     }
   }
 
-  @each $i in 66, 67 {
+  @each $i in 66 {
     $offsets : '';
     $suffix : '';
 
@@ -618,7 +620,7 @@ input {
     }
 
     #{$offsets} {
-      margin-left: #{$i+'%'};
+      margin-left: calc(200% / 3);
     }
   }
 }
@@ -683,16 +685,12 @@ input {
   }
 
   .layout-row, .layout#{$name}-row {
-    > .#{$flexName}-33   , > .#{$flexName}-33     {  flex: 1 1 33%;  max-width: 33%;  max-height: 100%; box-sizing: border-box; }
-    > .#{$flexName}-34   , > .#{$flexName}-34     {  flex: 1 1 34%;  max-width: 34%;  max-height: 100%; box-sizing: border-box; }
-    > .#{$flexName}-66   , > .#{$flexName}-66     {  flex: 1 1 66%;  max-width: 66%;  max-height: 100%; box-sizing: border-box; }
-    > .#{$flexName}-67   , > .#{$flexName}-67     {  flex: 1 1 67%;  max-width: 67%;  max-height: 100%; box-sizing: border-box; }
+    > .#{$flexName}-33   , > .#{$flexName}-33     {  flex: 1 1 33%;  max-width: calc(100% / 3);  max-height: 100%; box-sizing: border-box; }
+    > .#{$flexName}-66   , > .#{$flexName}-66     {  flex: 1 1 66%;  max-width: calc(200% / 3);  max-height: 100%; box-sizing: border-box; }
   }
   .layout-column, .layout#{$name}-column {
-    > .#{$flexName}-33   , > .#{$flexName}-33     {  flex: 1 1 33%;  max-width: 100%;  max-height: 33%; box-sizing: border-box; }
-    > .#{$flexName}-34   , > .#{$flexName}-34     {  flex: 1 1 34%;  max-width: 100%;  max-height: 34%; box-sizing: border-box; }
-    > .#{$flexName}-66   , > .#{$flexName}-66     {  flex: 1 1 66%;  max-width: 100%;  max-height: 66%; box-sizing: border-box; }
-    > .#{$flexName}-67   , > .#{$flexName}-67     {  flex: 1 1 67%;  max-width: 100%;  max-height: 67%; box-sizing: border-box; }
+    > .#{$flexName}-33   , > .#{$flexName}-33     {  flex: 1 1 33%;  max-width: 100%;  max-height: calc(100% / 3); box-sizing: border-box; }
+    > .#{$flexName}-66   , > .#{$flexName}-66     {  flex: 1 1 66%;  max-width: 100%;  max-height: calc(200% / 3); box-sizing: border-box; }
   }
 }
 
@@ -2567,7 +2565,6 @@ md-fab-speed-dial {
 
   &.md-is-open {
     .md-fab-action-item {
-      visibility: visible;
       align-items: center;
     }
   }
@@ -2579,7 +2576,6 @@ md-fab-speed-dial {
     height: auto;
 
     .md-fab-action-item {
-      visibility: hidden;
       transition: $swift-ease-in;
     }
   }
@@ -2645,12 +2641,21 @@ md-fab-speed-dial {
   }
 
   /*
+   * Hide some graphics glitches if switching animation types
+   */
+  &.md-fling-remove, &.md-scale-remove {
+    .md-fab-action-item > * {
+      visibility: hidden;
+    }
+  }
+
+  /*
    * Handle the animations
    */
   &.md-scale {
     .md-fab-action-item {
       opacity: 0;
-      transform: scale(0);
+      transform: scale(0.1);
       transition: $swift-ease-in;
 
       // Make the scale animation a bit faster since we are delaying each item

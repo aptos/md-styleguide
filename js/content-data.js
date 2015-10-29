@@ -1,25 +1,5 @@
 DocsApp
 .constant('PAGES', {
-  "Compositions": [
-    {
-      "name": "awesomeness",
-      "outputPath": "compositions/awesomeness.html",
-      "url": "/Compositions/awesomeness",
-      "label": "Case Study 23"
-    },
-    {
-      "name": "logos",
-      "outputPath": "compositions/logos.html",
-      "url": "/Compositions/logos",
-      "label": "Logos"
-    },
-    {
-      "name": "datatables",
-      "outputPath": "compositions/datatables.html",
-      "url": "/Compositions/datatables",
-      "label": "Data Tables"
-    }
-  ],
   "CSS": [
     {
       "name": "button",

@@ -59,7 +59,7 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, COMPOSITIONS, $routeProvider, $mdTh
     .primaryPalette('yellow')
     .dark();
 
-  $mdThemingProvider.definePalette('womply-primary', $mdThemingProvider.extendPalette('blue', {
+  $mdThemingProvider.definePalette('womply', $mdThemingProvider.extendPalette('blue', {
       '50':   '#CDE9F9',
       '100':  '#8FC7EA',
       '200':  '#49A3DD',
@@ -76,7 +76,7 @@ function(SERVICES, COMPONENTS, DEMOS, PAGES, COMPOSITIONS, $routeProvider, $mdTh
   }));
 
   $mdThemingProvider.theme('default')
-    .primaryPalette('womply-primary')
+    .primaryPalette('womply')
     .accentPalette('pink');
 
   angular.forEach(COMPOSITIONS, function(page) {

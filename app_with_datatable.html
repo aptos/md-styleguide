@@ -1,0 +1,359 @@
+<!doctype html>
+<html ng-app="docsApp" ng-controller="DocsCtrl" lang="en" ng-strict-di>
+
+<head>
+  <title>
+    Womply Global Nav
+  </title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="viewport" content="initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="dist/styleguide.css">
+  <link rel="stylesheet" href="docs.css">
+  <base href="/">
+</head>
+
+<body layout="row" flex>
+  <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="true">
+    <div style="margin:20px;">
+      <div class="partner-logo tsys-logo-large"></div>
+      <div style="margin-left:20px;">
+        <h2>Merhant Insights</h2>
+        <h3>powered by WOMPLY</h3>
+      </div>
+    </div>
+    <md-divider></md-divider>
+    <div style="position:relative;top:-33px;left:219px;">
+      <md-button class="md-fab md-primary md-button md-ink-ripple md-raised">
+        <ng-md-icon icon="apps" size="24" style="fill:#fff; position:relative; top:5px;"></ng-md-icon>
+      </md-button>
+    </div>
+    <md-list>
+      <md-list-item>
+        <ng-md-icon icon="assessment" style="margin-right:32px;"></ng-md-icon>
+        <p><b>Revenue</b></p>
+      </md-list-item>
+      <md-list-item style="min-height:24px;">
+        <p style="margin-left:56px;">Revenue Comparison</p>
+      </md-list-item>
+      <md-list-item style="min-height:24px;">
+        <p style="margin-left:56px;">Day of Week</p>
+      </md-list-item>
+      <md-list-item style="min-height:24px;">
+        <p style="margin-left:56px;">Day of Week Comparison</p>
+      </md-list-item>
+      <md-list-item style="min-height:24px;">
+        <p style="margin-left:56px;">Leaderboard</p>
+      </md-list-item>
+      <md-list-item style="min-height:24px;">
+        <p style="margin-left:56px;">Key Metrics</p>
+      </md-list-item>
+      <md-list-item style="min-height:24px;">
+        <p style="margin-left:56px;">Transactions</p>
+      </md-list-item>
+      <md-list-item style="min-height:24px;">
+        <p style="margin-left:56px;">Daily Cash</p>
+      </md-list-item>
+      <md-list-item>
+        <ng-md-icon icon="message" style="margin-right:32px;"></ng-md-icon>
+        <p><b>Online Activity</b></p>
+      </md-list-item>
+      <md-list-item>
+        <ng-md-icon icon="language" style="margin-right:32px;"></ng-md-icon>
+        <p><b>Data Sources</b></p>
+      </md-list-item>
+      <md-list-item>
+        <ng-md-icon icon="compare" style="margin-right:32px;"></ng-md-icon>
+        <p><b>Compare Locations</b></p>
+      </md-list-item>
+      <md-list-item>
+        <ng-md-icon icon="directions" style="margin-right:32px;"></ng-md-icon>
+        <p><b>Getting Started</b></p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+        <ng-md-icon icon="place" style="margin-right:32px;"></ng-md-icon>
+        <p><b>Location</b></p>
+      </md-list-item>
+      <md-list-item style="min-height:24px;">
+        <p style="margin-left:56px;">Invite Staff</p>
+      </md-list-item>
+      <md-list-item style="min-height:24px;">
+        <p style="margin-left:56px;">Settings</p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+        <ng-md-icon icon="school" style="margin-right:32px;"></ng-md-icon>
+        <p><b>Womply Experts</b></p>
+      </md-list-item>
+    </md-list>
+  </md-sidenav>
+  <div flex style="background-color:#eee;">
+    <div layout="column">
+      <md-toolbar style="background-color:#0874B7; color:#fff" layout-align="center">
+        <div layout="row">
+          <div flex="80" flex-offset="10">Pauly's Pizza Place 3970 17th Street Demo, DE 68130</div>
+          <div flex>
+            <ng-md-icon icon="notifications" style="fill:#fff;"></ng-md-icon>
+            <ng-md-icon icon="settings" style="fill:#fff;"></ng-md-icon>
+          </div>
+        </div>
+      </md-toolbar>
+      <div>
+        <md-content class="md-padding" style="padding-top:0; background-color:#eee">
+          <md-card style="height:400px;margin-top:0;">
+            <div>
+              <h1>Welcome to Insights</h1>
+            </div>
+            <div layout-padding="">
+              <md-data-table alternate-headers="'contextual'">
+                <md-content class="mdDataTable md-whiteframe-z1 md-default-theme" layout="column">
+                  <table cellpadding="0" cellspacing="0">
+                    <thead>
+                      <tr class="theadTrRow">
+                        <th class="column leftAlignedColumn" md-ink-ripple="">
+                          <div layout="row">
+                            <span>Dessert (100g serving)</span>
+                            <span class="hoverSortIcons">
+              <ng-md-icon icon="arrow_forward" size="16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></ng-md-icon>
+            </span>
+                          </div>
+                        </th>
+                        <th class="column rightAlignedColumn" md-ink-ripple="">
+                          <div layout="row">
+                            <span class="sortedColumn ascending">
+              <ng-md-icon icon="arrow_forward" size="16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></ng-md-icon>
+            </span>
+                            <span>Calories</span>
+                          </div>
+                          <div class="md-ripple-container"></div>
+                        </th>
+                        <th class="column rightAlignedColumn" md-ink-ripple="">
+                          <div layout="row">
+                            <span class="hoverSortIcons">
+              <ng-md-icon icon="arrow_forward" size="16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></ng-md-icon>
+            </span>
+                            <span>Fat (g)</span>
+                          </div>
+                        </th>
+                        <th class="column rightAlignedColumn" md-ink-ripple="">
+                          <div layout="row">
+                            <span class="hoverSortIcons">
+              <ng-md-icon icon="arrow_forward" size="16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></ng-md-icon>
+            </span>
+                            <span>Carbs (g)</span>
+                          </div>
+                        </th>
+                        <th class="column rightAlignedColumn" md-ink-ripple="">
+                          <div layout="row">
+                            <span class="hoverSortIcons">
+              <ng-md-icon icon="arrow_forward" size="16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></ng-md-icon>
+            </span>
+                            <span>Protein (g)</span>
+                          </div>
+                        </th>
+                        <th class="column rightAlignedColumn" md-ink-ripple="">
+                          <div layout="row">
+                            <span class="hoverSortIcons">
+              <ng-md-icon icon="arrow_forward" size="16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></ng-md-icon>
+            </span>
+                            <span>Sodium (mg)</span>
+                          </div>
+                        </th>
+                        <th class="column rightAlignedColumn" md-ink-ripple="">
+                          <div layout="row">
+                            <span class="hoverSortIcons">
+              <ng-md-icon icon="arrow_forward" size="16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></ng-md-icon>
+            </span>
+                            <span>Calcium (%)</span>
+                          </div>
+                        </th>
+                        <th class="column rightAlignedColumn" md-ink-ripple="">
+                          <div layout="row">
+                            <span class="hoverSortIcons">
+              <ng-md-icon icon="arrow_forward" size="16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></ng-md-icon>
+            </span>
+                            <span>Iron (%)</span>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="column leftAlignedColumn">
+                          <span>Frozen yogurt</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>159</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>6</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>24</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>4</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>87</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>14%</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>1%</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="column leftAlignedColumn">
+                          <span>Ice cream sandwitch</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>237</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>9</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>37</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>4.3</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>129</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>84%</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>1%</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="column leftAlignedColumn">
+                          <span>Eclair</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>262</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>16</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>24</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>6</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>337</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>6%</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>7%</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="column leftAlignedColumn">
+                          <span>Cupcake</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>305</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>3.7</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>67</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>4.3</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>413</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>3%</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>8%</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="column leftAlignedColumn">
+                          <span>Gingerbread</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>356</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>16</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>49</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>2.9</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>327</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>7%</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>16%</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="column leftAlignedColumn">
+                          <span>Jelly bean</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>375</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>0</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>94</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>0</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>50</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>0%</span>
+                        </td>
+                        <td class="column rightAlignedColumn">
+                          <span>0%</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </md-content>
+              </md-data-table>
+            </div>
+          </md-card>
+        </md-content>
+      </div>
+    </div>
+  </div>
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-animate/angular-animate.js"></script>
+  <script src="./bower_components/angular-aria/angular-aria.js"></script>
+  <script src="./bower_components/angular-route/angular-route.js"></script>
+  <script src="./bower_components/angular-messages/angular-messages.js"></script>
+  <script src="./bower_components/angular-material/angular-material.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
+  <script src="docs.js"></script>
+  <script src="docs-demo-scripts.js"></script>
+</body>
+
+</html>

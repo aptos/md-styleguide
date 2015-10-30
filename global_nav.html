@@ -1,0 +1,158 @@
+<!doctype html>
+<html ng-app="docsApp" ng-controller="DocsCtrl" lang="en" ng-strict-di>
+
+<head>
+  <title>
+    Womply Global Nav
+  </title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="viewport" content="initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="dist/styleguide.css">
+  <link rel="stylesheet" href="docs.css">
+  <base href="/">
+</head>
+
+<body layout="row" flex>
+  <style>
+  md-sidenav .brand {
+    margin: 20px;
+  }
+
+  md-sidenav .brand .brand-text {
+    margin-left: 20px;
+  }
+
+  md-sidenav .app-switcher {
+    position: relative;
+    top: -33px;
+    left: 219px;
+  }
+
+  md-sidenav .app-switcher ng-md-icon {
+    fill: #fff;
+    position: relative;
+    top: 5px;
+  }
+
+  md-sidenav md-list-item ng-md-icon  {
+    margin-right: 32px;
+  }
+
+  md-sidenav md-list-item.subitem {
+    min-height: 24px !important;
+  }
+  md-sidenav md-list-item.subitem .subitem-no-icon {
+    margin-left: 56px;
+  }
+  </style>
+  <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="true">
+    <div class="brand">
+      <div class="partner-logo tsys-logo-large"></div>
+      <div class="brand-text">
+        <h2>Merhant Insights</h2>
+        <h3>powered by WOMPLY</h3>
+      </div>
+    </div>
+    <md-divider></md-divider>
+    <div class="app-switcher">
+      <md-button class="md-fab md-primary md-button md-ink-ripple md-raised">
+        <ng-md-icon icon="apps" size="24"></ng-md-icon>
+      </md-button>
+    </div>
+    <md-list>
+      <md-list-item>
+        <ng-md-icon icon="assessment"></ng-md-icon>
+        <p><b>Revenue</b></p>
+      </md-list-item>
+      <md-list-item class="subitem">
+        <p class="subitem-no-icon">Revenue Comparison</p>
+      </md-list-item>
+      <md-list-item class="subitem">
+        <p class="subitem-no-icon">Day of Week</p>
+      </md-list-item>
+      <md-list-item class="subitem">
+        <p class="subitem-no-icon">Day of Week Comparison</p>
+      </md-list-item>
+      <md-list-item class="subitem">
+        <p class="subitem-no-icon">Leaderboard</p>
+      </md-list-item>
+      <md-list-item class="subitem">
+        <p class="subitem-no-icon">Key Metrics</p>
+      </md-list-item>
+      <md-list-item class="subitem">
+        <p class="subitem-no-icon">Transactions</p>
+      </md-list-item>
+      <md-list-item class="subitem">
+        <p class="subitem-no-icon">Daily Cash</p>
+      </md-list-item>
+      <md-list-item>
+        <ng-md-icon icon="message" ></ng-md-icon>
+        <p><b>Online Activity</b></p>
+      </md-list-item>
+      <md-list-item>
+        <ng-md-icon icon="language" ></ng-md-icon>
+        <p><b>Data Sources</b></p>
+      </md-list-item>
+      <md-list-item>
+        <ng-md-icon icon="compare" ></ng-md-icon>
+        <p><b>Compare Locations</b></p>
+      </md-list-item>
+      <md-list-item>
+        <ng-md-icon icon="directions" ></ng-md-icon>
+        <p><b>Getting Started</b></p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+        <ng-md-icon icon="place" ></ng-md-icon>
+        <p><b>Location</b></p>
+      </md-list-item>
+      <md-list-item class="subitem">
+        <p class="subitem-no-icon">Invite Staff</p>
+      </md-list-item>
+      <md-list-item class="subitem">
+        <p class="subitem-no-icon">Settings</p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+        <ng-md-icon icon="school" ></ng-md-icon>
+        <p><b>Womply Experts</b></p>
+      </md-list-item>
+    </md-list>
+  </md-sidenav>
+  <div flex style="background-color:#eee;">
+    <div layout="column">
+      <md-toolbar style="background-color:#0874B7; color:#fff" layout-align="center">
+        <div layout="row">
+          <div flex="80" flex-offset="10">Pauly's Pizza Place 3970 17th Street Demo, DE 68130</div>
+          <div flex="5">
+            <ng-md-icon icon="notifications" style="fill:#fff;"></ng-md-icon>
+          </div>
+          <div flex="5">
+            <ng-md-icon icon="settings" style="fill:#fff;"></ng-md-icon>
+          </div>
+        </div>
+      </md-toolbar>
+      <div>
+        <md-content class="md-padding" style="padding-top:0; background-color:#eee">
+          <md-card style="height:400px;margin-top:0;">
+            <div>
+              <h1>Welcome to Insights</h1>
+            </div>
+          </md-card>
+        </md-content>
+      </div>
+    </div>
+  </div>
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-animate/angular-animate.js"></script>
+  <script src="./bower_components/angular-aria/angular-aria.js"></script>
+  <script src="./bower_components/angular-route/angular-route.js"></script>
+  <script src="./bower_components/angular-messages/angular-messages.js"></script>
+  <script src="./bower_components/angular-material/angular-material.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
+  <script src="docs.js"></script>
+  <script src="docs-demo-scripts.js"></script>
+</body>
+
+</html>

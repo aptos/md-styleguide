@@ -1840,10 +1840,22 @@ DocsApp
 
 DocsApp.constant('COMPOSITIONS',[
   {
+    "name": "CardTransactions",
+    "outputPath": "compositions/CardTransactions.html",
+    "url": "/Compositions/CardTransactions",
+    "label": "CardTransactions"
+  },
+  {
     "name": "ChipsStyling",
     "outputPath": "compositions/ChipsStyling.html",
     "url": "/Compositions/ChipsStyling",
     "label": "ChipsStyling"
+  },
+  {
+    "name": "Datatable",
+    "outputPath": "compositions/Datatable.html",
+    "url": "/Compositions/Datatable",
+    "label": "Datatable"
   },
   {
     "name": "FABusage",
@@ -1852,34 +1864,22 @@ DocsApp.constant('COMPOSITIONS',[
     "label": "FABusage"
   },
   {
+    "name": "Feature253",
+    "outputPath": "compositions/Feature253.html",
+    "url": "/Compositions/Feature253",
+    "label": "Feature253"
+  },
+  {
+    "name": "Icons",
+    "outputPath": "compositions/Icons.html",
+    "url": "/Compositions/Icons",
+    "label": "Icons"
+  },
+  {
     "name": "PartnerLogos",
     "outputPath": "compositions/PartnerLogos.html",
     "url": "/Compositions/PartnerLogos",
     "label": "PartnerLogos"
-  },
-  {
-    "name": "awesomeness",
-    "outputPath": "compositions/awesomeness.html",
-    "url": "/Compositions/awesomeness",
-    "label": "awesomeness"
-  },
-  {
-    "name": "datatables",
-    "outputPath": "compositions/datatables.html",
-    "url": "/Compositions/datatables",
-    "label": "datatables"
-  },
-  {
-    "name": "logos",
-    "outputPath": "compositions/logos.html",
-    "url": "/Compositions/logos",
-    "label": "logos"
-  },
-  {
-    "name": "transactions",
-    "outputPath": "compositions/transactions.html",
-    "url": "/Compositions/transactions",
-    "label": "transactions"
   }
 ]);
 DocsApp
@@ -4639,9 +4639,7 @@ angular.module('docsApp').run(['$templateCache', function($templateCache) {
     '    <p>\n' +
     '      All Compositions are added as simple html files within the /compositions directory.\n' +
     '      This is where you can reference any other components found in DEMOS and add new elements with womply specific css.\n' +
-    '      In order to add a new template to the Compositions menu, you must also update js/content-data.js .\n' +
-    '      Add a new element within "Compositions" that includes name, outputPath, url and the label.\n' +
-    '      For the javascript averse, ask a dev for assitance. In the future, this task can be automated.\n' +
+    '      Once you have added a new composition, run <i>gulp build</i> to generate a new menu item under Compositions.\n' +
     '    </p>\n' +
     '\n' +
     '  </md-content>\n' +
@@ -4667,7 +4665,6 @@ angular.module('docsApp').run(['$templateCache', function($templateCache) {
     '    <p>\n' +
     '      In order to jumpstart a style guide with a comprehensive set of components, the doc set from the Angular Material project has been used.\n' +
     '      The documents contain some js examples for angular devs, however this styleguide is intended for use by all Womply product teams.\n' +
-    '      The CSS declarations for each component may be useful for ReactJS based projects as well.\n' +
     '    </p>\n' +
     '    <h2 class="md-headline">What is Material Design?</h2>\n' +
     '    <p>\n' +

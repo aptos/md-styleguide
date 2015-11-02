@@ -9,7 +9,6 @@
   <meta name="viewport" content="initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="dist/styleguide.css">
-  <link rel="stylesheet" href="docs.css">
   <base href="/">
 </head>
 
@@ -17,6 +16,10 @@
   <style>
   md-sidenav .brand {
     margin: 20px;
+  }
+
+  md-sidenav .brand .partner-logo {
+    margin-left: 20px;
   }
 
   md-sidenav .brand .brand-text {
@@ -44,19 +47,20 @@
   }
   md-sidenav md-list-item.subitem .subitem-no-icon {
     margin-left: 56px;
+    font-weight: 300;
   }
   </style>
   <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="true">
     <div class="brand">
-      <div class="partner-logo tsys-logo-large"></div>
+      <div class="partner-logo contain tsys-logo-large"></div>
       <div class="brand-text">
-        <h2>Merhant Insights</h2>
+        <h2 class="color-womply-500">Merchant Insights</h2>
         <h3>powered by WOMPLY</h3>
       </div>
     </div>
     <md-divider></md-divider>
     <div class="app-switcher">
-      <md-button class="md-fab md-primary md-button md-ink-ripple md-raised">
+      <md-button class="md-fab md-primary md-ink-ripple md-raised">
         <ng-md-icon icon="apps" size="24"></ng-md-icon>
       </md-button>
     </div>
@@ -122,7 +126,7 @@
   </md-sidenav>
   <div flex style="background-color:#eee;">
     <div layout="column">
-      <md-toolbar style="background-color:#0874B7; color:#fff" layout-align="center">
+      <md-toolbar class="md-primary md-hue-1" layout-align="center">
         <div layout="row">
           <div flex="80" flex-offset="10">Pauly's Pizza Place 3970 17th Street Demo, DE 68130</div>
           <div flex="5">

@@ -1,3 +1,33 @@
+.color-womply-50 {
+  color: #CDE9F9; }
+
+.color-womply-100 {
+  color: #8FC7EA; }
+
+.color-womply-200 {
+  color: #49A3DD; }
+
+.color-womply-300 {
+  color: #0B81CA; }
+
+.color-womply-400 {
+  color: #0874B7; }
+
+.color-womply-500 {
+  color: #0969A2; }
+
+.color-womply-600 {
+  color: #086094; }
+
+.color-womply-700 {
+  color: #07507A; }
+
+.color-womply-800 {
+  color: #053751; }
+
+.color-womply-900 {
+  color: #042F44; }
+
 html, body {
   height: 100%;
   color: rgba(0, 0, 0, 0.87);
@@ -7718,8 +7748,12 @@ md-tooltip {
 
 .partner-logo {
   display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 125px;
   height: 72px;
-  width: 192px; }
+  padding: 10px; }
   .partner-logo.contain {
     background-size: contain; }
   .partner-logo.cover {

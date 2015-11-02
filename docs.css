@@ -1089,6 +1089,51 @@ docs-demo .doc-demo-content {
   height: 18px;
   width: 18px; }
 
+.buttondemoBasicUsage section {
+  background: #f7f7f7;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em;
+  position: relative !important;
+  padding-bottom: 10px; }
+
+.buttondemoBasicUsage md-content {
+  margin-right: 7px; }
+
+.buttondemoBasicUsage section .md-button {
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
+.buttondemoBasicUsage .label {
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  font-size: 14px;
+  opacity: 0.54; }
+
+.checkboxdemoBasicUsage .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoBasicUsage p {
+  padding-left: 8px; }
+
+.checkboxdemoBasicUsage fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
+.checkboxdemoBasicUsage legend {
+  color: #3F51B5; }
+
+.checkboxdemoBasicUsage legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoBasicUsage .ipsum {
+  color: saddlebrown; }
+
 .bottomSheetdemoBasicUsage .md-inline-list-icon-label {
   display: inline-block;
   padding-left: 10px;
@@ -1123,53 +1168,35 @@ docs-demo .doc-demo-content {
 .bottomSheetdemoBasicUsage md-toast > * {
   font-weight: bolder; }
 
-.buttondemoBasicUsage section {
-  background: #f7f7f7;
-  border-radius: 3px;
-  text-align: center;
-  margin: 1em;
-  position: relative !important;
-  padding-bottom: 10px; }
-
-.buttondemoBasicUsage md-content {
-  margin-right: 7px; }
-
-.buttondemoBasicUsage section .md-button {
-  margin-top: 16px;
-  margin-bottom: 16px; }
-
-.buttondemoBasicUsage .label {
-  position: absolute;
-  bottom: 5px;
-  left: 7px;
-  font-size: 14px;
-  opacity: 0.54; }
-
-.carddemoBasicUsage md-card {
-  min-height: 150px; }
-
-.checkboxdemoBasicUsage .checkboxDemo1 div {
+.checkboxdemoSyncing .checkboxDemo1 div {
   clear: both; }
 
-.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
+.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
   float: left; }
 
-.checkboxdemoBasicUsage p {
-  padding-left: 8px; }
-
-.checkboxdemoBasicUsage fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
-
-.checkboxdemoBasicUsage legend {
+.checkboxdemoSyncing legend {
   color: #3F51B5; }
 
-.checkboxdemoBasicUsage legend code {
+.checkboxdemoSyncing legend code {
   color: #3F51B5;
   font-weight: normal; }
 
-.checkboxdemoBasicUsage .ipsum {
-  color: saddlebrown; }
+.checkboxdemoSyncing p {
+  padding-left: 8px; }
+
+.checkboxdemoSyncing .info {
+  padding-left: 13px; }
+
+.checkboxdemoSyncing div.standard {
+  padding: 8px;
+  padding-left: 15px; }
+
+.checkboxdemoSyncing fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
+.carddemoBasicUsage md-card {
+  min-height: 150px; }
 
 .chipsdemoBasicUsage .custom-chips .md-chip {
   position: relative; }
@@ -1204,33 +1231,6 @@ docs-demo .doc-demo-content {
         background: rgba(255, 0, 0, 0.8); }
   .chipsdemoBasicUsage .custom-chips .md-chip:not(.md-readonly) md-chip-template {
     padding-right: 5px; }
-
-.checkboxdemoSyncing .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoSyncing legend {
-  color: #3F51B5; }
-
-.checkboxdemoSyncing legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoSyncing p {
-  padding-left: 8px; }
-
-.checkboxdemoSyncing .info {
-  padding-left: 13px; }
-
-.checkboxdemoSyncing div.standard {
-  padding: 8px;
-  padding-left: 15px; }
-
-.checkboxdemoSyncing fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
 
 .chipsdemoContactChips md-content.autocomplete {
   min-height: 250px; }
@@ -1270,9 +1270,6 @@ docs-demo .doc-demo-content {
   height: 250px;
   overflow: hidden; }
 
-.chipsdemoStaticChips p.note {
-  font-size: 12px; }
-
 .chipsdemoCustomInputs md-content.autocomplete {
   min-height: 200px; }
 
@@ -1295,6 +1292,9 @@ docs-demo .doc-demo-content {
   padding: 0;
   margin: 0; }
 
+.chipsdemoStaticChips p.note {
+  font-size: 12px; }
+
 .contentdemoBasicUsage div.demo-content {
   height: 600px; }
 
@@ -1314,46 +1314,6 @@ docs-demo .doc-demo-content {
     color: darkred;
     margin: 10px 0 0 25px; }
 
-.dividerdemoBasicUsage .face {
-  border-radius: 30px;
-  border: 1px solid #ddd;
-  width: 48px;
-  margin: 16px; }
-
-.fabSpeedDialdemoBasicUsage .text-capitalize {
-  text-transform: capitalize; }
-
-.fabSpeedDialdemoBasicUsage .md-fab:hover, .fabSpeedDialdemoBasicUsage .md-fab.md-focused {
-  background-color: #000 !important; }
-
-.fabSpeedDialdemoBasicUsage p.note {
-  font-size: 1.2rem; }
-
-.fabSpeedDialdemoBasicUsage .lock-size {
-  min-width: 300px;
-  min-height: 300px;
-  width: 300px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.fabSpeedDialdemoMoreOptions .lock-size {
-  min-width: 300px;
-  min-height: 300px;
-  width: 300px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.fabSpeedDialdemoMoreOptions .md-fab.demo-fab.trigger-fab:hover, .fabSpeedDialdemoMoreOptions .md-fab.demo-fab.trigger-fab.md-focused, .fabSpeedDialdemoMoreOptions .md-fab.demo-fab.action-fab:hover, .fabSpeedDialdemoMoreOptions .md-fab.demo-fab.action-fab.md-focused {
-  background-color: #333; }
-
-.fabSpeedDialdemoMoreOptions .md-fab.demo-fab.action-fab {
-  background-color: #aaa; }
-
-.fabSpeedDialdemoMoreOptions md-content div[flex="50"] {
-  padding: 15px; }
-
 .dialogdemoBasicUsage #popupContainer {
   position: relative; }
 
@@ -1370,6 +1330,15 @@ docs-demo .doc-demo-content {
 .dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
   font-size: 0.8em;
   margin-top: 50px; }
+
+.dividerdemoBasicUsage .face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px; }
+
+.fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
+  left: 7px; }
 
 .gridListdemoBasicUsage md-grid-list {
   margin: 8px; }
@@ -1394,9 +1363,6 @@ docs-demo .doc-demo-content {
 
 .gridListdemoBasicUsage md-grid-tile {
   transition: all 400ms ease-out 50ms; }
-
-.fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
-  left: 7px; }
 
 .gridListdemoDynamicTiles md-icon {
   width: 50%;
@@ -1471,6 +1437,40 @@ docs-demo .doc-demo-content {
   font-weight: 700;
   width: 100%;
   text-align: center; }
+
+.fabSpeedDialdemoBasicUsage .text-capitalize {
+  text-transform: capitalize; }
+
+.fabSpeedDialdemoBasicUsage .md-fab:hover, .fabSpeedDialdemoBasicUsage .md-fab.md-focused {
+  background-color: #000 !important; }
+
+.fabSpeedDialdemoBasicUsage p.note {
+  font-size: 1.2rem; }
+
+.fabSpeedDialdemoBasicUsage .lock-size {
+  min-width: 300px;
+  min-height: 300px;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.fabSpeedDialdemoMoreOptions .lock-size {
+  min-width: 300px;
+  min-height: 300px;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.fabSpeedDialdemoMoreOptions .md-fab.demo-fab.trigger-fab:hover, .fabSpeedDialdemoMoreOptions .md-fab.demo-fab.trigger-fab.md-focused, .fabSpeedDialdemoMoreOptions .md-fab.demo-fab.action-fab:hover, .fabSpeedDialdemoMoreOptions .md-fab.demo-fab.action-fab.md-focused {
+  background-color: #333; }
+
+.fabSpeedDialdemoMoreOptions .md-fab.demo-fab.action-fab {
+  background-color: #aaa; }
+
+.fabSpeedDialdemoMoreOptions md-content div[flex="50"] {
+  padding: 15px; }
 
 .icondemoFontIconsWithClassnames {
   /* Bootstrap Overrides */
@@ -1657,6 +1657,25 @@ docs-demo .doc-demo-content {
   height: 48px;
   color: #00f; }
 
+.icondemoSvgIconSets md-progress-circular {
+  margin-bottom: 20px; }
+
+.icondemoSvgIconSets md-icon {
+  margin: 20px;
+  margin-top: 0;
+  width: 24px;
+  height: 24px; }
+
+.icondemoSvgIconSets .demo-content {
+  min-height: 210px; }
+
+.icondemoSvgIconSets .appSvgIconSets {
+  padding: 25px; }
+
+.icondemoSvgIconSets .s48 {
+  width: 48px;
+  height: 48px; }
+
 .icondemoUsingTemplateCache md-progress-circular {
   margin-bottom: 20px; }
 
@@ -1679,25 +1698,6 @@ docs-demo .doc-demo-content {
   padding-left: 25px;
   color: #7f7e7e; }
 
-.icondemoSvgIconSets md-progress-circular {
-  margin-bottom: 20px; }
-
-.icondemoSvgIconSets md-icon {
-  margin: 20px;
-  margin-top: 0;
-  width: 24px;
-  height: 24px; }
-
-.icondemoSvgIconSets .demo-content {
-  min-height: 210px; }
-
-.icondemoSvgIconSets .appSvgIconSets {
-  padding: 25px; }
-
-.icondemoSvgIconSets .s48 {
-  width: 48px;
-  height: 48px; }
-
 .inputdemoBasicUsage md-datepicker {
   margin-top: 18px; }
 
@@ -1708,6 +1708,9 @@ docs-demo .doc-demo-content {
 
 .inputdemoBasicUsage .md-datepicker-input-container {
   margin-left: 2px; }
+
+.inputdemoErrors .inputErrorsApp {
+  min-height: 48px; }
 
 .inputdemoIcons .inputIconDemo {
   min-height: 48px; }
@@ -1721,30 +1724,6 @@ docs-demo .doc-demo-content {
 .inputdemoIcons md-input-container.md-input-invalid > md-icon.email,
 .inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
   color: red; }
-
-.inputdemoErrors .inputErrorsApp {
-  min-height: 48px; }
-
-.menudemoMenuPositionModes .md-menu-demo {
-  padding: 24px; }
-
-.menudemoMenuPositionModes .menu-demo-container {
-  min-height: 200px; }
-
-.menudemoBasicUsage .md-menu-demo {
-  padding: 24px; }
-
-.menudemoBasicUsage .menu-demo-container {
-  min-height: 200px; }
-
-.menudemoMenuWidth .md-menu-demo {
-  padding: 24px; }
-
-.menudemoMenuWidth .menu-demo-container {
-  min-height: 200px; }
-
-.menudemoMenuWidth .menus {
-  width: 100%; }
 
 .listdemoBasicUsage md-divider {
   margin-top: 10px;
@@ -1766,6 +1745,47 @@ docs-demo .doc-demo-content {
   /* IE 10+ */
   user-select: none;
   /* Likely future */ }
+
+.menudemoBasicUsage .md-menu-demo {
+  padding: 24px; }
+
+.menudemoBasicUsage .menu-demo-container {
+  min-height: 200px; }
+
+.menudemoMenuPositionModes .md-menu-demo {
+  padding: 24px; }
+
+.menudemoMenuPositionModes .menu-demo-container {
+  min-height: 200px; }
+
+.menudemoMenuWidth .md-menu-demo {
+  padding: 24px; }
+
+.menudemoMenuWidth .menu-demo-container {
+  min-height: 200px; }
+
+.menudemoMenuWidth .menus {
+  width: 100%; }
+
+.menuBardemoBasicUsage .page-container {
+  background-color: #f1f1f1;
+  padding: 32px; }
+
+.menuBardemoBasicUsage .page {
+  margin: 0 auto;
+  background-color: white;
+  padding: 24px;
+  max-width: 680px;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25); }
+
+.menuBardemoBasicUsage .page h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 0;
+  font-weight: normal; }
+
+.menuBardemoBasicUsage .page p {
+  line-height: 1.6rem; }
 
 .progressCirculardemoBasicUsage body {
   padding: 20px; }
@@ -1801,26 +1821,6 @@ docs-demo .doc-demo-content {
 
 .progressCirculardemoBasicUsage .visible {
   border-color: rgba(221, 221, 177, 0); }
-
-.menuBardemoBasicUsage .page-container {
-  background-color: #f1f1f1;
-  padding: 32px; }
-
-.menuBardemoBasicUsage .page {
-  margin: 0 auto;
-  background-color: white;
-  padding: 24px;
-  max-width: 680px;
-  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25); }
-
-.menuBardemoBasicUsage .page h1 {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-top: 0;
-  font-weight: normal; }
-
-.menuBardemoBasicUsage .page p {
-  line-height: 1.6rem; }
 
 .radioButtondemoBasicUsage body {
   padding: 20px; }
@@ -1927,10 +1927,6 @@ docs-demo .doc-demo-content {
   width: 48px;
   margin: 16px; }
 
-.switchdemoBasicUsage .inset {
-  padding-left: 25px;
-  padding-top: 25px; }
-
 .swipedemoBasicUsage .demo-swipe {
   padding: 20px 10px; }
 
@@ -1942,6 +1938,20 @@ docs-demo .doc-demo-content {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+
+.switchdemoBasicUsage .inset {
+  padding-left: 25px;
+  padding-top: 25px; }
+
+.tabsdemoDynamicHeight md-content {
+  background-color: transparent !important; }
+  .tabsdemoDynamicHeight md-content md-tabs {
+    background: #f6f6f6;
+    border: 1px solid #e1e1e1; }
+    .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+      background: white; }
+  .tabsdemoDynamicHeight md-content h1:first-child {
+    margin-top: 0; }
 
 .tabsdemoDynamicTabs md-content {
   background-color: transparent !important; }
@@ -1982,16 +1992,6 @@ docs-demo .doc-demo-content {
 .tabsdemoDynamicTabs .md-button.add-tab {
   transform: translateY(5px); }
 
-.tabsdemoDynamicHeight md-content {
-  background-color: transparent !important; }
-  .tabsdemoDynamicHeight md-content md-tabs {
-    background: #f6f6f6;
-    border: 1px solid #e1e1e1; }
-    .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
-      background: white; }
-  .tabsdemoDynamicHeight md-content h1:first-child {
-    margin-top: 0; }
-
 .tabsdemoStaticTabs md-tab-content {
   padding: 25px; }
   .tabsdemoStaticTabs md-tab-content:nth-child(1) {
@@ -2012,14 +2012,14 @@ docs-demo .doc-demo-content {
   margin-top: 26px;
   margin-left: 0; }
 
+.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+  color: white; }
+
 .toolbardemoScrollShrink .face {
   width: 48px;
   margin: 16px;
   border-radius: 48px;
   border: 1px solid #ddd; }
-
-.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
-  color: white; }
 
 .tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button,
 .tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {

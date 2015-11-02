@@ -28,29 +28,30 @@
 
   md-sidenav .app-switcher {
     position: relative;
-    top: -33px;
+    top: -35px;
     left: 219px;
   }
 
   md-sidenav .app-switcher ng-md-icon {
     fill: #fff;
     position: relative;
-    top: 5px;
+    top: 6.5px;
   }
 
-  md-sidenav md-list-item ng-md-icon  {
+  md-sidenav md-list-item ng-md-icon {
     margin-right: 32px;
   }
 
   md-sidenav md-list-item.subitem {
     min-height: 24px !important;
   }
+
   md-sidenav md-list-item.subitem .subitem-no-icon {
     margin-left: 56px;
     font-weight: 300;
   }
   </style>
-  <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="true">
+  <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('min-width: 1000px')">
     <div class="brand">
       <div class="partner-logo contain tsys-logo-large"></div>
       <div class="brand-text">
@@ -91,24 +92,24 @@
         <p class="subitem-no-icon">Daily Cash</p>
       </md-list-item>
       <md-list-item>
-        <ng-md-icon icon="message" ></ng-md-icon>
+        <ng-md-icon icon="message"></ng-md-icon>
         <p><b>Online Activity</b></p>
       </md-list-item>
       <md-list-item>
-        <ng-md-icon icon="language" ></ng-md-icon>
+        <ng-md-icon icon="language"></ng-md-icon>
         <p><b>Data Sources</b></p>
       </md-list-item>
       <md-list-item>
-        <ng-md-icon icon="compare" ></ng-md-icon>
+        <ng-md-icon icon="compare"></ng-md-icon>
         <p><b>Compare Locations</b></p>
       </md-list-item>
       <md-list-item>
-        <ng-md-icon icon="directions" ></ng-md-icon>
+        <ng-md-icon icon="directions"></ng-md-icon>
         <p><b>Getting Started</b></p>
       </md-list-item>
       <md-divider></md-divider>
       <md-list-item>
-        <ng-md-icon icon="place" ></ng-md-icon>
+        <ng-md-icon icon="place"></ng-md-icon>
         <p><b>Location</b></p>
       </md-list-item>
       <md-list-item class="subitem">
@@ -119,7 +120,7 @@
       </md-list-item>
       <md-divider></md-divider>
       <md-list-item>
-        <ng-md-icon icon="school" ></ng-md-icon>
+        <ng-md-icon icon="school"></ng-md-icon>
         <p><b>Womply Experts</b></p>
       </md-list-item>
     </md-list>
@@ -128,8 +129,16 @@
     <div layout="column">
       <md-toolbar class="md-primary md-hue-1" layout-align="center">
         <div layout="row">
-          <div flex="80" flex-offset="10">Pauly's Pizza Place 3970 17th Street Demo, DE 68130</div>
-          <div flex="5">
+          <div flex="70" flex-offset="10">
+            <md-input-container style="padding:0;">
+              <md-select ng-model="fakery">
+                <md-option ng-selected="true">
+                  Pauly's Pizza Place 3970 17th Street Demo, DE 68130
+                </md-option>
+              </md-select>
+            </md-input-container>
+          </div>
+          <div flex="5" flex-offset="10">
             <ng-md-icon icon="notifications" style="fill:#fff;"></ng-md-icon>
           </div>
           <div flex="5">

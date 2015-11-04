@@ -1111,29 +1111,6 @@ docs-demo .doc-demo-content {
   font-size: 14px;
   opacity: 0.54; }
 
-.checkboxdemoBasicUsage .checkboxDemo1 div {
-  clear: both; }
-
-.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoBasicUsage p {
-  padding-left: 8px; }
-
-.checkboxdemoBasicUsage fieldset.standard {
-  border-style: solid;
-  border-width: 1px; }
-
-.checkboxdemoBasicUsage legend {
-  color: #3F51B5; }
-
-.checkboxdemoBasicUsage legend code {
-  color: #3F51B5;
-  font-weight: normal; }
-
-.checkboxdemoBasicUsage .ipsum {
-  color: saddlebrown; }
-
 .bottomSheetdemoBasicUsage .md-inline-list-icon-label {
   display: inline-block;
   padding-left: 10px;
@@ -1168,6 +1145,32 @@ docs-demo .doc-demo-content {
 .bottomSheetdemoBasicUsage md-toast > * {
   font-weight: bolder; }
 
+.carddemoBasicUsage md-card {
+  min-height: 150px; }
+
+.checkboxdemoBasicUsage .checkboxDemo1 div {
+  clear: both; }
+
+.checkboxdemoBasicUsage .checkboxDemo1 md-checkbox {
+  float: left; }
+
+.checkboxdemoBasicUsage p {
+  padding-left: 8px; }
+
+.checkboxdemoBasicUsage fieldset.standard {
+  border-style: solid;
+  border-width: 1px; }
+
+.checkboxdemoBasicUsage legend {
+  color: #3F51B5; }
+
+.checkboxdemoBasicUsage legend code {
+  color: #3F51B5;
+  font-weight: normal; }
+
+.checkboxdemoBasicUsage .ipsum {
+  color: saddlebrown; }
+
 .checkboxdemoSyncing .checkboxDemo1 div {
   clear: both; }
 
@@ -1194,9 +1197,6 @@ docs-demo .doc-demo-content {
 .checkboxdemoSyncing fieldset.standard {
   border-style: solid;
   border-width: 1px; }
-
-.carddemoBasicUsage md-card {
-  min-height: 150px; }
 
 .chipsdemoBasicUsage .custom-chips .md-chip {
   position: relative; }
@@ -1337,107 +1337,6 @@ docs-demo .doc-demo-content {
   width: 48px;
   margin: 16px; }
 
-.fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
-  left: 7px; }
-
-.gridListdemoBasicUsage md-grid-list {
-  margin: 8px; }
-
-.gridListdemoBasicUsage .gray {
-  background: #f5f5f5; }
-
-.gridListdemoBasicUsage .green {
-  background: #b9f6ca; }
-
-.gridListdemoBasicUsage .yellow {
-  background: #ffff8d; }
-
-.gridListdemoBasicUsage .blue {
-  background: #84ffff; }
-
-.gridListdemoBasicUsage .purple {
-  background: #b388ff; }
-
-.gridListdemoBasicUsage .red {
-  background: #ff8a80; }
-
-.gridListdemoBasicUsage md-grid-tile {
-  transition: all 400ms ease-out 50ms; }
-
-.gridListdemoDynamicTiles md-icon {
-  width: 50%;
-  height: 30%; }
-
-.gridListdemoDynamicTiles md-icon svg {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%; }
-
-.gridListdemoDynamicTiles .s64 {
-  font-size: 64px; }
-
-.gridListdemoDynamicTiles .s32 {
-  font-size: 48px; }
-
-.gridListdemoDynamicTiles md-icon.fa {
-  display: block;
-  padding-left: 0; }
-
-.gridListdemoDynamicTiles md-icon.s32 span {
-  padding-left: 8px; }
-
-.gridListdemoDynamicTiles md-grid-list {
-  margin: 8px; }
-
-.gridListdemoDynamicTiles .gray {
-  background: #f5f5f5; }
-
-.gridListdemoDynamicTiles .green {
-  background: #b9f6ca; }
-
-.gridListdemoDynamicTiles .yellow {
-  background: #ffff8d; }
-
-.gridListdemoDynamicTiles .blue {
-  background: #84ffff; }
-
-.gridListdemoDynamicTiles .darkBlue {
-  background: #80d8ff; }
-
-.gridListdemoDynamicTiles .deepBlue {
-  background: #448aff; }
-
-.gridListdemoDynamicTiles .purple {
-  background: #b388ff; }
-
-.gridListdemoDynamicTiles .lightPurple {
-  background: #8c9eff; }
-
-.gridListdemoDynamicTiles .red {
-  background: #ff8a80; }
-
-.gridListdemoDynamicTiles .pink {
-  background: #ff80ab; }
-
-.gridListdemoDynamicTiles md-grid-tile {
-  transition: all 300ms ease-out 50ms; }
-
-.gridListdemoDynamicTiles md-grid-tile md-icon {
-  padding-bottom: 32px; }
-
-.gridListdemoDynamicTiles md-grid-tile md-grid-tile-footer {
-  background: rgba(0, 0, 0, 0.68);
-  height: 36px; }
-
-.gridListdemoDynamicTiles md-grid-tile-footer figcaption {
-  width: 100%; }
-
-.gridListdemoDynamicTiles md-grid-tile-footer figcaption h3 {
-  margin: 0;
-  font-weight: 700;
-  width: 100%;
-  text-align: center; }
-
 .fabSpeedDialdemoBasicUsage .text-capitalize {
   text-transform: capitalize; }
 
@@ -1471,6 +1370,9 @@ docs-demo .doc-demo-content {
 
 .fabSpeedDialdemoMoreOptions md-content div[flex="50"] {
   padding: 15px; }
+
+.fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
+  left: 7px; }
 
 .icondemoFontIconsWithClassnames {
   /* Bootstrap Overrides */
@@ -1698,6 +1600,104 @@ docs-demo .doc-demo-content {
   padding-left: 25px;
   color: #7f7e7e; }
 
+.gridListdemoBasicUsage md-grid-list {
+  margin: 8px; }
+
+.gridListdemoBasicUsage .gray {
+  background: #f5f5f5; }
+
+.gridListdemoBasicUsage .green {
+  background: #b9f6ca; }
+
+.gridListdemoBasicUsage .yellow {
+  background: #ffff8d; }
+
+.gridListdemoBasicUsage .blue {
+  background: #84ffff; }
+
+.gridListdemoBasicUsage .purple {
+  background: #b388ff; }
+
+.gridListdemoBasicUsage .red {
+  background: #ff8a80; }
+
+.gridListdemoBasicUsage md-grid-tile {
+  transition: all 400ms ease-out 50ms; }
+
+.gridListdemoDynamicTiles md-icon {
+  width: 50%;
+  height: 30%; }
+
+.gridListdemoDynamicTiles md-icon svg {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.gridListdemoDynamicTiles .s64 {
+  font-size: 64px; }
+
+.gridListdemoDynamicTiles .s32 {
+  font-size: 48px; }
+
+.gridListdemoDynamicTiles md-icon.fa {
+  display: block;
+  padding-left: 0; }
+
+.gridListdemoDynamicTiles md-icon.s32 span {
+  padding-left: 8px; }
+
+.gridListdemoDynamicTiles md-grid-list {
+  margin: 8px; }
+
+.gridListdemoDynamicTiles .gray {
+  background: #f5f5f5; }
+
+.gridListdemoDynamicTiles .green {
+  background: #b9f6ca; }
+
+.gridListdemoDynamicTiles .yellow {
+  background: #ffff8d; }
+
+.gridListdemoDynamicTiles .blue {
+  background: #84ffff; }
+
+.gridListdemoDynamicTiles .darkBlue {
+  background: #80d8ff; }
+
+.gridListdemoDynamicTiles .deepBlue {
+  background: #448aff; }
+
+.gridListdemoDynamicTiles .purple {
+  background: #b388ff; }
+
+.gridListdemoDynamicTiles .lightPurple {
+  background: #8c9eff; }
+
+.gridListdemoDynamicTiles .red {
+  background: #ff8a80; }
+
+.gridListdemoDynamicTiles .pink {
+  background: #ff80ab; }
+
+.gridListdemoDynamicTiles md-grid-tile {
+  transition: all 300ms ease-out 50ms; }
+
+.gridListdemoDynamicTiles md-grid-tile md-icon {
+  padding-bottom: 32px; }
+
+.gridListdemoDynamicTiles md-grid-tile md-grid-tile-footer {
+  background: rgba(0, 0, 0, 0.68);
+  height: 36px; }
+
+.gridListdemoDynamicTiles md-grid-tile-footer figcaption {
+  width: 100%; }
+
+.gridListdemoDynamicTiles md-grid-tile-footer figcaption h3 {
+  margin: 0;
+  font-weight: 700;
+  width: 100%;
+  text-align: center; }
+
 .inputdemoBasicUsage md-datepicker {
   margin-top: 18px; }
 
@@ -1822,38 +1822,6 @@ docs-demo .doc-demo-content {
 .progressCirculardemoBasicUsage .visible {
   border-color: rgba(221, 221, 177, 0); }
 
-.radioButtondemoBasicUsage body {
-  padding: 20px; }
-
-.radioButtondemoBasicUsage hr {
-  margin-left: -20px;
-  opacity: 0.3; }
-
-.radioButtondemoBasicUsage md-radio-group {
-  width: 150px; }
-
-.radioButtondemoBasicUsage p:last-child {
-  padding-bottom: 50px; }
-
-.radioButtondemoBasicUsage [ng-controller] {
-  padding-left: 20px; }
-
-.radioButtondemoBasicUsage .radioValue {
-  margin-left: 5px;
-  color: #0f9d58;
-  font-weight: bold;
-  padding: 5px; }
-
-.radioButtondemoBasicUsage md-icon {
-  margin: 20px;
-  margin-top: 0;
-  width: 128px;
-  height: 128px; }
-
-.radioButtondemoBasicUsage .ipsum {
-  color: saddlebrown;
-  font-size: 0.9em; }
-
 .progressLineardemoBasicUsage body {
   padding: 20px; }
 
@@ -1912,6 +1880,38 @@ docs-demo .doc-demo-content {
   display: inline-block;
   margin-top: 10px;
   padding: 25px;
+  font-size: 0.9em; }
+
+.radioButtondemoBasicUsage body {
+  padding: 20px; }
+
+.radioButtondemoBasicUsage hr {
+  margin-left: -20px;
+  opacity: 0.3; }
+
+.radioButtondemoBasicUsage md-radio-group {
+  width: 150px; }
+
+.radioButtondemoBasicUsage p:last-child {
+  padding-bottom: 50px; }
+
+.radioButtondemoBasicUsage [ng-controller] {
+  padding-left: 20px; }
+
+.radioButtondemoBasicUsage .radioValue {
+  margin-left: 5px;
+  color: #0f9d58;
+  font-weight: bold;
+  padding: 5px; }
+
+.radioButtondemoBasicUsage md-icon {
+  margin: 20px;
+  margin-top: 0;
+  width: 128px;
+  height: 128px; }
+
+.radioButtondemoBasicUsage .ipsum {
+  color: saddlebrown;
   font-size: 0.9em; }
 
 .selectdemoBasicUsage md-input-container {

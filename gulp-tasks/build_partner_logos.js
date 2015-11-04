@@ -8,10 +8,10 @@ gulp.task('collect-partner-logos', function () {
   partner_logos = [];
   var count = 0
   console.info("Collect Partner Logos")
-  return gulp.src('dist/assets/images/partner_logos/*-small.png')
+  return gulp.src('dist/assets/images/partner_logos/*-large.png')
   .pipe(tap(function (file, t) {
     var filename = path.basename(file.path);
-    var name = path.basename(file.path, '-small.png');
+    var name = path.basename(file.path, '-large.png');
     partner_logos.push(name);
     console.info(name)
   }));
@@ -29,9 +29,9 @@ gulp.task('write-partner-logos-demo', ['collect-partner-logos'], function () {
   partner_logos.forEach( function(name) {
     demo = demo +
     '<md-grid-tile md-rowspan="2" md-colspan="2" md-colspan-sm="1">\n' +
-    '<div class="partner-logo ' + name + '-logo-small"></div>\n' +
+    '<div class="partner-logo contain ' + name + '-logo-large"></div>\n' +
     '<md-grid-tile-footer>\n' +
-    '<h3>' + name + '-logo-small</h3></md-grid-tile-footer>\n' +
+    '<h3>' + name + '-logo-large</h3></md-grid-tile-footer>\n' +
     '</md-grid-tile>\n' ;
   });
 

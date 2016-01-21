@@ -13,7 +13,7 @@ This style guide contains a set of visual design standards based on the Google M
   - `gulp build`
 1. To view in browser as you make updates (default)
   - `gulp`
-  - run `live-server` in a second terminal
+  - run `live-server` in a second terminal to see your changes automatically reflected in your browser
 
 ## Updating css
 
@@ -25,12 +25,27 @@ SASS files are arranged in the scss directory
         |-- _typography.scss (for example purposes)
         |-- _variables.scss (overrides and additions to angular-material.scss)
 
-## Adding new Templates
+## Adding new Compositions and Pages
 
-While the component library is based on the angular-material documentation as a seed, templates which define new component designs as well as layouts which are comprised of multiple components can be added to the styleguide.
+While the component library is based on the angular-material documentation as a seed, templates which define new component designs as well as layouts which are comprised of multiple components can be added to the styleguide. These are broken into two categories - Compositions, which are smaller pieces of html that make up part of a page body and Pages, which include complete navigation elements and headings as well as body components..
 
-1. Place new templates as html files in the /templates directory
-1. Add the template information into the PAGES section of  js/content-data.js. This will render a new link in the side menu under Templates
+Compositions are stored in the /compositions directory. They are automatically discovered and listed in the COMPOSITIONS menu dropdown in the sidebar when you run 'gulp build'. Compositions can include any of the elements listed in DEMOS as well as custom html/css. You can include custom css within a '''<style>''' tag at the top of the file, similar to ChipsStyling.html.
+
+Pages are stored in the /pages directory. They should include an entire webpage including the head section. Here's an example:
+
+    <!doctype html>
+    <html ng-app="docsApp" ng-controller="DocsCtrl" lang="en" ng-strict-di>
+
+    <head>
+      <title>
+        Womply Global Nav
+      </title>
+      <link rel="icon" type="image/x-icon" href="favicon.ico" />
+      <meta name="viewport" content="initial-scale=1" />
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="../dist/styleguide.css">
+      <base href="/">
+    </head>
 
 ## Adding image assets
 
